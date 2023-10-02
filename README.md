@@ -14,6 +14,7 @@ Simple set of tools to help with probabilities in Pokémon games.
 Icons for Poké Balls and Pokémon provided via https://github.com/PokeAPI
 
 Once sprites get added with a new set of games, they'll have to be added manually once.
+Temporarily require their sprites repo to get the full package: `npm install github:PokeAPI/sprites`
 * Adding new Poké Balls
   * copy Poké Ball sprites from `node_modules/pokemon-sprites/sprites/items` to `public/sprites/pokeballs`
   * update enum to represent new items in `enum/pokeBalls.ts` and `dataProviders/pokeBallProvider.ts`
