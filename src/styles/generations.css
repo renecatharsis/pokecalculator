@@ -1,0 +1,186 @@
+.generation_box {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 0.7em;
+    padding: 0.3em;
+    color: black;
+}
+
+.generation_box--red {
+    background-color: #FF4444;
+}
+
+.generation_box--blue {
+    background-color: #6792FF;
+}
+
+.generation_box--yellow {
+    background-color: #FFFF00;
+}
+
+.generation_box--gold {
+    background-color: #E3C641;
+}
+
+.generation_box--silver {
+    background-color: #C1CCD3;
+}
+
+.generation_box--crystal {
+    background-color: #87CEFA;
+}
+
+.generation_box--ruby {
+    background-color: #BF0109;
+    color: white;
+}
+
+.generation_box--sapphire {
+    background-color: #3862AE;
+    color: white;
+}
+
+.generation_box--emerald {
+    background-color: #009A46;
+    color: white;
+}
+
+.generation_box--firered {
+    background-color: #DD7521;
+}
+
+.generation_box--leafgreen {
+    background-color: #B9D101;
+}
+
+.generation_box--diamond {
+    background-color: #84BAF8;
+}
+
+.generation_box--pearl {
+    background-color: #DDAAAA;
+}
+
+.generation_box--platinum {
+    background-color: #AABBD1;
+}
+
+.generation_box--heartgold {
+    background-color: #EEDD82;
+}
+
+.generation_box--soulsilver {
+    background-color: #B9D3EE;
+}
+
+.generation_box--black {
+    background-color: black;
+    color: white;
+}
+
+.generation_box--white {
+    background-color: white;
+    border-color: black;
+}
+
+.generation_box--black2 {
+    background-color: black;
+    color: #0084C9;
+}
+
+.generation_box--white2 {
+    background-color: white;
+    border-color: #ED1C24;
+    color: #ED1C24;
+}
+
+.generation_box--black2 {
+    background-color: black;
+    color: #0084C9;
+}
+
+.generation_box--x {
+    background-color: #DFF3F4;
+    border-color: #005E9B;
+    color: #005E9B;
+}
+
+.generation_box--y {
+    background-color: #E9B2BF;
+    border-color: #871223;
+    color: #871223;
+}
+
+.generation_box--omegaruby {
+    background-color: #BF0109;
+    border-color: #4F1734;
+    color: #F8F688;
+}
+
+.generation_box--alphasapphire {
+    background-color: #3862AE;
+    border-color: #0A1535;
+    color: #F8F688;
+}
+
+.generation_box--sun {
+    background-color: #F2952D;
+    border-color: #2D1515;
+    color: #6F2637;
+}
+
+.generation_box--moon {
+    background-color: #56A4D2;
+    border-color: #1F1B2A;
+    color: #2D2D5F;
+}
+
+.generation_box--ultrasun {
+    background-color: #110B0D;
+    border-color: #FA8E00;
+    color: #FBA81C;
+}
+
+.generation_box--ultramoon {
+    background-color: #110B0D;
+    border-color: #008CD9;
+    color: #12A6DF;
+}
+
+.generation_box--sword {
+    background-color: #00AEEF;
+    border-color: #211D70;
+    color: white;
+}
+
+.generation_box--shield {
+    background-color: #ED1165;
+    border-color: #790004;
+    color: white;
+}
+
+.generation_box--brilliantdiamond {
+    background-color: #C1F0FA;
+    border-color: #006FB7;
+    color: #0091CA;
+}
+
+.generation_box--shiningpearl {
+    background-color: #E8C1C6;
+    border-color: #6A337C;
+    color: #6A337C;
+}
+
+.generation_box--scarlet {
+    background-color: #D90B19;
+    border-color: #652C32;
+    color: #FFF106;
+}
+
+.generation_box--violet {
+    background-color: #741A84;
+    border-color: #C15D93;
+    color: #FFF106;
+}
