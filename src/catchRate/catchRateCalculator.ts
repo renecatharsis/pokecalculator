@@ -9,6 +9,7 @@ const calculateProbability = function (input: CatchRateInputDto): number {
         return GUARANTEED_CATCH;
     }
 
+    return Math.floor(Math.random() * 100);
     return GUARANTEED_NO_CATCH;
 };
 

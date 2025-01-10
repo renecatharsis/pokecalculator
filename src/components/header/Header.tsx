@@ -1,6 +1,6 @@
 "use client";
 
-import ListItem from "@/components/header/listItem";
+import ListItem from "@/components/header/ListItem";
 import { useState } from "react";
 import Link from "next/link";
 

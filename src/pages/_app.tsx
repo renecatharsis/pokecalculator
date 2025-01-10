@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Footer from "@/components/footer/footer";
-import Header from "@/components/header/header";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
 
 export default function App({ Component, pageProps }: AppProps) {
     return (
