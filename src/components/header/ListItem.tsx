@@ -11,7 +11,7 @@ export default function ListItem({ children, NavLink }: ListItemParams) {
             <li>
                 <a
                     href={NavLink}
-                    className="text-dark flex py-2 text-base font-medium hover:text-secondary lg:ml-12 lg:inline-flex lg:py-6 lg:text-white"
+                    className="flex py-2 text-base font-bold hover:text-secondary lg:ml-12 lg:inline-flex lg:py-6 text-secondary lg:text-white"
                 >
                     {children}
                 </a>
