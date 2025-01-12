@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
 import { calculateProbability } from "@/catchRate/catchRateCalculator";
-import { PokeBalls } from "@/enum/pokeBalls";
-import { StatusCondition } from "@/enum/statusCondition";
+import { PokeBalls } from "@/enum/PokeBalls";
+import { StatusCondition } from "@/enum/StatusCondition";
 import { CatchRateInputDto } from "@/dto/catchRateInputDto";
 
 test("MasterBallGuaranteesSuccessWithGenerallyHighProbability", () => {

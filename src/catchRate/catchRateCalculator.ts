@@ -1,5 +1,5 @@
 import { CatchRateInputDto } from "@/dto/catchRateInputDto";
-import { PokeBalls } from "@/enum/pokeBalls";
+import { PokeBalls } from "@/enum/PokeBalls";
 
 const GUARANTEED_CATCH: number = 100;
 const GUARANTEED_NO_CATCH: number = 0;

@@ -17,7 +17,7 @@ Once sprites get added with a new set of games, they'll have to be added manuall
 Temporarily require their sprites repo to get the full package: `npm install github:PokeAPI/sprites`
 * Adding new Poké Balls
   * copy Poké Ball sprites from `node_modules/pokemon-sprites/sprites/items` to `public/sprites/pokeballs`
-  * update enum to represent new items in `enum/pokeBalls.ts` and `dataProviders/pokeBallProvider.ts`
+  * update enum to represent new items in `enum/PokeBalls.ts` and `dataProviders/pokeBallProvider.ts`
 * Adding new Pokémon
   * copy Pokémon sprites from `node_modules/pokemon-sprites/sprites/pokemon` to `public/sprites/pokemon`
   * `wget -P bin/_pokedata/pokemon.csv https://github.com/PokeAPI/pokeapi/blob/master/data/v2/csv/pokemon.csv`

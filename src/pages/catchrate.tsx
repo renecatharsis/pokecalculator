@@ -1,33 +1,18 @@
+import { BaseSyntheticEvent, useEffect, useState } from "react";
 import UnorderedList from "@/components/list/UnorderedList";
-import PokemonCombobox from "@/components/formElements/PokemonCombobox";
-import PokemonGenerationListbox from "@/components/formElements/PokemonGenerationListbox";
+import PokemonCombobox from "@/components/catchRate/PokemonCombobox";
+import PokemonGenerationListbox from "@/components/catchRate/PokemonGenerationListbox";
 import { CatchRateInputDto } from "@/dto/catchRateInputDto";
 import { CatchRateOutputDto } from "@/dto/catchRateOutputDto";
-import { ApiDefinition } from "@/enum/apiDefinition";
+import { ApiDefinition } from "@/enum/ApiDefinition";
 import { mergeClassList } from "@/util/domAttributes";
-import { statusConditionList, StatusConditionListInterface } from "@/dataProviders/statusConditionProvider";
-import { pokeballList, PokeballListInterface } from "@/dataProviders/pokeballProvider";
-import {
-    Listbox,
-    Transition,
-    Combobox,
-    ComboboxInput,
-    ComboboxOptions,
-    ComboboxOption,
-    Label,
-    ComboboxButton,
-} from "@headlessui/react";
-import { useEffect, useState } from "react";
+import PokeballListbox from "@/components/catchRate/PokeballListbox";
+import StatusConditionListbox from "@/components/catchRate/StatusConditionListbox";
+import HeadlessUiCheckbox from "@/components/formElements/HeadlessUiCheckbox";
 
 export default function CatchRate() {
-    // const pokeballs = pokeballList();
-    // const statusConditions = statusConditionList();
-
-    const [hasBackendError, setHasBackendError] = useState(false);
-    // const [selectedPokeball, setSelectedPokeball] = useState(pokeballs[17]); // regular poké ball
-    // const [selectedStatusCondition, setSelectedStatusCondition] = useState(statusConditions[0]); // none
-
-    const [catchRate, setCatchRate] = useState(0.0);
+    const [hasBackendError, setHasBackendError] = useState<boolean>(false);
+    const [catchRate, setCatchRate] = useState<number>(0);
     const [catchRateInput, setCatchRateInput] = useState<CatchRateInputDto>({
         generation: 1,
         pokeball: 0,
@@ -56,36 +41,19 @@ export default function CatchRate() {
             .catch(() => setHasBackendError(true));
     }, [catchRateInput]);
 
-    // function updatedSelectedPokeball(pokeball: PokeballListInterface) {
-    //     setSelectedPokeball(pokeball);
-    //     setCatchRateInput({
-    //         ...catchRateInput,
-    //         pokeball: pokeball.id,
-    //     });
-    // }
-    //
-    // function updatedSelectedStatusCondition(statusCondition: StatusConditionListInterface) {
-    //     setSelectedStatusCondition(statusCondition);
-    //     setCatchRateInput({
-    //         ...catchRateInput,
-    //         statusCondition: statusCondition.id,
-    //     });
-    // }
-    //
-    // function updateCatchRateInput(event: BaseSyntheticEvent) {
-    //     setCatchRateInput({
-    //         ...catchRateInput,
-    //         [event.target.name]: parseInt(event.target.value),
-    //     });
-    // }
-    //
-    // function updateCatchRateInputCheckbox(event: BaseSyntheticEvent) {
-    //     setCatchRateInput({
-    //         ...catchRateInput,
-    //         [event.target.name]: event.target.checked,
-    //     });
-    // }
-    //
+    function updateCatchRateInput(event: BaseSyntheticEvent) {
+        setCatchRateInput({
+            ...catchRateInput,
+            [event.target.name]: parseInt(event.target.value),
+        });
+    }
+
+    function updateCatchRateInputCheckbox(name: string, checked: boolean) {
+        setCatchRateInput({
+            ...catchRateInput,
+            [name]: checked,
+        });
+    }
 
     return (
         <div className="min-h-screen md:w-3/5">
@@ -120,210 +88,54 @@ export default function CatchRate() {
                                     <PokemonGenerationListbox state={catchRateInput} stateHandler={setCatchRateInput} />
                                 </div>
 
-                                {/*<div className="sm:col-span-2">*/}
-                                {/*    <Listbox value={selectedPokeball} onChange={updatedSelectedPokeball}>*/}
-                                {/*        {({ open }) => (*/}
-                                {/*            <>*/}
-                                {/*                <Listbox.Label className="block text-sm font-medium leading-6">*/}
-                                {/*                    Poké Ball*/}
-                                {/*                </Listbox.Label>*/}
-                                {/*                <div className="relative mt-2">*/}
-                                {/*                    <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">*/}
-                                {/*                        <span className="flex items-center">*/}
-                                {/*                            <img*/}
-                                {/*                                src={selectedPokeball.thumbnail}*/}
-                                {/*                                alt={selectedPokeball.display}*/}
-                                {/*                                className="h-5 w-5 flex-shrink-0 rounded-full"*/}
-                                {/*                            />*/}
-                                {/*                            <span className="ml-3 block truncate">*/}
-                                {/*                                {selectedPokeball.display}*/}
-                                {/*                            </span>*/}
-                                {/*                        </span>*/}
-                                {/*                        <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">*/}
-                                {/*                            <DropdownArrow />*/}
-                                {/*                        </span>*/}
-                                {/*                    </Listbox.Button>*/}
+                                <div className="sm:col-span-3">
+                                    <PokeballListbox state={catchRateInput} stateHandler={setCatchRateInput} />
+                                </div>
 
-                                {/*                    <Transition*/}
-                                {/*                        show={open}*/}
-                                {/*                        as={Fragment}*/}
-                                {/*                        leave="transition ease-in duration-100"*/}
-                                {/*                        leaveFrom="opacity-100"*/}
-                                {/*                        leaveTo="opacity-0"*/}
-                                {/*                    >*/}
-                                {/*                        <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">*/}
-                                {/*                            {pokeballs.map((pokeball: PokeballListInterface) => (*/}
-                                {/*                                <Listbox.Option*/}
-                                {/*                                    key={pokeball.id}*/}
-                                {/*                                    className={({ active }) =>*/}
-                                {/*                                        mergeClassList(*/}
-                                {/*                                            active*/}
-                                {/*                                                ? "bg-indigo-600 text-white"*/}
-                                {/*                                                : "text-gray-900",*/}
-                                {/*                                            "relative cursor-default select-none py-2 pl-3 pr-9",*/}
-                                {/*                                        )*/}
-                                {/*                                    }*/}
-                                {/*                                    value={pokeball}*/}
-                                {/*                                >*/}
-                                {/*                                    {() => (*/}
-                                {/*                                        <>*/}
-                                {/*                                            <div className="flex items-center">*/}
-                                {/*                                                <img*/}
-                                {/*                                                    src={pokeball.thumbnail}*/}
-                                {/*                                                    alt=""*/}
-                                {/*                                                    className="h-5 w-5 mr-4 flex-shrink-0 rounded-full"*/}
-                                {/*                                                />*/}
-                                {/*                                                <span>{pokeball.display}</span>*/}
-                                {/*                                            </div>*/}
-                                {/*                                        </>*/}
-                                {/*                                    )}*/}
-                                {/*                                </Listbox.Option>*/}
-                                {/*                            ))}*/}
-                                {/*                        </Listbox.Options>*/}
-                                {/*                    </Transition>*/}
-                                {/*                </div>*/}
-                                {/*            </>*/}
-                                {/*        )}*/}
-                                {/*    </Listbox>*/}
-                                {/*</div>*/}
+                                <div className="sm:col-span-2">
+                                    <StatusConditionListbox state={catchRateInput} stateHandler={setCatchRateInput} />
+                                </div>
 
-                                {/*<div className="sm:col-span-2">*/}
-                                {/*    <Listbox value={selectedStatusCondition} onChange={updatedSelectedStatusCondition}>*/}
-                                {/*        {({ open }) => (*/}
-                                {/*            <>*/}
-                                {/*                <Listbox.Label className="block text-sm font-medium leading-6">*/}
-                                {/*                    Status Condition*/}
-                                {/*                </Listbox.Label>*/}
-                                {/*                <div className="relative mt-2">*/}
-                                {/*                    <Listbox.Button className="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 sm:text-sm sm:leading-6">*/}
-                                {/*                        <span className="flex items-center">*/}
-                                {/*                            <span className="block truncate mr-3">*/}
-                                {/*                                {selectedStatusCondition.display}*/}
-                                {/*                            </span>*/}
-                                {/*                        </span>*/}
-                                {/*                        <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">*/}
-                                {/*                            <DropdownArrow />*/}
-                                {/*                        </span>*/}
-                                {/*                    </Listbox.Button>*/}
+                                <div className="sm:col-span-6 sm:col-start-1">
+                                    <label htmlFor="hpCurrent" className="block text-sm font-medium leading-6">
+                                        Current HP / Max HP (use checkboxes if you can&#39;t tell)
+                                    </label>
+                                    <div className="mt-2">
+                                        <input
+                                            type="number"
+                                            name="hpCurrent"
+                                            id="hpCurrent"
+                                            placeholder="100"
+                                            onChange={updateCatchRateInput}
+                                            className="w-1/3 lg:w-1/4 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                                        />
+                                        <span className="mx-2">/</span>
+                                        <input
+                                            type="number"
+                                            name="hpMax"
+                                            id="hpMax"
+                                            placeholder="100"
+                                            onChange={updateCatchRateInput}
+                                            className="w-1/3 lg:w-1/4 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                                        />
+                                    </div>
+                                </div>
 
-                                {/*                    <Transition*/}
-                                {/*                        show={open}*/}
-                                {/*                        as={Fragment}*/}
-                                {/*                        leave="transition ease-in duration-100"*/}
-                                {/*                        leaveFrom="opacity-100"*/}
-                                {/*                        leaveTo="opacity-0"*/}
-                                {/*                    >*/}
-                                {/*                        <Listbox.Options className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">*/}
-                                {/*                            {statusConditions.map(*/}
-                                {/*                                (statusCondition: StatusConditionListInterface) => (*/}
-                                {/*                                    <Listbox.Option*/}
-                                {/*                                        key={statusCondition.id}*/}
-                                {/*                                        className={({ active }) =>*/}
-                                {/*                                            mergeClassList(*/}
-                                {/*                                                active*/}
-                                {/*                                                    ? "bg-indigo-600 text-white"*/}
-                                {/*                                                    : "text-gray-900",*/}
-                                {/*                                                "relative cursor-default select-none py-2 pl-3 pr-9",*/}
-                                {/*                                            )*/}
-                                {/*                                        }*/}
-                                {/*                                        value={statusCondition}*/}
-                                {/*                                    >*/}
-                                {/*                                        {() => (*/}
-                                {/*                                            <>*/}
-                                {/*                                                <div className="flex items-center">*/}
-                                {/*                                                    <span className="mr-3">*/}
-                                {/*                                                        {statusCondition.display}*/}
-                                {/*                                                    </span>*/}
-                                {/*                                                </div>*/}
-                                {/*                                            </>*/}
-                                {/*                                        )}*/}
-                                {/*                                    </Listbox.Option>*/}
-                                {/*                                ),*/}
-                                {/*                            )}*/}
-                                {/*                        </Listbox.Options>*/}
-                                {/*                    </Transition>*/}
-                                {/*                </div>*/}
-                                {/*            </>*/}
-                                {/*        )}*/}
-                                {/*    </Listbox>*/}
-                                {/*</div>*/}
+                                <div className="sm:col-span-2">
+                                    <HeadlessUiCheckbox
+                                        name={"hpBarOrange"}
+                                        label={"HP Bar Orange?"}
+                                        stateHandler={updateCatchRateInputCheckbox}
+                                    />
+                                </div>
 
-                                {/*<div className="sm:col-span-2 sm:col-start-1">*/}
-                                {/*    <label htmlFor="hpCurrent" className="block text-sm font-medium leading-6">*/}
-                                {/*        Current HP*/}
-                                {/*    </label>*/}
-                                {/*    <div className="mt-2">*/}
-                                {/*        <input*/}
-                                {/*            type="number"*/}
-                                {/*            name="hpCurrent"*/}
-                                {/*            id="hpCurrent"*/}
-                                {/*            placeholder="Use orange/red bar if unsure"*/}
-                                {/*            onChange={updateCatchRateInput}*/}
-                                {/*            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"*/}
-                                {/*        />*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
-
-                                {/*<div className="sm:col-span-2">*/}
-                                {/*    <label htmlFor="hpMax" className="block text-sm font-medium leading-6">*/}
-                                {/*        Max HP*/}
-                                {/*    </label>*/}
-                                {/*    <div className="mt-2">*/}
-                                {/*        <input*/}
-                                {/*            type="number"*/}
-                                {/*            name="hpMax"*/}
-                                {/*            id="hpMax"*/}
-                                {/*            placeholder="Use orange/red bar if unsure"*/}
-                                {/*            onChange={updateCatchRateInput}*/}
-                                {/*            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"*/}
-                                {/*        />*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
-
-                                {/*<div className="sm:col-span-2 sm:col-start-1">*/}
-                                {/*    <label htmlFor="hpBarOrange" className="block text-sm font-medium leading-6">*/}
-                                {/*        Orange HP bar*/}
-                                {/*    </label>*/}
-                                {/*    <div className="mt-2">*/}
-                                {/*        <input*/}
-                                {/*            id="hpBarOrange"*/}
-                                {/*            name="hpBarOrange"*/}
-                                {/*            type="checkbox"*/}
-                                {/*            onChange={updateCatchRateInputCheckbox}*/}
-                                {/*            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"*/}
-                                {/*        />*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
-
-                                {/*<div className="sm:col-span-2">*/}
-                                {/*    <label htmlFor="hpBarRed" className="block text-sm font-medium leading-6">*/}
-                                {/*        Red HP bar*/}
-                                {/*    </label>*/}
-                                {/*    <div className="mt-2">*/}
-                                {/*        <input*/}
-                                {/*            id="hpBarRed"*/}
-                                {/*            name="hpBarRed"*/}
-                                {/*            type="checkbox"*/}
-                                {/*            onChange={updateCatchRateInputCheckbox}*/}
-                                {/*            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"*/}
-                                {/*        />*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
-
-                                {/*<div className="sm:col-span-3 sm:col-start-1">*/}
-                                {/*    <label htmlFor="status" className="block text-sm font-medium leading-6">*/}
-                                {/*        Dark grass*/}
-                                {/*    </label>*/}
-                                {/*    <div className="mt-2">*/}
-                                {/*        <input*/}
-                                {/*            id="darkGrass"*/}
-                                {/*            name="darkGrass"*/}
-                                {/*            type="checkbox"*/}
-                                {/*            onChange={updateCatchRateInputCheckbox}*/}
-                                {/*            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"*/}
-                                {/*        />*/}
-                                {/*    </div>*/}
-                                {/*</div>*/}
+                                <div className="sm:col-span-2">
+                                    <HeadlessUiCheckbox
+                                        name={"hpBarRed"}
+                                        label={"HP Red Bar?"}
+                                        stateHandler={updateCatchRateInputCheckbox}
+                                    />
+                                </div>
 
                                 <p
                                     className={
@@ -337,7 +149,7 @@ export default function CatchRate() {
                         </div>
                     </form>
 
-                    <div className="pt-6 pb-6 border-t border-b md:border-b-0 border-gray-900/10 ">
+                    <div className="pt-6 pb-6 border-t border-t-white ">
                         <p className="text-base font-semibold leading-7">
                             Catch rate probability: <span className="text-orange-500">{catchRate}%</span>
                         </p>

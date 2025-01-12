@@ -1,4 +1,4 @@
-import { Generation } from "@/enum/generation";
+import { Generation } from "@/enum/Generation";
 
 interface GenerationListItem {
     id: number;
