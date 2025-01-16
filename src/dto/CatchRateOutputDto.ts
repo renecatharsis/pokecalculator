@@ -1,3 +1,3 @@
 export interface CatchRateOutputDto {
-  probability: number;
+    probability: number;
 }

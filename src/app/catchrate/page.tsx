@@ -1,9 +1,11 @@
+"use client";
+
 import { BaseSyntheticEvent, useEffect, useState } from "react";
 import UnorderedList from "@/components/list/UnorderedList";
 import PokemonCombobox from "@/components/catchRate/PokemonCombobox";
 import PokemonGenerationListbox from "@/components/catchRate/PokemonGenerationListbox";
-import { CatchRateInputDto } from "@/dto/catchRateInputDto";
-import { CatchRateOutputDto } from "@/dto/catchRateOutputDto";
+import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
+import { CatchRateOutputDto } from "@/dto/CatchRateOutputDto";
 import { ApiDefinition } from "@/enum/ApiDefinition";
 import { mergeClassList } from "@/util/domAttributes";
 import PokeballListbox from "@/components/catchRate/PokeballListbox";
@@ -73,6 +75,15 @@ export default function CatchRate() {
                                     className="underline"
                                 >
                                     PokéWiki
+                                </a>{" "}
+                                and{" "}
+                                <a
+                                    href="https://bulbapedia.bulbagarden.net/wiki/Catch_rate"
+                                    target="_blank"
+                                    rel="noopener"
+                                    className="underline"
+                                >
+                                    Bulbapedia
                                 </a>
                                 .
                             </p>

@@ -3,7 +3,7 @@ import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOption
 import DropdownArrow from "@/components/formElements/DropdownArrow";
 import { mergeClassList } from "@/util/domAttributes";
 import { getPokemonList, PokemonListItem } from "@/dataProviders/PokemonProvider";
-import { CatchRateInputDto } from "@/dto/catchRateInputDto";
+import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 
 const MAX_RESULTS: number = 25;
 

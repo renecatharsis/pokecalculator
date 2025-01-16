@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from "@headlessui/react";
-import { CatchRateInputDto } from "@/dto/catchRateInputDto";
+import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { getPokeballList, PokeballListItem } from "@/dataProviders/PokeballProvider";
 import { mergeClassList } from "@/util/domAttributes";
 import DropdownArrow from "@/components/formElements/DropdownArrow";
