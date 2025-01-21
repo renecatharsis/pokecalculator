@@ -5,11 +5,10 @@ import { StatusCondition } from "@/enum/StatusCondition";
 
 export const catchRateInputSchema = z.object({
     pokemon: z.number().min(1).max(1017), // max supported pokémon for now
-    generation: z.number().min(Generation.GEN1).max(Generation.GEN9), // 9 generations
-    pokeball: z.number().min(PokeBalls.BEAST_BALL).max(PokeBalls.ULTRA_BALL), // 24 balls
-    statusCondition: z.number().min(StatusCondition.NONE).max(StatusCondition.FREEZE), // 7 status conditions
-    hpCurrent: z.number().nullable(),
-    hpMax: z.number().nullable(),
+    generation: z.nativeEnum(Generation),
+    pokeball: z.nativeEnum(PokeBalls),
+    statusCondition: z.nativeEnum(StatusCondition),
+    hpPercentage: z.number(),
     hpBarOrange: z.boolean(),
     hpBarRed: z.boolean(),
     darkGrass: z.boolean(),

@@ -11,20 +11,26 @@ import { mergeClassList } from "@/util/domAttributes";
 import PokeballListbox from "@/components/catchRate/PokeballListbox";
 import StatusConditionListbox from "@/components/catchRate/StatusConditionListbox";
 import HeadlessUiCheckbox from "@/components/formElements/HeadlessUiCheckbox";
+import HeadlessUiAlert from "@/components/formElements/HeadlessUiAlert";
+import { StatusCondition } from "@/enum/StatusCondition";
+import { PokeBalls } from "@/enum/PokeBalls";
+import { Generation } from "@/enum/Generation";
 
 export default function CatchRate() {
     const [hasBackendError, setHasBackendError] = useState<boolean>(false);
-    const [catchRate, setCatchRate] = useState<number>(0);
+    const [catchRate, setCatchRate] = useState<CatchRateOutputDto>({
+        probability: 0,
+        notices: [],
+    });
     const [catchRateInput, setCatchRateInput] = useState<CatchRateInputDto>({
-        generation: 1,
-        pokeball: 0,
         pokemon: 1,
-        statusCondition: 0,
-        darkGrass: false,
-        hpCurrent: null,
-        hpMax: null,
+        generation: Generation.GEN1,
+        pokeball: PokeBalls.POKE_BALL,
+        statusCondition: StatusCondition.NONE,
+        hpPercentage: 100,
         hpBarOrange: false,
         hpBarRed: false,
+        darkGrass: false,
     });
 
     useEffect(() => {
@@ -38,7 +44,7 @@ export default function CatchRate() {
             .then((response) => response.json())
             .then((responseBody: CatchRateOutputDto) => {
                 setHasBackendError(false);
-                setCatchRate(responseBody.probability);
+                setCatchRate(responseBody);
             })
             .catch(() => setHasBackendError(true));
     }, [catchRateInput]);
@@ -109,43 +115,39 @@ export default function CatchRate() {
 
                                 <div className="sm:col-span-6 sm:col-start-1">
                                     <label htmlFor="hpCurrent" className="block text-sm font-medium leading-6">
-                                        Current HP / Max HP (use checkboxes if you can&#39;t tell)
+                                        HP percentage (use checkboxes if you can&#39;t tell)
                                     </label>
-                                    <div className="mt-2">
-                                        <input
-                                            type="number"
-                                            name="hpCurrent"
-                                            id="hpCurrent"
-                                            placeholder="100"
-                                            onChange={updateCatchRateInput}
-                                            className="w-1/3 lg:w-1/4 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                                        />
-                                        <span className="mx-2">/</span>
-                                        <input
-                                            type="number"
-                                            name="hpMax"
-                                            id="hpMax"
-                                            placeholder="100"
-                                            onChange={updateCatchRateInput}
-                                            className="w-1/3 lg:w-1/4 rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-                                        />
+                                    <div className="flex justify-start flex-col md:flex-row gap-x-6">
+                                        <div className="mt-2 md:col-span-2 flex items-center rounded-md bg-white px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                                            <input
+                                                type="number"
+                                                name="hpPercentage"
+                                                id="hpPercentage"
+                                                placeholder="100"
+                                                onChange={updateCatchRateInput}
+                                                className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+                                            />
+                                            <div className="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">
+                                                %
+                                            </div>
+                                        </div>
+
+                                        <div className="mt-3">
+                                            <HeadlessUiCheckbox
+                                                name={"hpBarOrange"}
+                                                label={"HP Bar Orange?"}
+                                                stateHandler={updateCatchRateInputCheckbox}
+                                            />
+                                        </div>
+
+                                        <div className="mt-3">
+                                            <HeadlessUiCheckbox
+                                                name={"hpBarRed"}
+                                                label={"HP Red Bar?"}
+                                                stateHandler={updateCatchRateInputCheckbox}
+                                            />
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div className="sm:col-span-2">
-                                    <HeadlessUiCheckbox
-                                        name={"hpBarOrange"}
-                                        label={"HP Bar Orange?"}
-                                        stateHandler={updateCatchRateInputCheckbox}
-                                    />
-                                </div>
-
-                                <div className="sm:col-span-2">
-                                    <HeadlessUiCheckbox
-                                        name={"hpBarRed"}
-                                        label={"HP Red Bar?"}
-                                        stateHandler={updateCatchRateInputCheckbox}
-                                    />
                                 </div>
 
                                 <p
@@ -162,8 +164,9 @@ export default function CatchRate() {
 
                     <div className="pt-6 pb-6 border-t border-t-white ">
                         <p className="text-base font-semibold leading-7">
-                            Catch rate probability: <span className="text-orange-500">{catchRate}%</span>
+                            Catch rate probability: <span className="text-orange-500">{catchRate.probability}%</span>
                         </p>
+                        {catchRate.notices.length > 0 && <HeadlessUiAlert messages={catchRate.notices} />}
                     </div>
                 </div>
 
