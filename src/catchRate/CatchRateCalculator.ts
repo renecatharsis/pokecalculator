@@ -2,6 +2,8 @@ import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { PokeBalls } from "@/enum/PokeBalls";
 import { Generation } from "@/enum/Generation";
 
+const HP_PERCENTAGE_CUTOFF_YELLOW = 50;
+const HP_PERCENTAGE_CUTOFF_RED = 20;
 const GUARANTEED_CATCH: number = 100;
 // const GUARANTEED_NO_CATCH: number = 0;
 
@@ -20,4 +22,4 @@ const calculateProbability = function (input: CatchRateInputDto): number {
 
 // function calculateGen1Probability(input: CatchRateInputDto): number {}
 
-export { calculateProbability };
+export { HP_PERCENTAGE_CUTOFF_YELLOW, HP_PERCENTAGE_CUTOFF_RED, calculateProbability };

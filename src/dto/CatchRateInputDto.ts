@@ -8,8 +8,8 @@ export const catchRateInputSchema = z.object({
     generation: z.nativeEnum(Generation),
     pokeball: z.nativeEnum(PokeBalls),
     statusCondition: z.nativeEnum(StatusCondition),
-    hpPercentage: z.number(),
-    hpBarOrange: z.boolean(),
+    hpPercentage: z.number().min(1).max(100).nullable(),
+    hpBarYellow: z.boolean(),
     hpBarRed: z.boolean(),
     darkGrass: z.boolean(),
 });

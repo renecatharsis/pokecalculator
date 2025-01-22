@@ -28,7 +28,7 @@ export default function CatchRate() {
         pokeball: PokeBalls.POKE_BALL,
         statusCondition: StatusCondition.NONE,
         hpPercentage: 100,
-        hpBarOrange: false,
+        hpBarYellow: false,
         hpBarRed: false,
         darkGrass: false,
     });
@@ -115,15 +115,17 @@ export default function CatchRate() {
 
                                 <div className="sm:col-span-6 sm:col-start-1">
                                     <label htmlFor="hpCurrent" className="block text-sm font-medium leading-6">
-                                        HP percentage (use checkboxes if you can&#39;t tell)
+                                        HP percentage (use checkboxes instead if you can&#39;t tell)
                                     </label>
                                     <div className="flex justify-start flex-col md:flex-row gap-x-6">
-                                        <div className="mt-2 md:col-span-2 flex items-center rounded-md bg-white px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                                        <div className="mt-2 md:col-span-4 flex items-center rounded-md bg-white px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
                                             <input
                                                 type="number"
                                                 name="hpPercentage"
                                                 id="hpPercentage"
-                                                placeholder="100"
+                                                defaultValue="100"
+                                                min="1"
+                                                max="100"
                                                 onChange={updateCatchRateInput}
                                                 className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
                                             />
@@ -134,16 +136,16 @@ export default function CatchRate() {
 
                                         <div className="mt-3">
                                             <HeadlessUiCheckbox
-                                                name={"hpBarOrange"}
-                                                label={"HP Bar Orange?"}
+                                                name="hpBarYellow"
+                                                label="HP Bar Yellow?"
                                                 stateHandler={updateCatchRateInputCheckbox}
                                             />
                                         </div>
 
                                         <div className="mt-3">
                                             <HeadlessUiCheckbox
-                                                name={"hpBarRed"}
-                                                label={"HP Red Bar?"}
+                                                name="hpBarRed"
+                                                label="HP Red Bar?"
                                                 stateHandler={updateCatchRateInputCheckbox}
                                             />
                                         </div>

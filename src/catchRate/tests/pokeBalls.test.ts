@@ -10,7 +10,7 @@ it("returns a guaranteed catch with master ball", () => {
         pokeball: PokeBalls.MASTER_BALL,
         statusCondition: StatusCondition.SLEEP,
         hpPercentage: 100,
-        hpBarOrange: true,
+        hpBarYellow: true,
         hpBarRed: true,
     } as CatchRateInputDto;
 
@@ -24,7 +24,7 @@ it("returns a guaranteed catch with master ball even on otherwise low probabilit
         pokeball: PokeBalls.MASTER_BALL,
         statusCondition: StatusCondition.NONE,
         hpPercentage: 100,
-        hpBarOrange: false,
+        hpBarYellow: false,
         hpBarRed: false,
         darkGrass: false,
     } as CatchRateInputDto;
