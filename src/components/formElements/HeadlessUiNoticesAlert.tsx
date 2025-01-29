@@ -1,7 +1,7 @@
 import { ExclamationTriangleIcon } from "@heroicons/react/20/solid";
 import { CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
 
-export default function HeadlessUiAlert({ messages }: { messages: CatchRateOutputNoticeDto[] }) {
+export default function HeadlessUiNoticesAlert({ messages }: { messages: CatchRateOutputNoticeDto[] }) {
     return (
         <div className="rounded-md bg-yellow-50 p-4">
             <div className="flex">

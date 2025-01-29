@@ -4,7 +4,7 @@ import { PokeBalls } from "@/enum/PokeBalls";
 import { StatusCondition } from "@/enum/StatusCondition";
 
 export const catchRateInputSchema = z.object({
-    pokemon: z.number().min(1).max(1017), // max supported pokémon for now
+    pokemon: z.number().min(1).max(1025), // max supported pokémon for now
     generation: z.nativeEnum(Generation),
     pokeball: z.nativeEnum(PokeBalls),
     statusCondition: z.nativeEnum(StatusCondition),

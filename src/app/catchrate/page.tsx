@@ -7,14 +7,14 @@ import PokemonGenerationListbox from "@/components/catchRate/PokemonGenerationLi
 import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { CatchRateOutputDto } from "@/dto/CatchRateOutputDto";
 import { ApiDefinition } from "@/enum/ApiDefinition";
-import { mergeClassList } from "@/util/domAttributes";
 import PokeballListbox from "@/components/catchRate/PokeballListbox";
 import StatusConditionListbox from "@/components/catchRate/StatusConditionListbox";
 import HeadlessUiCheckbox from "@/components/formElements/HeadlessUiCheckbox";
-import HeadlessUiAlert from "@/components/formElements/HeadlessUiAlert";
+import HeadlessUiNoticesAlert from "@/components/formElements/HeadlessUiNoticesAlert";
 import { StatusCondition } from "@/enum/StatusCondition";
 import { PokeBalls } from "@/enum/PokeBalls";
 import { Generation } from "@/enum/Generation";
+import HeadlessUiErrors from "@/components/formElements/HeadlessUiErrors";
 
 export default function CatchRate() {
     const [hasBackendError, setHasBackendError] = useState<boolean>(false);
@@ -41,8 +41,15 @@ export default function CatchRate() {
             },
             body: JSON.stringify(catchRateInput),
         })
-            .then((response) => response.json())
+            .then((response) => {
+                if (response.status === 422) {
+                    throw new Error("Invalid parameters provided");
+                }
+
+                return response.json();
+            })
             .then((responseBody: CatchRateOutputDto) => {
+                console.log(responseBody);
                 setHasBackendError(false);
                 setCatchRate(responseBody);
             })
@@ -151,15 +158,6 @@ export default function CatchRate() {
                                         </div>
                                     </div>
                                 </div>
-
-                                <p
-                                    className={
-                                        (mergeClassList("sm:col-start-1 sm:col-span-2"),
-                                        !hasBackendError ? "hidden" : "")
-                                    }
-                                >
-                                    <span className={!hasBackendError ? "hidden" : ""}>Something went wrong :-/</span>
-                                </p>
                             </div>
                         </div>
                     </form>
@@ -168,7 +166,17 @@ export default function CatchRate() {
                         <p className="text-base font-semibold leading-7">
                             Catch rate probability: <span className="text-orange-500">{catchRate.probability}%</span>
                         </p>
-                        {catchRate.notices.length > 0 && <HeadlessUiAlert messages={catchRate.notices} />}
+                        {catchRate.notices && catchRate.notices.length > 0 && (
+                            <HeadlessUiNoticesAlert messages={catchRate.notices} />
+                        )}
+                        {hasBackendError && (
+                            <HeadlessUiErrors
+                                messages={[
+                                    "Unfortunately, something went wrong there.",
+                                    "Please let us know what so we can look into it!",
+                                ]}
+                            />
+                        )}
                     </div>
                 </div>
 

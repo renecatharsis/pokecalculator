@@ -10,8 +10,9 @@ export async function POST(request: NextRequest) {
     const validatedData = catchRateInputSchema.safeParse(jsonData);
 
     if (!validatedData.success) {
+        console.error("Failed catchRate input validation:", jsonData, validatedData.error.issues);
         return Response.json(validatedData.error.issues, {
-            status: 400,
+            status: 422,
         });
     }
 

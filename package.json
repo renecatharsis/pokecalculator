@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "create-pokemon-data": "bin/pokedata.js"
   },
   "dependencies": {
     "next": "^15.1.2",

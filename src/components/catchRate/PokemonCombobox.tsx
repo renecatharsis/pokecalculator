@@ -26,7 +26,7 @@ export default function PokemonCombobox({
               })
             : pokemonData
                   .filter((pokemon) => {
-                      return pokemon.display.toLowerCase().includes(pokemonQuery.toLowerCase());
+                      return pokemon.name.toLowerCase().includes(pokemonQuery.toLowerCase());
                   })
                   .slice(0, MAX_RESULTS);
 
@@ -68,7 +68,7 @@ export default function PokemonCombobox({
                         paddingLeft: "2.5rem",
                     }}
                     onChange={(event: ChangeEvent<HTMLInputElement>) => setPokemonQuery(event.target.value)}
-                    displayValue={(pokemon: PokemonListItem) => pokemon.display}
+                    displayValue={(pokemon: PokemonListItem) => pokemon.name}
                     name="pokemon"
                 />
                 <ComboboxButton className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none">
@@ -93,13 +93,13 @@ export default function PokemonCombobox({
                                         <div className="flex items-center">
                                             <img
                                                 src={pokemon.thumbnail}
-                                                alt={pokemon.display}
+                                                alt={pokemon.name}
                                                 className="h-6 w-6 flex-shrink-0 rounded-full"
                                             />
                                             <span
                                                 className={mergeClassList("ml-3 truncate", selected && "font-semibold")}
                                             >
-                                                {pokemon.display}
+                                                {pokemon.name}
                                             </span>
                                         </div>
                                     </>

@@ -4,8 +4,8 @@ import { PokeBalls } from "@/enum/PokeBalls";
 
 export const catchRateInputLogicSchema = z
     .object({
-        pokemon: z.number().min(1).max(1017), // max supported pokémon for now
-        generation: z.number().min(Generation.GEN1).max(Generation.GEN9), // 9 generations
+        pokemon: z.number(),
+        generation: z.nativeEnum(Generation),
         pokeball: z.nativeEnum(PokeBalls),
         hpPercentage: z.number().nullable(),
         hpBarYellow: z.boolean(),
