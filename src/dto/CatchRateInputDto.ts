@@ -8,6 +8,7 @@ export const catchRateInputSchema = z.object({
     generation: z.nativeEnum(Generation),
     pokeball: z.nativeEnum(PokeBalls),
     statusCondition: z.nativeEnum(StatusCondition),
+    level: z.number().min(2).max(70), // official games' level ranges for wild pokémon
     hpPercentage: z.number().min(1).max(100).nullable(),
     hpBarYellow: z.boolean(),
     hpBarRed: z.boolean(),

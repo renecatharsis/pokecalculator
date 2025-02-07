@@ -10,7 +10,11 @@ export async function POST(request: NextRequest) {
     const validatedData = catchRateInputSchema.safeParse(jsonData);
 
     if (!validatedData.success) {
-        console.error("Failed catchRate input validation:", jsonData, validatedData.error.issues);
+        // @TODO check for something like a log level per env
+        if (process.env.NODE_ENV !== "test") {
+            console.error("Failed catchRate input validation:", jsonData, validatedData.error.issues);
+        }
+
         return Response.json(validatedData.error.issues, {
             status: 422,
         });

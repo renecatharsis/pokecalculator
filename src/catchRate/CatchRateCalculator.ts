@@ -2,6 +2,7 @@ import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { PokeBalls } from "@/enum/PokeBalls";
 import { Generation } from "@/enum/Generation";
 import { StatusCondition } from "@/enum/StatusCondition";
+import { getPokemonList } from "@/dataProviders/PokemonProvider";
 
 const HP_PERCENTAGE_CUTOFF_YELLOW = 50;
 const HP_PERCENTAGE_CUTOFF_RED = 20;
@@ -22,6 +23,15 @@ const calculateProbability = function (input: CatchRateInputDto): number {
 };
 
 function calculateGen1Probability(input: CatchRateInputDto): number {
+    const pokemon = getPokemonList().find((pokemonListItem) => {
+        return pokemonListItem.id === input.pokemon;
+    });
+
+    // technically never happening due to validation, but TS wants the safety net regardless
+    if (!pokemon) {
+        throw new Error("Could not map Pokémon for provided id " + input.pokemon);
+    }
+
     let ballModifier = 255;
     if (input.pokeball === PokeBalls.GREAT_BALL) {
         ballModifier = 200;
@@ -41,25 +51,35 @@ function calculateGen1Probability(input: CatchRateInputDto): number {
         statusModifier = 12;
     }
 
-    console.log(statusModifier);
-
     const hpBallFactor = input.pokeball === PokeBalls.GREAT_BALL ? 8 : 12;
-    let hpFactor = /*max hp mon*/ (1000 * 255) / hpBallFactor;
-    const currentHp = (1000 / 100) * (input.hpPercentage ?? 100);
-    const currentHpFactor = Math.floor(currentHp / 4);
+
+    // full HP formula: floor(0.01 x (2 x Base + IV + floor(0.25 x EV)) x Level) + Level + 10
+    // assuming an average of 8 DV for HP and no EVs on wild encounters
+    const baseLevelHp = Math.floor(0.01 * (2 * pokemon.baseHp + 8) * input.level) + input.level + 10;
+
+    let hpFactor = (baseLevelHp * 255) / hpBallFactor;
+
+    const currentHp = (baseLevelHp / 100) * (input.hpPercentage ?? 100);
+    const currentHpFactor = currentHp / 4;
     if (currentHpFactor > 0) {
-        hpFactor = Math.min(hpBallFactor / hpFactor, 255);
+        hpFactor = Math.min(hpFactor / currentHpFactor, 255);
     }
 
     const ballFactor = ballModifier + 1; // amount of all possible outcomes
-    const pokemonCatchRateFactor = Math.min(/*catch rate pkmn*/ 50 + 1, ballFactor - statusModifier);
+    const pokemonCatchRateFactor = Math.min(pokemon.captureRate + 1, ballFactor - statusModifier);
     const hpFactorDivisor = (hpFactor + 1) / 256;
-    const res = Math.floor(((statusModifier + pokemonCatchRateFactor) * hpFactorDivisor) / ballFactor);
+    const res = (statusModifier + pokemonCatchRateFactor * hpFactorDivisor) / ballFactor;
+    const res2 = statusModifier / ballFactor + (pokemonCatchRateFactor / ballFactor) * hpFactorDivisor;
+
+    // console.log("res: " + res);
+    // console.log("res2: " + res2);
+    /*
+     * Usecase: Rattata, level 2, gen 1, pokéball, no status, 100% hp
+     * expected: 36,33%
+     * actual: 33,59%
+     */
     console.log(res);
-
-    return res;
-
-    // hp formula: HP = floor(0.01 x (2 x Base + IV + floor(0.25 x EV)) x Level) + Level + 10
+    return Math.min(Math.round(res * 100 * 100) / 100, 100);
 }
 
 export { HP_PERCENTAGE_CUTOFF_YELLOW, HP_PERCENTAGE_CUTOFF_RED, calculateProbability };

@@ -8,7 +8,7 @@ import { PokeBalls } from "@/enum/PokeBalls";
 import { StatusCondition } from "@/enum/StatusCondition";
 import { CatchRateOutputDto, CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
 
-it("should return error 400 on empty json body", async () => {
+it("should return error 422 on empty json body", async () => {
     const requestObj = {
         json: async () => ({}),
     } as NextRequest;
@@ -16,17 +16,18 @@ it("should return error 400 on empty json body", async () => {
     const response = await POST(requestObj);
     const body = await response.json();
 
-    expect(response.status).toBe(400);
-    expect(body.length).toBe(8);
+    expect(response.status).toBe(422);
+    expect(body.length).toBe(9);
 });
 
-it("should return error 400 on invalid types", async () => {
+it("should return error 422 on invalid types", async () => {
     const requestObj = {
         json: async () => ({
             pokemon: "foo",
             generation: "foo",
             pokeball: "foo",
             statusCondition: "foo",
+            level: "foo",
             darkGrass: "foo",
             hpPercentage: "foo",
             hpBarYellow: "foo",
@@ -37,8 +38,8 @@ it("should return error 400 on invalid types", async () => {
     const response = await POST(requestObj);
     const body = await response.json();
 
-    expect(response.status).toBe(400);
-    expect(body.length).toBe(8);
+    expect(response.status).toBe(422);
+    expect(body.length).toBe(9);
 });
 
 it("should return warning when providing hp percentage and yellow bar", async () => {
@@ -48,6 +49,7 @@ it("should return warning when providing hp percentage and yellow bar", async ()
             generation: Generation.GEN1,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
+            level: 2,
             darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: true,
@@ -75,6 +77,7 @@ it("should return warning when providing hp percentage and red bar", async () =>
             generation: Generation.GEN1,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
+            level: 2,
             darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: false,
@@ -102,6 +105,7 @@ it("should return warning when providing hp percentage and yellow & red bar", as
             generation: Generation.GEN1,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
+            level: 2,
             darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: true,
@@ -129,6 +133,7 @@ it("should return warning when providing no hp percentage and yellow & red bar",
             generation: Generation.GEN1,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
+            level: 2,
             darkGrass: false,
             hpPercentage: null,
             hpBarYellow: true,
@@ -156,6 +161,7 @@ it("should return warning when providing no hp percentage, no yellow & no red ba
             generation: Generation.GEN1,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
+            level: 2,
             darkGrass: false,
             hpPercentage: null,
             hpBarYellow: false,
@@ -183,6 +189,7 @@ it("should return warnings on invalid settings for gen1", async () => {
             pokeball: PokeBalls.TIMER_BALL, // not available in gen1
             pokemon: 250, // not available in gen1
             statusCondition: StatusCondition.NONE,
+            level: 2,
             darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: false,

@@ -27,6 +27,7 @@ export default function CatchRate() {
         generation: Generation.GEN1,
         pokeball: PokeBalls.POKE_BALL,
         statusCondition: StatusCondition.NONE,
+        level: 2,
         hpPercentage: 100,
         hpBarYellow: false,
         hpBarRed: false,
@@ -49,7 +50,6 @@ export default function CatchRate() {
                 return response.json();
             })
             .then((responseBody: CatchRateOutputDto) => {
-                console.log(responseBody);
                 setHasBackendError(false);
                 setCatchRate(responseBody);
             })
@@ -102,9 +102,25 @@ export default function CatchRate() {
                             </p>
 
                             <div className="mt-6 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-6">
-                                <div className="sm:col-span-6">
-                                    <div className="mt-2">
-                                        <PokemonCombobox state={catchRateInput} stateHandler={setCatchRateInput} />
+                                <div className="sm:col-span-5">
+                                    <PokemonCombobox state={catchRateInput} stateHandler={setCatchRateInput} />
+                                </div>
+
+                                <div className="sm:col-span-1">
+                                    <label htmlFor="level" className="block text-sm font-medium leading-6">
+                                        Level
+                                    </label>
+                                    <div className="mt-2 md:col-span-4 flex items-center rounded-md bg-white px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                                        <input
+                                            type="number"
+                                            name="level"
+                                            id="level"
+                                            defaultValue="2"
+                                            min="2"
+                                            max="70"
+                                            onChange={updateCatchRateInput}
+                                            className="block min-w-0 grow py-1.5 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+                                        />
                                     </div>
                                 </div>
 
@@ -183,6 +199,7 @@ export default function CatchRate() {
                 <div className="md:basis-1/3 pt-5 p-5 border border-gray-200 bg-secondary shadow-sm rounded-lg">
                     <h2 className="text-base font-semibold leading-7">Good to know:</h2>
                     <ul className="mt-2">
+                        <UnorderedList text="Assuming average DVs/IVs" />
                         <UnorderedList text="No support for Shadow Pokémon" />
                         <UnorderedList text="No support for Pokémon Legends Arceus & Let's Go Eevee / Pikachu" />
                         <UnorderedList text="No support for Safari Zones or parks" />
