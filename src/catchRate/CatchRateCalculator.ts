@@ -2,7 +2,7 @@ import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { PokeBalls } from "@/enum/PokeBalls";
 import { Generation } from "@/enum/Generation";
 import { StatusCondition } from "@/enum/StatusCondition";
-import { getPokemonList, PokemonListItem } from "@/dataProviders/PokemonProvider";
+import { getPokemonByNumberAndGeneration, PokemonListItem } from "@/dataProviders/PokemonProvider";
 
 const HP_PERCENTAGE_CUTOFF_YELLOW = 49;
 const HP_PERCENTAGE_CUTOFF_RED = 19;
@@ -17,7 +17,7 @@ function calculateProbability(input: CatchRateInputDto): number {
 
     let res = GUARANTEED_NO_CATCH;
 
-    if (input.generation === Generation.GEN1) {
+    if (input.generation === Generation.GEN1_RB || input.generation === Generation.GEN1_Y) {
         res = calculateGen1Probability(input);
     }
 
@@ -25,10 +25,7 @@ function calculateProbability(input: CatchRateInputDto): number {
 }
 
 function calculateGen1Probability(input: CatchRateInputDto): number {
-    const pokemon = getPokemonList().find((pokemonListItem) => {
-        return pokemonListItem.id === input.pokemon;
-    });
-
+    const pokemon = getPokemonByNumberAndGeneration(input.pokemon, input.generation);
     // technically never happening due to validation, but TS wants the safety net regardless
     if (!pokemon) {
         throw new Error("Could not map Pokémon for provided id " + input.pokemon);
@@ -95,6 +92,11 @@ function calculateGen1Probability(input: CatchRateInputDto): number {
         const ballFactor = ballModifier + 1; // amount of all possible outcomes
         const pokemonCatchRateFactor = Math.min(pokemon.captureRate + 1, ballFactor - statusModifier);
         const hpFactorDivisor = (hpFactor + 1) / 256;
+
+        if (pokemon.id === 148) {
+            const res = (statusModifier + pokemonCatchRateFactor * hpFactorDivisor) / ballFactor;
+            console.log(`dv: ${dv}, maxHP: ${maxHp}, res: ${res}`);
+        }
 
         return (statusModifier + pokemonCatchRateFactor * hpFactorDivisor) / ballFactor;
     }

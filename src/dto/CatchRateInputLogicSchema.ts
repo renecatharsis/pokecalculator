@@ -39,7 +39,7 @@ export const catchRateInputLogicSchema = z
     })
     // gen 1 custom rules
     .superRefine(({ pokemon, generation, pokeball }, refinementContext) => {
-        if (generation !== Generation.GEN1) {
+        if (generation !== Generation.GEN1_RB && generation !== Generation.GEN1_Y) {
             return;
         }
 

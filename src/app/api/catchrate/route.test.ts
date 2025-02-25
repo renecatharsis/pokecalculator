@@ -46,7 +46,7 @@ it("should return warning when providing hp percentage and yellow bar", async ()
     const requestObj = {
         json: async () => ({
             pokemon: 1,
-            generation: Generation.GEN1,
+            generation: Generation.GEN1_RB,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
@@ -57,24 +57,24 @@ it("should return warning when providing hp percentage and yellow bar", async ()
         }),
     } as NextRequest;
 
-    // const response = await POST(requestObj);
-    // const body = (await response.json()) as CatchRateOutputDto;
-    //
-    // expect(response.status).toBe(200);
-    // expect(body.probability).toBeGreaterThanOrEqual(0);
-    // expect(body.probability).toBeLessThanOrEqual(100);
-    // expect(body.notices.length).toBe(1);
-    // expect(body.notices).toContainEqual({
-    //     path: "hpPercentage",
-    //     message: "HP percentage provided, ignoring yellow and red bar settings.",
-    // } as CatchRateOutputNoticeDto);
+    const response = await POST(requestObj);
+    const body = (await response.json()) as CatchRateOutputDto;
+
+    expect(response.status).toBe(200);
+    expect(body.probability).toBeGreaterThanOrEqual(0);
+    expect(body.probability).toBeLessThanOrEqual(100);
+    expect(body.notices.length).toBe(1);
+    expect(body.notices).toContainEqual({
+        path: "hpPercentage",
+        message: "HP percentage provided, ignoring yellow and red bar settings.",
+    } as CatchRateOutputNoticeDto);
 });
 
 it("should return warning when providing hp percentage and red bar", async () => {
     const requestObj = {
         json: async () => ({
             pokemon: 1,
-            generation: Generation.GEN1,
+            generation: Generation.GEN1_RB,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
@@ -85,24 +85,24 @@ it("should return warning when providing hp percentage and red bar", async () =>
         }),
     } as NextRequest;
 
-    // const response = await POST(requestObj);
-    // const body = (await response.json()) as CatchRateOutputDto;
-    //
-    // expect(response.status).toBe(200);
-    // expect(body.probability).toBeGreaterThanOrEqual(0);
-    // expect(body.probability).toBeLessThanOrEqual(100);
-    // expect(body.notices.length).toBe(1);
-    // expect(body.notices).toContainEqual({
-    //     path: "hpPercentage",
-    //     message: "HP percentage provided, ignoring yellow and red bar settings.",
-    // } as CatchRateOutputNoticeDto);
+    const response = await POST(requestObj);
+    const body = (await response.json()) as CatchRateOutputDto;
+
+    expect(response.status).toBe(200);
+    expect(body.probability).toBeGreaterThanOrEqual(0);
+    expect(body.probability).toBeLessThanOrEqual(100);
+    expect(body.notices.length).toBe(1);
+    expect(body.notices).toContainEqual({
+        path: "hpPercentage",
+        message: "HP percentage provided, ignoring yellow and red bar settings.",
+    } as CatchRateOutputNoticeDto);
 });
 
 it("should return warning when providing hp percentage and yellow & red bar", async () => {
     const requestObj = {
         json: async () => ({
             pokemon: 1,
-            generation: Generation.GEN1,
+            generation: Generation.GEN1_RB,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
@@ -113,24 +113,24 @@ it("should return warning when providing hp percentage and yellow & red bar", as
         }),
     } as NextRequest;
 
-    // const response = await POST(requestObj);
-    // const body = (await response.json()) as CatchRateOutputDto;
-    //
-    // expect(response.status).toBe(200);
-    // expect(body.probability).toBeGreaterThanOrEqual(0);
-    // expect(body.probability).toBeLessThanOrEqual(100);
-    // expect(body.notices.length).toBe(1);
-    // expect(body.notices).toContainEqual({
-    //     path: "hpPercentage",
-    //     message: "HP percentage provided, ignoring yellow and red bar settings.",
-    // } as CatchRateOutputNoticeDto);
+    const response = await POST(requestObj);
+    const body = (await response.json()) as CatchRateOutputDto;
+
+    expect(response.status).toBe(200);
+    expect(body.probability).toBeGreaterThanOrEqual(0);
+    expect(body.probability).toBeLessThanOrEqual(100);
+    expect(body.notices.length).toBe(1);
+    expect(body.notices).toContainEqual({
+        path: "hpPercentage",
+        message: "HP percentage provided, ignoring yellow and red bar settings.",
+    } as CatchRateOutputNoticeDto);
 });
 
 it("should return warning when providing no hp percentage and yellow & red bar", async () => {
     const requestObj = {
         json: async () => ({
             pokemon: 1,
-            generation: Generation.GEN1,
+            generation: Generation.GEN1_RB,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
@@ -141,24 +141,24 @@ it("should return warning when providing no hp percentage and yellow & red bar",
         }),
     } as NextRequest;
 
-    // const response = await POST(requestObj);
-    // const body = (await response.json()) as CatchRateOutputDto;
-    //
-    // expect(response.status).toBe(200);
-    // expect(body.probability).toBeGreaterThanOrEqual(0);
-    // expect(body.probability).toBeLessThanOrEqual(100);
-    // expect(body.notices.length).toBe(1);
-    // expect(body.notices).toContainEqual({
-    //     path: "hpPercentage",
-    //     message: "Using red bar cutoff for HP percentage.",
-    // } as CatchRateOutputNoticeDto);
+    const response = await POST(requestObj);
+    const body = (await response.json()) as CatchRateOutputDto;
+
+    expect(response.status).toBe(200);
+    expect(body.probability).toBeGreaterThanOrEqual(0);
+    expect(body.probability).toBeLessThanOrEqual(100);
+    expect(body.notices.length).toBe(1);
+    expect(body.notices).toContainEqual({
+        path: "hpPercentage",
+        message: "Using red bar cutoff for HP percentage.",
+    } as CatchRateOutputNoticeDto);
 });
 
 it("should return warning when providing no hp percentage, no yellow & no red bar", async () => {
     const requestObj = {
         json: async () => ({
             pokemon: 1,
-            generation: Generation.GEN1,
+            generation: Generation.GEN1_RB,
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
@@ -169,23 +169,23 @@ it("should return warning when providing no hp percentage, no yellow & no red ba
         }),
     } as NextRequest;
 
-    // const response = await POST(requestObj);
-    // const body = (await response.json()) as CatchRateOutputDto;
-    //
-    // expect(response.status).toBe(200);
-    // expect(body.probability).toBeGreaterThanOrEqual(0);
-    // expect(body.probability).toBeLessThanOrEqual(100);
-    // expect(body.notices.length).toBe(1);
-    // expect(body.notices).toContainEqual({
-    //     path: "hpPercentage",
-    //     message: "Assuming full HP.",
-    // } as CatchRateOutputNoticeDto);
+    const response = await POST(requestObj);
+    const body = (await response.json()) as CatchRateOutputDto;
+
+    expect(response.status).toBe(200);
+    expect(body.probability).toBeGreaterThanOrEqual(0);
+    expect(body.probability).toBeLessThanOrEqual(100);
+    expect(body.notices.length).toBe(1);
+    expect(body.notices).toContainEqual({
+        path: "hpPercentage",
+        message: "Assuming full HP.",
+    } as CatchRateOutputNoticeDto);
 });
 
 it("should return warnings on invalid settings for gen1", async () => {
     const requestObj = {
         json: async () => ({
-            generation: Generation.GEN1,
+            generation: Generation.GEN1_RB,
             pokeball: PokeBalls.TIMER_BALL, // not available in gen1
             pokemon: 250, // not available in gen1
             statusCondition: StatusCondition.NONE,
@@ -200,16 +200,16 @@ it("should return warnings on invalid settings for gen1", async () => {
     const response = await POST(requestObj);
     const body = (await response.json()) as CatchRateOutputDto;
 
-    // expect(response.status).toBe(200);
-    // expect(body.probability).toBeGreaterThanOrEqual(0);
-    // expect(body.probability).toBeLessThanOrEqual(100);
-    // expect(body.notices.length).toBe(2);
-    // expect(body.notices).toContainEqual({
-    //     path: "pokeball",
-    //     message: "Selected ball is not available in Gen 1.",
-    // } as CatchRateOutputNoticeDto);
-    // expect(body.notices).toContainEqual({
-    //     path: "pokemon",
-    //     message: "Selected Pokémon is not available in Gen 1.",
-    // } as CatchRateOutputNoticeDto);
+    expect(response.status).toBe(200);
+    expect(body.probability).toBeGreaterThanOrEqual(0);
+    expect(body.probability).toBeLessThanOrEqual(100);
+    expect(body.notices.length).toBe(2);
+    expect(body.notices).toContainEqual({
+        path: "pokeball",
+        message: "Selected ball is not available in Gen 1.",
+    } as CatchRateOutputNoticeDto);
+    expect(body.notices).toContainEqual({
+        path: "pokemon",
+        message: "Selected Pokémon is not available in Gen 1.",
+    } as CatchRateOutputNoticeDto);
 });

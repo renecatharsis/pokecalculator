@@ -2,11 +2,12 @@ import { calculateProbability } from "@/catchRate/CatchRateCalculator";
 import { PokeBalls } from "@/enum/PokeBalls";
 import { StatusCondition } from "@/enum/StatusCondition";
 import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
+import { Generation } from "@/enum/Generation";
 
 it("ensures level difference results using rattata with pokéball at full hp, no status", () => {
     const baseParams = {
         pokemon: 19,
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.POKE_BALL,
         statusCondition: StatusCondition.NONE,
         hpPercentage: 100,
@@ -88,7 +89,7 @@ it("ensures level difference results using rattata with pokéball at full hp, no
 
 it("ensures yellow hp bar results using pokéball", () => {
     const baseParams = {
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.POKE_BALL,
         statusCondition: StatusCondition.NONE,
         level: 50,
@@ -109,7 +110,7 @@ it("ensures yellow hp bar results using pokéball", () => {
 
 it("ensures red hp bar results using pokéball", () => {
     const baseParams = {
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.POKE_BALL,
         statusCondition: StatusCondition.NONE,
         level: 50,
@@ -130,7 +131,7 @@ it("ensures red hp bar results using pokéball", () => {
 
 it("ensures hp percentage results using pokéball", () => {
     const baseParams = {
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.POKE_BALL,
         statusCondition: StatusCondition.NONE,
         level: 50,
@@ -192,7 +193,7 @@ it("ensures hp percentage results using pokéball", () => {
 
 it("ensures great ball results at different hp, no status", () => {
     const baseParams = {
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.GREAT_BALL,
         statusCondition: StatusCondition.NONE,
         hpBarYellow: false,
@@ -253,7 +254,7 @@ it("ensures great ball results at different hp, no status", () => {
 
 it("ensures ultra ball results at different hp, no status", () => {
     const baseParams = {
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.ULTRA_BALL,
         statusCondition: StatusCondition.NONE,
         hpBarYellow: false,
@@ -315,7 +316,7 @@ it("ensures ultra ball results at different hp, no status", () => {
 it("ensures status results with different pokémon at different hp", () => {
     const baseParamsRattata = {
         pokemon: 19,
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.POKE_BALL,
         level: 70,
         hpPercentage: 100,
@@ -333,7 +334,7 @@ it("ensures status results with different pokémon at different hp", () => {
 
     const baseParamsOnix = {
         pokemon: 95,
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.GREAT_BALL,
         level: 50,
         hpPercentage: 50,
@@ -351,7 +352,7 @@ it("ensures status results with different pokémon at different hp", () => {
 
     const baseParamsMewto = {
         pokemon: 150,
-        generation: 1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.ULTRA_BALL,
         level: 30,
         hpPercentage: 30,
@@ -369,9 +370,83 @@ it("ensures status results with different pokémon at different hp", () => {
 });
 
 it("ensures different catch rate of raticate is considered before gen 3", () => {
-    // @TODO
+    const baseParamsRB = {
+        pokemon: 20,
+        generation: Generation.GEN1_RB,
+        pokeball: PokeBalls.POKE_BALL,
+        statusCondition: StatusCondition.NONE,
+        hpPercentage: 100,
+        hpBarYellow: false,
+        hpBarRed: false,
+    } as CatchRateInputDto;
+
+    expect(calculateProbability({ ...baseParamsRB, level: 2 })).toEqual(13.89);
+    expect(calculateProbability({ ...baseParamsRB, level: 10 })).toEqual(12.46);
+    expect(calculateProbability({ ...baseParamsRB, level: 30 })).toEqual(12.13);
+    expect(calculateProbability({ ...baseParamsRB, level: 50 })).toEqual(12.05);
+    expect(calculateProbability({ ...baseParamsRB, level: 70 })).toEqual(11.99);
+
+    const baseParamsY = {
+        pokemon: 20,
+        generation: Generation.GEN1_Y,
+        pokeball: PokeBalls.POKE_BALL,
+        statusCondition: StatusCondition.NONE,
+        hpPercentage: 100,
+        hpBarYellow: false,
+        hpBarRed: false,
+    } as CatchRateInputDto;
+
+    expect(calculateProbability({ ...baseParamsY, level: 2 })).toEqual(13.89);
+    expect(calculateProbability({ ...baseParamsY, level: 10 })).toEqual(12.46);
+    expect(calculateProbability({ ...baseParamsY, level: 30 })).toEqual(12.13);
+    expect(calculateProbability({ ...baseParamsY, level: 50 })).toEqual(12.05);
+    expect(calculateProbability({ ...baseParamsY, level: 70 })).toEqual(11.99);
 });
 
 it("ensures different catch rate of dragonair and dragonite is considered in yellow", () => {
-    // @TODO
+    const baseParamsRB = {
+        generation: Generation.GEN1_RB,
+        pokeball: PokeBalls.POKE_BALL,
+        statusCondition: StatusCondition.NONE,
+        hpPercentage: 50,
+        hpBarYellow: false,
+        hpBarRed: false,
+    } as CatchRateInputDto;
+
+    // Dragonair at 50% HP to force differences
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 148, level: 2 })).toEqual(17.97);
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 148, level: 10 })).toEqual(12.46);
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 148, level: 30 })).toEqual(12.56);
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 148, level: 50 })).toEqual(12.31);
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 148, level: 70 })).toEqual(12.22);
+
+    // Dragonite at 50% HP to force differences
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 149, level: 2 })).toEqual(15.36);
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 149, level: 10 })).toEqual(13.39);
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 149, level: 30 })).toEqual(12.5);
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 149, level: 50 })).toEqual(12.25);
+    expect(calculateProbability({ ...baseParamsRB, pokemon: 149, level: 70 })).toEqual(12.16);
+
+    const baseParamsY = {
+        generation: Generation.GEN1_Y,
+        pokeball: PokeBalls.POKE_BALL,
+        statusCondition: StatusCondition.NONE,
+        hpPercentage: 50,
+        hpBarYellow: false,
+        hpBarRed: false,
+    } as CatchRateInputDto;
+
+    // Dragonair at 50% HP to force differences
+    expect(calculateProbability({ ...baseParamsY, pokemon: 148, level: 2 })).toEqual(10.94);
+    expect(calculateProbability({ ...baseParamsY, pokemon: 148, level: 10 })).toEqual(7.59);
+    expect(calculateProbability({ ...baseParamsY, pokemon: 148, level: 30 })).toEqual(7.65);
+    expect(calculateProbability({ ...baseParamsY, pokemon: 148, level: 50 })).toEqual(7.49);
+    expect(calculateProbability({ ...baseParamsY, pokemon: 148, level: 70 })).toEqual(7.44);
+
+    // Dragonite at 50% HP to force differences
+    expect(calculateProbability({ ...baseParamsY, pokemon: 149, level: 2 })).toEqual(3.34);
+    expect(calculateProbability({ ...baseParamsY, pokemon: 149, level: 10 })).toEqual(2.91);
+    expect(calculateProbability({ ...baseParamsY, pokemon: 149, level: 30 })).toEqual(2.72);
+    expect(calculateProbability({ ...baseParamsY, pokemon: 149, level: 50 })).toEqual(2.66);
+    expect(calculateProbability({ ...baseParamsY, pokemon: 149, level: 70 })).toEqual(2.64);
 });

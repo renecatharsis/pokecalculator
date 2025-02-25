@@ -1,3 +1,5 @@
+import { Generation } from "@/enum/Generation";
+
 interface PokemonListItem {
     id: number;
     name: string;
@@ -6,7 +8,7 @@ interface PokemonListItem {
     thumbnail: string;
 }
 
-const getPokemonList = function (): PokemonListItem[] {
+function getPokemonList(): PokemonListItem[] {
     // auto-generated via npm command, existing entries won't ever change, only newer ones will be added eventually
     return [
         { id: 1, name: "Bulbasaur", captureRate: 45, baseHp: 45, thumbnail: "sprites/pokemon/1.png" },
@@ -1047,11 +1049,39 @@ const getPokemonList = function (): PokemonListItem[] {
         { id: 1024, name: "Terapagos", captureRate: 255, baseHp: 90, thumbnail: "sprites/pokemon/1024.png" },
         { id: 1025, name: "Pecharunt", captureRate: 3, baseHp: 88, thumbnail: "sprites/pokemon/1025.png" },
     ];
-};
+}
 
-const getPokemonByNumber = function (number: number): PokemonListItem | undefined {
-    return getPokemonList().find((value: PokemonListItem) => value.id === number);
-};
+function getOverridesForGen1RB(): PokemonListItem[] {
+    return [{ id: 20, name: "Raticate", captureRate: 90, baseHp: 55, thumbnail: "sprites/pokemon/20.png" }];
+}
 
-export { getPokemonList, getPokemonByNumber };
+function getOverridesForGen1Y(): PokemonListItem[] {
+    return [
+        { id: 20, name: "Raticate", captureRate: 90, baseHp: 55, thumbnail: "sprites/pokemon/20.png" },
+        { id: 148, name: "Dragonair", captureRate: 27, baseHp: 61, thumbnail: "sprites/pokemon/148.png" },
+        { id: 149, name: "Dragonite", captureRate: 9, baseHp: 91, thumbnail: "sprites/pokemon/149.png" },
+    ];
+}
+
+function getPokemonByNumberAndGeneration(number: number, generation: Generation): PokemonListItem | undefined {
+    let overrides: PokemonListItem[] = [];
+
+    switch (generation) {
+        case Generation.GEN1_RB:
+            overrides = getOverridesForGen1RB();
+            break;
+        case Generation.GEN1_Y:
+            overrides = getOverridesForGen1Y();
+            break;
+        default:
+            break;
+    }
+
+    return (
+        overrides.find((value: PokemonListItem) => value.id === number) ||
+        getPokemonList().find((value: PokemonListItem) => value.id === number)
+    );
+}
+
+export { getPokemonList, getPokemonByNumberAndGeneration };
 export type { PokemonListItem };

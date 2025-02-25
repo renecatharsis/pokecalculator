@@ -24,7 +24,7 @@ export default function CatchRate() {
     });
     const [catchRateInput, setCatchRateInput] = useState<CatchRateInputDto>({
         pokemon: 1,
-        generation: Generation.GEN1,
+        generation: Generation.GEN1_RB,
         pokeball: PokeBalls.POKE_BALL,
         statusCondition: StatusCondition.NONE,
         level: 2,
@@ -190,7 +190,7 @@ export default function CatchRate() {
                             <HeadlessUiErrors
                                 messages={[
                                     "Unfortunately, something went wrong there.",
-                                    "Please let us know what so we can look into it!",
+                                    "Please let us know, so we can look into it!",
                                 ]}
                             />
                         )}

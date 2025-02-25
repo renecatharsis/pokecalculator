@@ -1,7 +1,7 @@
 import { Generation } from "@/enum/Generation";
 
 interface GenerationListItem {
-    id: number;
+    id: Generation;
     classAppendix: GenerationListItemHighlight[];
     displayName: string;
 }
@@ -14,15 +14,19 @@ interface GenerationListItemHighlight {
 const getGenerationsList = function (): GenerationListItem[] {
     return [
         {
-            id: Generation.GEN1,
+            id: Generation.GEN1_RB,
             classAppendix: [
                 { displayShortcut: "R", classNameAppendix: "red" },
                 { displayShortcut: "B", classNameAppendix: "blue" },
-                { displayShortcut: "Y", classNameAppendix: "yellow" },
             ],
             displayName: "Gen1",
         },
         {
+            id: Generation.GEN1_Y,
+            classAppendix: [{ displayShortcut: "Y", classNameAppendix: "yellow" }],
+            displayName: "Gen1",
+        },
+        /*{
             id: Generation.GEN2,
             classAppendix: [
                 { displayShortcut: "G", classNameAppendix: "gold" },
@@ -100,7 +104,7 @@ const getGenerationsList = function (): GenerationListItem[] {
                 { displayShortcut: "V", classNameAppendix: "violet" },
             ],
             displayName: "Gen9",
-        },
+        },*/
     ];
 };
 
