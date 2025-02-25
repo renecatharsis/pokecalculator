@@ -1,5 +1,6 @@
 import { SVGProps } from "react";
 
+const year = new Date();
 const navigation = [
     {
         name: "Twitter",
@@ -45,18 +46,7 @@ export default function Footer() {
                 </div>
                 <div className="text-center md:text-left mt-8 md:order-1 md:mt-0">
                     <p className="text-xs leading-5 text-gray-500">
-                        Copyright &copy; 2025 Rene Rösch
-                        <br />
-                        Using collective data and sprites from{" "}
-                        <a
-                            className="underline"
-                            href="https://github.com/PokeAPI"
-                            target="_blank"
-                            rel="noopener"
-                            title="pokéapi"
-                        >
-                            PokéAPI
-                        </a>
+                        Copyright &copy; {year.getFullYear()} Rene Rösch
                         <br />
                         Pokémon and Pokémon character names are trademarks of Nintendo.
                     </p>

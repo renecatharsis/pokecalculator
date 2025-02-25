@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
         });
     }
 
-    // step 3: calculate probability
+    // step 3: calculate probability, format non-mathematically
     const response: CatchRateOutputDto = {
         probability: calculateProbability(validatedData.data),
         notices: notices,

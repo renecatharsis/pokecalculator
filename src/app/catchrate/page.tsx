@@ -57,9 +57,23 @@ export default function CatchRate() {
     }, [catchRateInput]);
 
     function updateCatchRateInput(event: BaseSyntheticEvent) {
+        let value = parseInt(event.target.value);
+
+        if (event.target.type === "number") {
+            const min = event.target.getAttribute("min") ? parseInt(event.target.getAttribute("min")) : null;
+            const max = event.target.getAttribute("max") ? parseInt(event.target.getAttribute("max")) : null;
+
+            if (min !== null && min > value) {
+                event.target.value = value = min;
+            }
+            if (max !== null && max < value) {
+                event.target.value = value = max;
+            }
+        }
+
         setCatchRateInput({
             ...catchRateInput,
-            [event.target.name]: parseInt(event.target.value),
+            [event.target.name]: value,
         });
     }
 
@@ -78,27 +92,14 @@ export default function CatchRate() {
                         <div className="pb-8">
                             <h2 className="text-base font-semibold leading-7">Check your approximate catch rate.</h2>
                             <p className="mt-1 text-sm leading-6">
-                                This works primarily for the main line games, some edge cases excluded.
+                                Edge cases or unexpected behaviour will be listed together with the results.
                                 <br />
-                                Calculations are based on formulas and information from{" "}
-                                <a
-                                    href="https://www.pokewiki.de/Fangchance"
-                                    target="_blank"
-                                    rel="noopener"
-                                    className="underline"
-                                >
-                                    PokéWiki
+                                Check out our{" "}
+                                <a className="font-bold underline" href="/maths">
+                                    more in depth page
                                 </a>{" "}
-                                and{" "}
-                                <a
-                                    href="https://bulbapedia.bulbagarden.net/wiki/Catch_rate"
-                                    target="_blank"
-                                    rel="noopener"
-                                    className="underline"
-                                >
-                                    Bulbapedia
-                                </a>
-                                .
+                                for an explanation on inaccuracies and why real hardware can stray away from our
+                                results.
                             </p>
 
                             <div className="mt-6 grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-6">
@@ -108,7 +109,7 @@ export default function CatchRate() {
 
                                 <div className="sm:col-span-1">
                                     <label htmlFor="level" className="block text-sm font-medium leading-6">
-                                        Level
+                                        Level ( 2 - 70 )
                                     </label>
                                     <div className="mt-2 md:col-span-4 flex items-center rounded-md bg-white px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
                                         <input
@@ -199,11 +200,9 @@ export default function CatchRate() {
                 <div className="md:basis-1/3 pt-5 p-5 border border-gray-200 bg-secondary shadow-sm rounded-lg">
                     <h2 className="text-base font-semibold leading-7">Good to know:</h2>
                     <ul className="mt-2">
-                        <UnorderedList text="Assuming average DVs/IVs" />
                         <UnorderedList text="No support for Shadow Pokémon" />
                         <UnorderedList text="No support for Pokémon Legends Arceus & Let's Go Eevee / Pikachu" />
                         <UnorderedList text="No support for Safari Zones or parks" />
-                        <UnorderedList text="Be mindful of weird results due to in-game bugs (e.g. Bad Poison before Gen4)" />
                     </ul>
                 </div>
             </div>

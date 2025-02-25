@@ -47,7 +47,7 @@ export const catchRateInputLogicSchema = z
             refinementContext.addIssue({
                 path: ["pokemon"],
                 code: "custom",
-                message: "Selected Pokémon is not available in Gen 1, defaulting to Bulbasaur.",
+                message: "Selected Pokémon is not available in Gen 1.",
             });
         }
 
@@ -60,7 +60,7 @@ export const catchRateInputLogicSchema = z
             refinementContext.addIssue({
                 path: ["pokeball"],
                 code: "custom",
-                message: "Selected ball is not available in Gen 1, defaulting to Poké Ball.",
+                message: "Selected ball is not available in Gen 1.",
             });
         }
     });

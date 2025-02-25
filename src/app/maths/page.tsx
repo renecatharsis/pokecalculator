@@ -1,0 +1,92 @@
+export default function Maths() {
+    return (
+        <div className="md:w-3/5 border border-gray-200 bg-secondary shadow-sm rounded-lg px-6 lg:px-8 py-4 lg:py-4">
+            <div className="mx-8 text-base/7">
+                <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">
+                    A tale of technicalities
+                </h1>
+                <div className="mt-10 max-w-4xl">
+                    <p>
+                        In theory, there&#39;s relatively simple maths behind all the formulas used to calculate, or
+                        rather, estimate the catch rate of an encounter. Reality looks quite a bit different though.
+                        With differences throughout all generations, sometimes even within a generation, straight up
+                        errors made by the devs and limitations of hardware, plenty of little things have to be
+                        considered. Let&#39;s get into it. Our cute little friend Rattata is gonna help us out here and
+                        there.
+                    </p>
+                </div>
+                <h2 className="mt-5 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl">Gen 1</h2>
+                <div className="mt-5 max-w-4xl">
+                    <p>
+                        Gen 1 is a really interesting one. Being different from all other generations, this one is full
+                        of surprises that made creating a calculator quite the trial-and-error experience.
+                        <br /> Also, our cute little Rattata&#39;s mom, Raticate, has a lower capture rate in Gen 1 and
+                        Gen 2 from all other games.
+                    </p>
+                    <h3 className="mt-2 text-pretty text-xl font-semibold tracking-tight">
+                        Floating point numbers aren&#39;t real
+                    </h3>
+                    <p className="mt-2">
+                        Calculating anything from a Pokémon&#39;s stats to variable factors can result in decimals. Gen
+                        1 doesn&#39;t support, or rather, consider that, however. Instead of mathematically rounding
+                        values (down until .4 and up beginning with .5), Gen 1 simply cuts off the decimals, essentially
+                        flooring all values.
+                    </p>
+                    <h3 className="mt-2 text-pretty text-xl font-semibold tracking-tight">RNG isn&#39;t real either</h3>
+                    <p className="mt-2">
+                        There&#39;s no such thing as true randomness on computers. Since a random factor is being used
+                        in the Gen 1 formula, though, this means the results in these games are sometimes different from
+                        what the math would suggest when using Great Balls or Ultra Balls. This is explained really well
+                        on{" "}
+                        <a
+                            className="font-bold underline"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.dragonflycave.com/mechanics/gen-i-capturing#rng"
+                        >
+                            The Cave of dragonflies
+                        </a>
+                        , so I won&#39;t even try to repeat it here in my own words.
+                        <br />
+                        We&#39;re showing intended catch rate here, not actual catch rate.
+                    </p>
+                    <h3 className="mt-2 text-pretty text-xl font-semibold tracking-tight">The ball factor</h3>
+                    <p className="mt-2">
+                        Great Balls have a different factor attached to it than all the other balls. Due to how the
+                        capture formula works, however, this can result in a Great Ball being a better option than an
+                        Ultra Ball. (see the RNG section) This effects mostly Pokémon at high or full HP and Pokémon
+                        with a high capture rate.
+                    </p>
+                    <h3 className="mt-2 text-pretty text-xl font-semibold tracking-tight">
+                        Differences between Red/Blue and Yellow
+                    </h3>
+                    <p className="mt-2">
+                        Pokémon Yellow uses different reroll counts (see the RNG section) effecting the actual catch
+                        rate.
+                    </p>
+                    <p className="mt-2">
+                        Besides that, the only differences are the lower capture rates of Dragonair and Dragonite.
+                    </p>
+                </div>
+                <h2 className="mt-5 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl">
+                    Things that cannot be
+                </h2>
+                <p className="mt-5">
+                    All of a Pokémon&#39;s stats are non-decimal values. Whenever you are choosing a percentage of HP
+                    left, however, this could in theory result in a decimal value. This cannot happen during combat. An
+                    attack&#39;s damage is always non-decimal, too. This means that we have to make a decision on what
+                    to do with impossible solutions like this. An example:
+                    <br />A level 50 Rattata with 0 DVs/IVs is gonna have 90 HP at full health.
+                    <br />
+                    If you were to set its health to 35%, you&#39;d end up with 31.5 HP. That&#39;s impossible in-game.
+                    No matter how much damage had been dealt and how, it would have always ended up with either 31 HP or
+                    32 HP.
+                    <br />
+                    Since Gen 1 floors all values, we&#39;ve decided to floor situations like this, too. Doing this
+                    might end up causing different results to other websites providing calculations and this is the most
+                    likely reason for it.
+                </p>
+            </div>
+        </div>
+    );
+}

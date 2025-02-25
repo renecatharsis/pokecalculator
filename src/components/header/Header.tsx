@@ -35,6 +35,8 @@ export default function Header() {
                             >
                                 <ul className="block lg:flex">
                                     <ListItem NavLink="/catchrate">Catch simulator</ListItem>
+                                    <ListItem NavLink="/maths">Technical details</ListItem>
+                                    <ListItem NavLink="/resources">Resources</ListItem>
                                 </ul>
                             </nav>
                         </div>
