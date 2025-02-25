@@ -93,11 +93,6 @@ function calculateGen1Probability(input: CatchRateInputDto): number {
         const pokemonCatchRateFactor = Math.min(pokemon.captureRate + 1, ballFactor - statusModifier);
         const hpFactorDivisor = (hpFactor + 1) / 256;
 
-        if (pokemon.id === 148) {
-            const res = (statusModifier + pokemonCatchRateFactor * hpFactorDivisor) / ballFactor;
-            console.log(`dv: ${dv}, maxHP: ${maxHp}, res: ${res}`);
-        }
-
         return (statusModifier + pokemonCatchRateFactor * hpFactorDivisor) / ballFactor;
     }
 }
