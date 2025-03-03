@@ -9,6 +9,11 @@ interface PokeballListItem {
 const getPokeballList = function (): PokeballListItem[] {
     return [
         {
+            id: PokeBalls.BEAST_BALL,
+            display: "Beast Ball",
+            thumbnail: "sprites/pokeballs/beast-ball.png",
+        },
+        {
             id: PokeBalls.CHERISH_BALL,
             display: "Cherish Ball",
             thumbnail: "sprites/pokeballs/cherish-ball.png",
@@ -112,6 +117,11 @@ const getPokeballList = function (): PokeballListItem[] {
             id: PokeBalls.REPEAT_BALL,
             display: "Repeat Ball",
             thumbnail: "sprites/pokeballs/repeat-ball.png",
+        },
+        {
+            id: PokeBalls.SAFARI_BALL,
+            display: "Safari Ball",
+            thumbnail: "sprites/pokeballs/safari-ball.png",
         },
         {
             id: PokeBalls.TIMER_BALL,

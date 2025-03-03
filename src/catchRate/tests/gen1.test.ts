@@ -191,6 +191,59 @@ it("ensures hp percentage results using pokéball", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 100 })).toEqual(0.53);
 });
 
+it("ensures hp percentage results using safari ball", () => {
+    const baseParams = {
+        generation: Generation.GEN1_RB,
+        pokeball: PokeBalls.SAFARI_BALL,
+        statusCondition: StatusCondition.NONE,
+        level: 50,
+        hpBarYellow: false,
+        hpBarRed: false,
+    } as CatchRateInputDto;
+
+    // rattata for high capture rate
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 1 })).toEqual(100);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 5 })).toEqual(100);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 10 })).toEqual(100);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 20 })).toEqual(100);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 30 })).toEqual(100);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 40 })).toEqual(86.57);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 50 })).toEqual(69.12);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 60 })).toEqual(57.54);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 70 })).toEqual(49.07);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 80 })).toEqual(42.53);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 90 })).toEqual(37.99);
+    expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 100 })).toEqual(33.89);
+
+    // onix for medium capture rate
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 1 })).toEqual(17.97);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 5 })).toEqual(17.97);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 10 })).toEqual(17.97);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 20 })).toEqual(17.97);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 30 })).toEqual(17.97);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 40 })).toEqual(15.74);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 50 })).toEqual(12.4);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 60 })).toEqual(10.28);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 70 })).toEqual(8.81);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 80 })).toEqual(7.64);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 90 })).toEqual(6.82);
+    expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 100 })).toEqual(6.09);
+
+    // mewtwo for low capture rate
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 1 })).toEqual(1.56);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 5 })).toEqual(1.56);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 10 })).toEqual(1.56);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 20 })).toEqual(1.56);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 30 })).toEqual(1.56);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 40 })).toEqual(1.34);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 50 })).toEqual(1.06);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 60 })).toEqual(0.88);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 70 })).toEqual(0.76);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 80 })).toEqual(0.66);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 90 })).toEqual(0.59);
+    expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 100 })).toEqual(0.53);
+});
+
 it("ensures great ball results at different hp, no status", () => {
     const baseParams = {
         generation: Generation.GEN1_RB,

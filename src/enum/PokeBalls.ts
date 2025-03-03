@@ -22,5 +22,6 @@ export enum PokeBalls {
     QUICK_BALL,
     REPEAT_BALL,
     TIMER_BALL,
+    SAFARI_BALL,
     ULTRA_BALL,
 }

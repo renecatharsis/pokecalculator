@@ -53,6 +53,7 @@ export const catchRateInputLogicSchema = z
 
         if (
             pokeball != PokeBalls.POKE_BALL &&
+            pokeball !== PokeBalls.SAFARI_BALL &&
             pokeball !== PokeBalls.GREAT_BALL &&
             pokeball !== PokeBalls.ULTRA_BALL &&
             pokeball !== PokeBalls.MASTER_BALL
@@ -61,6 +62,21 @@ export const catchRateInputLogicSchema = z
                 path: ["pokeball"],
                 code: "custom",
                 message: "Selected ball is not available in Gen 1.",
+            });
+        }
+    })
+    // ditto capture rate copy prior to gen 5
+    .superRefine(({ pokemon, generation }, refinementContext) => {
+        if (
+            [Generation.GEN1_RB, Generation.GEN1_Y, Generation.GEN2, Generation.GEN3, Generation.GEN4].find(
+                (gen) => gen === generation,
+            ) !== undefined &&
+            pokemon === 132
+        ) {
+            refinementContext.addIssue({
+                path: ["pokemon"],
+                code: "custom",
+                message: "Prior to Gen 5, Ditto also copies the capture rate of the Pokémon it transforms into.",
             });
         }
     });

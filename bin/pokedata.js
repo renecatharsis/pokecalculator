@@ -57,6 +57,7 @@ async function parsePokemon(pokemonPath, pokemonSpeciesPath, pokemonStatsPath) {
                         row[1].slice(1).replace(/-[a-z]/g, (match) => match.toUpperCase()),
                     captureRate: parseInt(species[9]),
                     baseHp: parseInt(stats[2]),
+                    weight: parseInt(row[4]),
                     thumbnail: "sprites/pokemon/" + row[2] + ".png",
                 };
             })
