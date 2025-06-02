@@ -8257,6 +8257,19 @@ function getOverridesForGen1Y(): PokemonListItem[] {
     ];
 }
 
+function getOverridesForGen2(): PokemonListItem[] {
+    return [
+        {
+            id: 20,
+            name: "Raticate",
+            captureRate: 90,
+            baseHp: 55,
+            weight: 185,
+            thumbnail: "sprites/pokemon/20.png",
+        },
+    ];
+}
+
 function getPokemonByNumberAndGeneration(number: number, generation: Generation): PokemonListItem | undefined {
     let overrides: PokemonListItem[] = [];
 
@@ -8266,6 +8279,10 @@ function getPokemonByNumberAndGeneration(number: number, generation: Generation)
             break;
         case Generation.GEN1_Y:
             overrides = getOverridesForGen1Y();
+            break;
+        case Generation.GEN2_GS:
+        case Generation.GEN2_C:
+            overrides = getOverridesForGen2();
             break;
         default:
             break;

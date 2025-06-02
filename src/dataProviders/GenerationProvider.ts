@@ -26,15 +26,19 @@ const getGenerationsList = function (): GenerationListItem[] {
             classAppendix: [{ displayShortcut: "Y", classNameAppendix: "yellow" }],
             displayName: "Gen1",
         },
-        /*{
-            id: Generation.GEN2,
+        {
+            id: Generation.GEN2_GS,
             classAppendix: [
                 { displayShortcut: "G", classNameAppendix: "gold" },
                 { displayShortcut: "S", classNameAppendix: "silver" },
-                { displayShortcut: "C", classNameAppendix: "crystal" },
             ],
             displayName: "Gen2",
         },
+        {
+            id: Generation.GEN2_C,
+            classAppendix: [{ displayShortcut: "C", classNameAppendix: "crystal" }],
+            displayName: "Gen2",
+        } /*,
         {
             id: Generation.GEN3,
             classAppendix: [
@@ -104,7 +108,7 @@ const getGenerationsList = function (): GenerationListItem[] {
                 { displayShortcut: "V", classNameAppendix: "violet" },
             ],
             displayName: "Gen9",
-        },*/
+        },*/,
     ];
 };
 

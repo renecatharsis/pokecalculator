@@ -17,7 +17,7 @@ export default function PokemonGenerationListbox({
     stateHandler: (catchRateInputDto: CatchRateInputDto) => void;
 }) {
     const generations = getGenerationsList();
-    const [selectedGeneration, setSelectedGeneration] = useState(generations[0]); // Gen 1
+    const [selectedGeneration, setSelectedGeneration] = useState(generations[0]); // Gen 1 R/B
 
     return (
         <Listbox

@@ -1,0 +1,284 @@
+// import { calculateProbability } from "@/catchRate/CatchRateCalculator";
+// import { PokeBalls } from "@/enum/PokeBalls";
+// import { StatusCondition } from "@/enum/StatusCondition";
+// import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
+// import { Generation } from "@/enum/Generation";
+//
+// it("ensures level difference results using rattata with pokéball at full hp, no status", () => {
+//     const baseParams = {
+//         pokemon: 19,
+//         generation: Generation.GEN2_GS,
+//         pokeball: PokeBalls.POKE_BALL,
+//         statusCondition: StatusCondition.NONE,
+//         hpPercentage: 100,
+//         hpBarYellow: false,
+//         hpBarRed: false,
+//     } as CatchRateInputDto;
+//
+//     // testing full level range to cover as many rounding and flooring scenarios as possible
+//     expect(calculateProbability({ ...baseParams, level: 2 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 3 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 4 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 5 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 6 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 7 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 8 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 9 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 10 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 11 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 12 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 13 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 14 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 15 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 16 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 17 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 18 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 19 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 20 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 21 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 22 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 23 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 24 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 25 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 26 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 27 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 28 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 29 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 30 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 31 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 32 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 33 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 34 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 35 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 36 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 37 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 38 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 39 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 40 })).toEqual(33.55);
+//     expect(calculateProbability({ ...baseParams, level: 41 })).toEqual(33.59);
+//     expect(calculateProbability({ ...baseParams, level: 42 })).toEqual(33.57);
+//     expect(calculateProbability({ ...baseParams, level: 43 })).toEqual(33.55);
+//     expect(calculateProbability({ ...baseParams, level: 44 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 45 })).toEqual(33.55);
+//     expect(calculateProbability({ ...baseParams, level: 46 })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParams, level: 47 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 48 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 49 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 50 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 51 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 52 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 53 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 54 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 55 })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParams, level: 56 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 57 })).toEqual(33.48);
+//     expect(calculateProbability({ ...baseParams, level: 58 })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParams, level: 59 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 60 })).toEqual(33.48);
+//     expect(calculateProbability({ ...baseParams, level: 61 })).toEqual(33.52);
+//     expect(calculateProbability({ ...baseParams, level: 62 })).toEqual(33.5);
+//     expect(calculateProbability({ ...baseParams, level: 63 })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParams, level: 64 })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParams, level: 65 })).toEqual(33.55);
+//     expect(calculateProbability({ ...baseParams, level: 66 })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParams, level: 67 })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParams, level: 68 })).toEqual(33.52);
+//     expect(calculateProbability({ ...baseParams, level: 69 })).toEqual(33.52);
+//     expect(calculateProbability({ ...baseParams, level: 70 })).toEqual(33.47);
+// });
+//
+// it("ensures yellow hp bar results using pokéball", () => {
+//     const baseParams = {
+//         generation: Generation.GEN2_GS,
+//         pokeball: PokeBalls.POKE_BALL,
+//         statusCondition: StatusCondition.NONE,
+//         level: 50,
+//         hpPercentage: null,
+//         hpBarYellow: true,
+//         hpBarRed: false,
+//     } as CatchRateInputDto;
+//
+//     // rattata for high capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 19 })).toEqual(67.53);
+//
+//     // // onix for medium capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 95 })).toEqual(12.11);
+//
+//     // mewtwo for low capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 150 })).toEqual(1.17);
+// });
+//
+// it("ensures red hp bar results using pokéball", () => {
+//     const baseParams = {
+//         generation: Generation.GEN2_GS,
+//         pokeball: PokeBalls.POKE_BALL,
+//         statusCondition: StatusCondition.NONE,
+//         level: 50,
+//         hpPercentage: null,
+//         hpBarYellow: false,
+//         hpBarRed: true,
+//     } as CatchRateInputDto;
+//
+//     // rattata for high capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 19 })).toEqual(87.5);
+//
+//     // onix for medium capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 95 })).toEqual(15.63);
+//
+//     // // mewtwo for low capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 150 })).toEqual(1.17);
+// });
+//
+// it("ensures hp percentage results using pokéball", () => {
+//     const baseParams = {
+//         generation: Generation.GEN2_GS,
+//         pokeball: PokeBalls.POKE_BALL,
+//         statusCondition: StatusCondition.NONE,
+//         level: 50,
+//         hpBarYellow: false,
+//         hpBarRed: false,
+//     } as CatchRateInputDto;
+//
+//     // rattata for high capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 1 })).toEqual(98.44);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 5 })).toEqual(97.07);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 10 })).toEqual(93.46);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 15 })).toEqual(90.04);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 20 })).toEqual(86.84);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 25 })).toEqual(83.4);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 30 })).toEqual(80.17);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 35 })).toEqual(76.71);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 40 })).toEqual(73.36);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 45 })).toEqual(70.22);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 50 })).toEqual(66.7);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 55 })).toEqual(63.33);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 60 })).toEqual(60.16);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 65 })).toEqual(56.69);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 70 })).toEqual(53.47);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 75 })).toEqual(50);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 80 })).toEqual(46.68);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 85 })).toEqual(43.41);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 90 })).toEqual(40.02);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 95 })).toEqual(36.74);
+//     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 100 })).toEqual(33.5);
+//
+//     // onix for medium capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 1 })).toEqual(17.58);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 5 })).toEqual(17.19);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 10 })).toEqual(16.68);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 20 })).toEqual(15.5);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 30 })).toEqual(14.38);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 40 })).toEqual(13.14);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 50 })).toEqual(12.01);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 60 })).toEqual(10.82);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 70 })).toEqual(9.62);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 80 })).toEqual(8.42);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 90 })).toEqual(7.28);
+//     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 100 })).toEqual(6.15);
+//
+//     // mewtwo for low capture rate
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 1 })).toEqual(1.17);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 5 })).toEqual(1.17);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 10 })).toEqual(1.17);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 20 })).toEqual(1.17);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 30 })).toEqual(1.17);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 40 })).toEqual(1.17);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 50 })).toEqual(1.07);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 60 })).toEqual(0.78);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 70 })).toEqual(0.78);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 80 })).toEqual(0.78);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 90 })).toEqual(0.78);
+//     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 100 })).toEqual(0.78);
+// });
+//
+// // @TODO ball tests
+//
+// it("ensures status results with different pokémon at different hp", () => {
+//     const baseParamsRattata = {
+//         pokemon: 19,
+//         generation: Generation.GEN2_GS,
+//         pokeball: PokeBalls.POKE_BALL,
+//         level: 70,
+//         hpPercentage: 100,
+//         hpBarYellow: false,
+//         hpBarRed: false,
+//     } as CatchRateInputDto;
+//
+//     expect(calculateProbability({ ...baseParamsRattata, statusCondition: StatusCondition.NONE })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParamsRattata, statusCondition: StatusCondition.BAD_POISON })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParamsRattata, statusCondition: StatusCondition.POISON })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParamsRattata, statusCondition: StatusCondition.PARALYSIS })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParamsRattata, statusCondition: StatusCondition.BURN })).toEqual(33.47);
+//     expect(calculateProbability({ ...baseParamsRattata, statusCondition: StatusCondition.SLEEP })).toEqual(37.38);
+//     expect(calculateProbability({ ...baseParamsRattata, statusCondition: StatusCondition.FREEZE })).toEqual(37.38);
+//
+//     const baseParamsOnix = {
+//         pokemon: 95,
+//         generation: Generation.GEN2_GS,
+//         pokeball: PokeBalls.GREAT_BALL,
+//         level: 50,
+//         hpPercentage: 50,
+//         hpBarYellow: false,
+//         hpBarRed: false,
+//     } as CatchRateInputDto;
+//
+//     expect(calculateProbability({ ...baseParamsOnix, statusCondition: StatusCondition.NONE })).toEqual(17.58);
+//     expect(calculateProbability({ ...baseParamsOnix, statusCondition: StatusCondition.BAD_POISON })).toEqual(17.58);
+//     expect(calculateProbability({ ...baseParamsOnix, statusCondition: StatusCondition.POISON })).toEqual(17.58);
+//     expect(calculateProbability({ ...baseParamsOnix, statusCondition: StatusCondition.PARALYSIS })).toEqual(17.58);
+//     expect(calculateProbability({ ...baseParamsOnix, statusCondition: StatusCondition.BURN })).toEqual(17.58);
+//     expect(calculateProbability({ ...baseParamsOnix, statusCondition: StatusCondition.SLEEP })).toEqual(21.48);
+//     expect(calculateProbability({ ...baseParamsOnix, statusCondition: StatusCondition.FREEZE })).toEqual(21.48);
+//
+//     const baseParamsMewto = {
+//         pokemon: 150,
+//         generation: Generation.GEN2_GS,
+//         pokeball: PokeBalls.ULTRA_BALL,
+//         level: 30,
+//         hpPercentage: 30,
+//         hpBarYellow: false,
+//         hpBarRed: false,
+//     } as CatchRateInputDto;
+//
+//     expect(calculateProbability({ ...baseParamsMewto, statusCondition: StatusCondition.NONE })).toEqual(1.95);
+//     expect(calculateProbability({ ...baseParamsMewto, statusCondition: StatusCondition.BAD_POISON })).toEqual(1.95);
+//     expect(calculateProbability({ ...baseParamsMewto, statusCondition: StatusCondition.POISON })).toEqual(1.95);
+//     expect(calculateProbability({ ...baseParamsMewto, statusCondition: StatusCondition.PARALYSIS })).toEqual(1.95);
+//     expect(calculateProbability({ ...baseParamsMewto, statusCondition: StatusCondition.BURN })).toEqual(1.95);
+//     expect(calculateProbability({ ...baseParamsMewto, statusCondition: StatusCondition.SLEEP })).toEqual(5.86);
+//     expect(calculateProbability({ ...baseParamsMewto, statusCondition: StatusCondition.FREEZE })).toEqual(5.86);
+// });
+//
+// it("ensures different catch rate of raticate is considered before gen 3", () => {
+//     const baseParamsGS = {
+//         pokemon: 20,
+//         generation: Generation.GEN2_GS,
+//         pokeball: PokeBalls.POKE_BALL,
+//         statusCondition: StatusCondition.NONE,
+//         hpPercentage: 100,
+//         hpBarYellow: false,
+//         hpBarRed: false,
+//     } as CatchRateInputDto;
+//
+//     expect(calculateProbability({ ...baseParamsGS, level: 2 })).toEqual(12.11);
+//     expect(calculateProbability({ ...baseParamsGS, level: 10 })).toEqual(12.11);
+//     expect(calculateProbability({ ...baseParamsGS, level: 30 })).toEqual(12.11);
+//     expect(calculateProbability({ ...baseParamsGS, level: 50 })).toEqual(12.01);
+//     expect(calculateProbability({ ...baseParamsGS, level: 70 })).toEqual(12.01);
+//
+//     const baseParamsC = {
+//         pokemon: 20,
+//         generation: Generation.GEN2_C,
+//         pokeball: PokeBalls.POKE_BALL,
+//         statusCondition: StatusCondition.NONE,
+//         hpPercentage: 100,
+//         hpBarYellow: false,
+//         hpBarRed: false,
+//     } as CatchRateInputDto;
+//
+//     expect(calculateProbability({ ...baseParamsC, level: 2 })).toEqual(12.11);
+//     expect(calculateProbability({ ...baseParamsC, level: 10 })).toEqual(12.11);
+//     expect(calculateProbability({ ...baseParamsC, level: 30 })).toEqual(12.11);
+//     expect(calculateProbability({ ...baseParamsC, level: 50 })).toEqual(12.01);
+//     expect(calculateProbability({ ...baseParamsC, level: 70 })).toEqual(12.01);
+// });

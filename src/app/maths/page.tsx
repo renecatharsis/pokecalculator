@@ -86,6 +86,17 @@ export default function Maths() {
                     might end up causing different results to other websites providing calculations and this is the most
                     likely reason for it.
                 </p>
+                <h2 className="mt-5 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl">
+                    Rounding up or down?
+                </h2>
+                <p className="mt-5">
+                    Just like rounding during the calculations and when deciding on HP values using percentages,
+                    rounding is done when displaying the final results. We decided to mathematically round each decimal
+                    from the last decimals all the way to the integer part. This is technically neither right nor wrong,
+                    since the games will only ever work with one specific IV/HP/XYZ set of Pokémon wheras we simulate
+                    all kinds of possible encounters and then display the average. This means that other websites may
+                    show slightly different catch rates, sometimes off by just 0.01.
+                </p>
             </div>
         </div>
     );
