@@ -68,6 +68,42 @@ export default function Maths() {
                         Besides that, the only differences are the lower capture rates of Dragonair and Dragonite.
                     </p>
                 </div>
+
+                <h2 className="mt-5 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl">Gen 2</h2>
+                <div className="mt-5 max-w-4xl">
+                    <p>
+                        Gen 2 is the beginning of more streamlined formulas that are less convoluted, but, due to its
+                        implementation in the games, still heavily buggy and sometimes even gamebreaking.
+                        <br /> For Pokémon differences, there&#39;s still only Raticate with a lower capture rate before
+                        Gen 3.
+                    </p>
+                    <h3 className="mt-2 text-pretty text-xl font-semibold tracking-tight">
+                        Once upon a time in a world that wasn&#39;t tested properly
+                    </h3>
+                    <p className="mt-2">
+                        The majority of unexpected results stem from implementation errors surrounding the different new
+                        Pokéball variants. The Fast Ball, Heavy Ball, Love Ball and Moon Ball do not (always) work as
+                        intended. To make matters worse, the only status effects that improve the catch rate at all are
+                        Sleep and Freeze. An in-depth explanation can be found, once again, on&nbsp;
+                        <a
+                            className="font-bold underline"
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.dragonflycave.com/mechanics/gen-ii-capturing"
+                        >
+                            The Cave of dragonflies
+                        </a>
+                        .
+                    </p>
+                    <h3 className="mt-2 text-pretty text-xl font-semibold tracking-tight">
+                        Differences between Gold/Silver and Crystal
+                    </h3>
+                    <p className="mt-2">
+                        Pokémon Crystal reads Kadabra&#39;s, Tauros&#39; and Sunflower&#39;s weight incorrectly and thus
+                        assumes the max weight tier when trying to capture them using a Heavy Ball.
+                    </p>
+                </div>
+
                 <h2 className="mt-5 text-pretty text-3xl font-semibold tracking-tight sm:text-4xl">
                     Things that cannot be
                 </h2>

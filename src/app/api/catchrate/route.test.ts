@@ -17,7 +17,7 @@ it("should return error 422 on empty json body", async () => {
     const body = await response.json();
 
     expect(response.status).toBe(422);
-    expect(body.length).toBe(9);
+    expect(body.length).toBe(13);
 });
 
 it("should return error 422 on invalid types", async () => {
@@ -28,10 +28,14 @@ it("should return error 422 on invalid types", async () => {
             pokeball: "foo",
             statusCondition: "foo",
             level: "foo",
-            darkGrass: "foo",
             hpPercentage: "foo",
             hpBarYellow: "foo",
             hpBarRed: "foo",
+            darkGrass: "foo",
+            fishing: "foo",
+            sameSpecies: "foo",
+            sameSex: "foo",
+            ownLevel: "foo",
         }),
     } as NextRequest;
 
@@ -39,7 +43,7 @@ it("should return error 422 on invalid types", async () => {
     const body = await response.json();
 
     expect(response.status).toBe(422);
-    expect(body.length).toBe(9);
+    expect(body.length).toBe(13);
 });
 
 it("should return warning when providing hp percentage and yellow bar", async () => {
@@ -50,10 +54,14 @@ it("should return warning when providing hp percentage and yellow bar", async ()
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
-            darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: true,
             hpBarRed: false,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -78,10 +86,14 @@ it("should return warning when providing hp percentage and red bar", async () =>
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
-            darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: false,
             hpBarRed: true,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -106,10 +118,14 @@ it("should return warning when providing hp percentage and yellow & red bar", as
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
-            darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: true,
             hpBarRed: true,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -134,10 +150,14 @@ it("should return warning when providing no hp percentage and yellow & red bar",
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
-            darkGrass: false,
             hpPercentage: null,
             hpBarYellow: true,
             hpBarRed: true,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -162,10 +182,14 @@ it("should return warning when providing no hp percentage, no yellow & no red ba
             pokeball: PokeBalls.POKE_BALL,
             statusCondition: StatusCondition.NONE,
             level: 2,
-            darkGrass: false,
             hpPercentage: null,
             hpBarYellow: false,
             hpBarRed: false,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -190,10 +214,14 @@ it("should return warnings on invalid settings for gen1", async () => {
             pokemon: 250, // not available in gen1
             statusCondition: StatusCondition.NONE,
             level: 2,
-            darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: false,
             hpBarRed: false,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -222,10 +250,14 @@ it("should return warnings on invalid settings for gen2", async () => {
             pokemon: 350, // not available in gen2
             statusCondition: StatusCondition.NONE,
             level: 2,
-            darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: false,
             hpBarRed: false,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -260,10 +292,14 @@ it("should return warnings for status effects in gen2", async () => {
                 statusCondition: status,
                 pokemon: 1,
                 level: 2,
-                darkGrass: false,
                 hpPercentage: 100,
                 hpBarYellow: false,
                 hpBarRed: false,
+                darkGrass: false,
+                fishing: false,
+                sameSpecies: false,
+                sameSex: false,
+                ownLevel: 100,
             }),
         } as NextRequest;
 
@@ -289,10 +325,14 @@ it("should return warnings for moon ball in gen2", async () => {
             statusCondition: StatusCondition.NONE,
             pokemon: 1,
             level: 2,
-            darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: false,
             hpBarRed: false,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -317,10 +357,14 @@ it("should return warnings for love ball in gen2", async () => {
             statusCondition: StatusCondition.NONE,
             pokemon: 1,
             level: 2,
-            darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: false,
             hpBarRed: false,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -345,10 +389,14 @@ it("should return warnings for fast ball in gen2", async () => {
             statusCondition: StatusCondition.NONE,
             pokemon: 1,
             level: 2,
-            darkGrass: false,
             hpPercentage: 100,
             hpBarYellow: false,
             hpBarRed: false,
+            darkGrass: false,
+            fishing: false,
+            sameSpecies: false,
+            sameSex: false,
+            ownLevel: 100,
         }),
     } as NextRequest;
 
@@ -381,10 +429,14 @@ it("should return warning for ditto prior to gen 5", async () => {
                 pokemon: 132, // ditto
                 statusCondition: StatusCondition.NONE,
                 level: 2,
-                darkGrass: false,
                 hpPercentage: 100,
                 hpBarYellow: false,
                 hpBarRed: false,
+                darkGrass: false,
+                fishing: false,
+                sameSpecies: false,
+                sameSex: false,
+                ownLevel: 100,
             }),
         } as NextRequest;
 
@@ -411,10 +463,14 @@ it("should return no warning for ditto after gen 5", async () => {
                 pokemon: 132, // ditto
                 statusCondition: StatusCondition.NONE,
                 level: 2,
-                darkGrass: false,
                 hpPercentage: 100,
                 hpBarYellow: false,
                 hpBarRed: false,
+                darkGrass: false,
+                fishing: false,
+                sameSpecies: false,
+                sameSex: false,
+                ownLevel: 100,
             }),
         } as NextRequest;
 

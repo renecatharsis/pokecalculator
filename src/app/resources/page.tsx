@@ -9,7 +9,7 @@ export default function Resources() {
                     <p>
                         A massive Thank you to the authors behind all these awesome resources.
                         <br />
-                        Without them, none of this would be possible.
+                        Without them, none of this would have been possible.
                     </p>
                     <ul role="list" className="mt-8 max-w-xl space-y-4">
                         <li className="flex gap-x-3">
@@ -79,6 +79,28 @@ export default function Resources() {
                                 <a href="https://github.com/pret/pokered" target="_blank" rel="noopener">
                                     <strong className="font-semibold">pokered</strong> Pokémon Red/Blue disassembly to
                                     verify math.
+                                </a>
+                            </span>
+                        </li>
+                        <li className="flex gap-x-3">
+                            <ArrowTopRightOnSquareIcon aria-hidden="true" className="size-5 flex-none" />
+                            <span>
+                                <a href="https://github.com/pret/pokegold" target="_blank" rel="noopener">
+                                    <strong className="font-semibold">pokegold</strong> Pokémon Gold/Silver disassembly
+                                    to verify math.
+                                </a>
+                            </span>
+                        </li>
+                        <li className="flex gap-x-3">
+                            <ArrowTopRightOnSquareIcon aria-hidden="true" className="size-5 flex-none" />
+                            <span>
+                                <a
+                                    href="https://glitchcity.wiki/wiki/Catch_rate_glitches_(Generation_II)"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <strong className="font-semibold">Glitch City Wiki</strong> for Gen 2 specific
+                                    glitch information
                                 </a>
                             </span>
                         </li>

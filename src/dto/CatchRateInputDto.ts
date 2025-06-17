@@ -13,6 +13,10 @@ export const catchRateInputSchema = z.object({
     hpBarYellow: z.boolean(),
     hpBarRed: z.boolean(),
     darkGrass: z.boolean(),
+    fishing: z.boolean(),
+    sameSpecies: z.boolean(),
+    sameSex: z.boolean(),
+    ownLevel: z.number().min(1).max(100),
 });
 
 export type CatchRateInputDto = z.infer<typeof catchRateInputSchema>;

@@ -78,24 +78,6 @@ function calculateGen1Probability(input: CatchRateInputDto): number {
         const pokemonCatchRateFactor = Math.min(pokemon.captureRate + 1, ballFactor - statusModifier);
         const hpFactorDivisor = (hpFactor + 1) / 256;
 
-        // console.log(
-        //     "dv: " +
-        //         dv +
-        //         " maxHp: " +
-        //         maxHp +
-        //         " currentHp: " +
-        //         currentHp +
-        //         " hpFactor: " +
-        //         hpFactor +
-        //         " ballFactor: " +
-        //         ballFactor +
-        //         " pokemonCatchRateFactor: " +
-        //         pokemonCatchRateFactor +
-        //         " hpFactorDivisor: " +
-        //         hpFactorDivisor +
-        //         " result: " +
-        //         (statusModifier + pokemonCatchRateFactor * hpFactorDivisor) / ballFactor,
-        // );
         return (statusModifier + pokemonCatchRateFactor * hpFactorDivisor) / ballFactor;
     }
 }
@@ -107,9 +89,6 @@ function calculateGen2Probability(input: CatchRateInputDto): number {
         throw new Error("Could not map Pokémon for provided id " + input.pokemon);
     }
 
-    // @TODO catchrate / ball
-    // @TODO angel und co
-    // @TODO sonderfälle catchrate raticate und co?
     // a bug in the games prevents paralysis, poison and burn to have any effect
     let statusModifier = 0;
     if (input.statusCondition === StatusCondition.FREEZE || input.statusCondition === StatusCondition.SLEEP) {
@@ -124,6 +103,47 @@ function calculateGen2Probability(input: CatchRateInputDto): number {
         case PokeBalls.ULTRA_BALL:
             catchRateModifier = catchRateModifier * 2;
             break;
+        case PokeBalls.FAST_BALL:
+            // fast ball only works on Magnemite, Grimer and Tangela
+            if ([81, 88, 114].includes(pokemon.id)) {
+                catchRateModifier = catchRateModifier * 4;
+            }
+            break;
+        case PokeBalls.HEAVY_BALL:
+            // crystal edition reads Kadabra's, Tauros' and Sunflora's weight incorrectly and just assumes the highest weight tier
+            if (
+                pokemon.weight >= 4096 ||
+                (input.generation === Generation.GEN2_C && [64, 128, 192].includes(input.pokemon))
+            ) {
+                catchRateModifier = catchRateModifier + 40;
+            } else if (pokemon.weight > 3072) {
+                catchRateModifier = catchRateModifier + 30;
+            } else if (pokemon.weight > 2048) {
+                catchRateModifier = catchRateModifier + 20;
+            } else if (pokemon.weight < 1024) {
+                catchRateModifier = catchRateModifier - 20;
+            }
+            break;
+        case PokeBalls.LEVEL_BALL:
+            if (input.level < Math.floor(input.ownLevel / 4)) {
+                catchRateModifier = catchRateModifier * 8;
+            } else if (input.level < Math.floor(input.ownLevel / 2)) {
+                catchRateModifier = catchRateModifier * 4;
+            } else if (input.level < input.ownLevel) {
+                catchRateModifier = catchRateModifier * 2;
+            }
+
+            break;
+        case PokeBalls.LOVE_BALL:
+            if (input.sameSpecies && input.sameSex) {
+                catchRateModifier = catchRateModifier * 8;
+            }
+            break;
+        case PokeBalls.LURE_BALL:
+            if (input.fishing) {
+                catchRateModifier = catchRateModifier * 3;
+            }
+            break;
         case PokeBalls.POKE_BALL:
         case PokeBalls.FRIEND_BALL:
         case PokeBalls.MOON_BALL:
@@ -132,7 +152,6 @@ function calculateGen2Probability(input: CatchRateInputDto): number {
     }
 
     catchRateModifier = Math.floor(catchRateModifier);
-    // console.log("catchRateModifier: " + catchRateModifier);
     if (catchRateModifier < 1) {
         catchRateModifier = 1;
     } else if (catchRateModifier > 255) {
@@ -142,31 +161,31 @@ function calculateGen2Probability(input: CatchRateInputDto): number {
     // Gen2 DVs range from 0 to 15
     let sumOfProbabilities = 0;
     for (let i = 0; i <= 15; i++) {
-        sumOfProbabilities += inlineGen2(pokemon, input, i);
+        sumOfProbabilities += inlineGen2(pokemon, input, catchRateModifier, i);
     }
 
     return sumOfProbabilities / 16;
 
-    function inlineGen2(pokemon: PokemonListItem, input: CatchRateInputDto, dv: number) {
+    function inlineGen2(pokemon: PokemonListItem, input: CatchRateInputDto, catchRateModifier: number, dv: number) {
+        // level ball doesn't even go further into the formula
+        if (input.pokeball === PokeBalls.LEVEL_BALL) {
+            return (catchRateModifier + 1) / 256;
+        }
+
         const maxHp = calculateMaxHp(pokemon.baseHp, dv, input.level);
         const currentHp = calculateCurrentHp(maxHp, input);
         const maxHpMultiplier = 3 * maxHp;
         const maxHpResult = maxHpMultiplier > 255 ? Math.floor(maxHpMultiplier / 4) : maxHpMultiplier;
         const currentHpMultiplier = 2 * currentHp;
-        const currentHpResult = maxHpMultiplier > 255 ? Math.floor(currentHpMultiplier / 4) : currentHpMultiplier;
+        let currentHpResult = maxHpMultiplier > 255 ? Math.floor(currentHpMultiplier / 4) : currentHpMultiplier;
 
-        // console.log("dv: " + dv);
-        // console.log("maxHp: " + maxHp);
-        // console.log("currentHp: " + currentHp);
-        // console.log("maxHpMultiplier: " + maxHpMultiplier);
-        // console.log("currentHpMultiplier: " + currentHpMultiplier);
-        // console.log("maxHpResult: " + maxHpResult);
-        // console.log("currentHpResult: " + currentHpResult);
+        if (currentHpResult === 0) {
+            currentHpResult = 1;
+        }
+
         const hpModifier = Math.floor(((maxHpResult - currentHpResult) * catchRateModifier) / maxHpResult);
         const modifierResult = Math.max(hpModifier, 1) + statusModifier;
 
-        // console.log((modifierResult + 1) / 256);
-        // console.log("###");
         return (modifierResult + 1) / 256;
     }
 }

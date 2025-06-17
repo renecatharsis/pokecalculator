@@ -4,7 +4,7 @@ import { StatusCondition } from "@/enum/StatusCondition";
 import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { Generation } from "@/enum/Generation";
 
-it("ensures level difference results using rattata with pokéball at full hp, no status", () => {
+it("ensures level difference results using Rattata with pokéball at full hp, no status", () => {
     const baseParams = {
         pokemon: 19,
         generation: Generation.GEN1_RB,
@@ -98,13 +98,13 @@ it("ensures yellow hp bar results using pokéball", () => {
         hpBarRed: false,
     } as CatchRateInputDto;
 
-    // rattata for high capture rate
+    // Rattata for high capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 19 })).toEqual(70.17);
 
-    // // onix for medium capture rate
+    // Onix for medium capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 95 })).toEqual(12.59);
 
-    // mewtwo for low capture rate
+    // Mewtwo for low capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 150 })).toEqual(1.08);
 });
 
@@ -119,13 +119,13 @@ it("ensures red hp bar results using pokéball", () => {
         hpBarRed: true,
     } as CatchRateInputDto;
 
-    // rattata for high capture rate
+    // Rattata for high capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 19 })).toEqual(100);
 
-    // onix for medium capture rate
+    // Onix for medium capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 95 })).toEqual(17.97);
 
-    // // mewtwo for low capture rate
+    // Mewtwo for low capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 150 })).toEqual(1.56);
 });
 
@@ -139,7 +139,7 @@ it("ensures hp percentage results using pokéball, no status", () => {
         hpBarRed: false,
     } as CatchRateInputDto;
 
-    // rattata for high capture rate
+    // Rattata for high capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 1 })).toEqual(100);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 5 })).toEqual(100);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 10 })).toEqual(100);
@@ -162,7 +162,7 @@ it("ensures hp percentage results using pokéball, no status", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 95 })).toEqual(35.82);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 100 })).toEqual(33.89);
 
-    // onix for medium capture rate
+    // Onix for medium capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 1 })).toEqual(17.97);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 5 })).toEqual(17.97);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 10 })).toEqual(17.97);
@@ -176,7 +176,7 @@ it("ensures hp percentage results using pokéball, no status", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 90 })).toEqual(6.8);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 100 })).toEqual(6.09);
 
-    // mewtwo for low capture rate
+    // Mewtwo for low capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 1 })).toEqual(1.56);
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 5 })).toEqual(1.56);
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 10 })).toEqual(1.56);
@@ -201,7 +201,7 @@ it("ensures hp percentage results using safari ball, no status", () => {
         hpBarRed: false,
     } as CatchRateInputDto;
 
-    // rattata for high capture rate
+    // Rattata for high capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 1 })).toEqual(100);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 5 })).toEqual(100);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 10 })).toEqual(100);
@@ -215,7 +215,7 @@ it("ensures hp percentage results using safari ball, no status", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 90 })).toEqual(37.79);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 100 })).toEqual(33.89);
 
-    // onix for medium capture rate
+    // Onix for medium capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 1 })).toEqual(30.46);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 5 })).toEqual(30.46);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 10 })).toEqual(30.46);
@@ -229,7 +229,7 @@ it("ensures hp percentage results using safari ball, no status", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 90 })).toEqual(11.53);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 100 })).toEqual(10.32);
 
-    // mewtwo for low capture rate
+    // Mewtwo for low capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 1 })).toEqual(2.65);
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 5 })).toEqual(2.65);
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 10 })).toEqual(2.65);
@@ -253,7 +253,7 @@ it("ensures great ball results at different hp, no status", () => {
         hpBarRed: false,
     } as CatchRateInputDto;
 
-    // rattata for high capture rate
+    // Rattata for high capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 1, level: 2 })).toEqual(100);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 50, level: 2 })).toEqual(100);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 100, level: 2 })).toEqual(54.3);
@@ -270,7 +270,7 @@ it("ensures great ball results at different hp, no status", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 50, level: 70 })).toEqual(99.9);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 100, level: 70 })).toEqual(50.64);
 
-    // onix for medium capture rate
+    // Onix for medium capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 1, level: 2 })).toEqual(22.89);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 50, level: 2 })).toEqual(22.89);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 100, level: 2 })).toEqual(12.48);
@@ -287,7 +287,7 @@ it("ensures great ball results at different hp, no status", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 50, level: 70 })).toEqual(22.87);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 100, level: 70 })).toEqual(11.57);
 
-    // mewtwo for low capture rate
+    // Mewtwo for low capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 1, level: 2 })).toEqual(1.99);
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 50, level: 2 })).toEqual(1.99);
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 100, level: 2 })).toEqual(1);
@@ -314,7 +314,7 @@ it("ensures ultra ball results at different hp, no status", () => {
         hpBarRed: false,
     } as CatchRateInputDto;
 
-    // rattata for high capture rate
+    // Rattata for high capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 1, level: 2 })).toEqual(100);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 50, level: 2 })).toEqual(100);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 100, level: 2 })).toEqual(36.33);
@@ -331,7 +331,7 @@ it("ensures ultra ball results at different hp, no status", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 50, level: 70 })).toEqual(67.97);
     expect(calculateProbability({ ...baseParams, pokemon: 19, hpPercentage: 100, level: 70 })).toEqual(33.86);
 
-    // onix for medium capture rate
+    // Onix for medium capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 1, level: 2 })).toEqual(30.46);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 50, level: 2 })).toEqual(30.46);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 100, level: 2 })).toEqual(11.12);
@@ -348,7 +348,7 @@ it("ensures ultra ball results at different hp, no status", () => {
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 50, level: 70 })).toEqual(20.69);
     expect(calculateProbability({ ...baseParams, pokemon: 95, hpPercentage: 100, level: 70 })).toEqual(10.29);
 
-    // mewtwo for low capture rate
+    // Mewtwo for low capture rate
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 1, level: 2 })).toEqual(2.65);
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 50, level: 2 })).toEqual(1.77);
     expect(calculateProbability({ ...baseParams, pokemon: 150, hpPercentage: 100, level: 2 })).toEqual(0.89);
@@ -422,7 +422,7 @@ it("ensures status results with different pokémon at different hp", () => {
     expect(calculateProbability({ ...baseParamsMewto, statusCondition: StatusCondition.FREEZE })).toEqual(19.21);
 });
 
-it("ensures different catch rate of raticate is considered before gen 3", () => {
+it("ensures different catch rate of Raticate is considered before gen 3", () => {
     const baseParamsRB = {
         pokemon: 20,
         generation: Generation.GEN1_RB,
@@ -456,7 +456,7 @@ it("ensures different catch rate of raticate is considered before gen 3", () => 
     expect(calculateProbability({ ...baseParamsY, level: 70 })).toEqual(11.99);
 });
 
-it("ensures different catch rate of dragonair and dragonite is considered in yellow", () => {
+it("ensures different catch rate of Dragonair and Dragonite is considered in yellow", () => {
     const baseParamsRB = {
         generation: Generation.GEN1_RB,
         pokeball: PokeBalls.POKE_BALL,

@@ -32,6 +32,10 @@ export default function CatchRate() {
         hpBarYellow: false,
         hpBarRed: false,
         darkGrass: false,
+        fishing: false,
+        sameSpecies: false,
+        sameSex: false,
+        ownLevel: 100,
     });
 
     useEffect(() => {
@@ -175,6 +179,63 @@ export default function CatchRate() {
                                         </div>
                                     </div>
                                 </div>
+
+                                {catchRateInput.generation !== Generation.GEN1_RB &&
+                                    catchRateInput.generation !== Generation.GEN1_Y &&
+                                    catchRateInput.pokeball === PokeBalls.LURE_BALL && (
+                                        <div className="sm:col-span-6 sm:col-start-1">
+                                            <HeadlessUiCheckbox
+                                                name="fishing"
+                                                label="Are you fishing?"
+                                                stateHandler={updateCatchRateInputCheckbox}
+                                            />
+                                        </div>
+                                    )}
+
+                                {catchRateInput.generation !== Generation.GEN1_RB &&
+                                    catchRateInput.generation !== Generation.GEN1_Y &&
+                                    catchRateInput.pokeball === PokeBalls.LOVE_BALL && (
+                                        <div className="sm:col-span-6 sm:col-start-1">
+                                            <HeadlessUiCheckbox
+                                                name="sameSpecies"
+                                                label="Is your Pokémon the same species?"
+                                                stateHandler={updateCatchRateInputCheckbox}
+                                            />
+                                        </div>
+                                    )}
+                                {catchRateInput.generation !== Generation.GEN1_RB &&
+                                    catchRateInput.generation !== Generation.GEN1_Y &&
+                                    catchRateInput.pokeball === PokeBalls.LOVE_BALL && (
+                                        <div className="sm:col-span-6 sm:col-start-1">
+                                            <HeadlessUiCheckbox
+                                                name="sameSex"
+                                                label="Is your Pokémon of the same sex?"
+                                                stateHandler={updateCatchRateInputCheckbox}
+                                            />
+                                        </div>
+                                    )}
+
+                                {catchRateInput.generation !== Generation.GEN1_RB &&
+                                    catchRateInput.generation !== Generation.GEN1_Y &&
+                                    catchRateInput.pokeball === PokeBalls.LEVEL_BALL && (
+                                        <div className="sm:col-span-2 sm:col-start-1">
+                                            <label htmlFor="ownLevel" className="block text-sm font-medium leading-6">
+                                                Your Pokémon&#39;s level ( 1 - 100 )
+                                            </label>
+                                            <div className="mt-2 md:col-span-4 flex items-center rounded-md bg-white px-3 outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                                                <input
+                                                    type="number"
+                                                    name="ownLevel"
+                                                    id="ownLevel"
+                                                    defaultValue="100"
+                                                    min="1"
+                                                    max="100"
+                                                    onChange={updateCatchRateInput}
+                                                    className="block min-w-0 grow py-1.5 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+                                                />
+                                            </div>
+                                        </div>
+                                    )}
                             </div>
                         </div>
                     </form>
