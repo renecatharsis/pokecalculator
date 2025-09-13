@@ -47,7 +47,11 @@ export default function PokemonCombobox({
             as="div"
             immediate
             value={selectedPokemon}
-            onChange={(pokemon: PokemonListItem) => {
+            onChange={(pokemon: PokemonListItem | null) => {
+                if (!pokemon) {
+                    return;
+                }
+
                 setSelectedPokemon(pokemon);
                 overridePokemonComboboxDisplayValue(pokemon);
                 stateHandler({
