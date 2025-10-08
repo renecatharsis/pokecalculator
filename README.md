@@ -2,7 +2,6 @@
 
 Simple set of tools to help with probabilities in Pokémon games.
 
-
 ## Requirements
 * NodeJS 20+
 
@@ -10,6 +9,9 @@ Simple set of tools to help with probabilities in Pokémon games.
 * `nvm use`
 * `npm install`
 * `npm run dev`
+
+## Running with docker in production
+* `docker-compose up --build -d`
 
 ## Updating static Pokémon resources
 Icons for Poké Balls and Pokémon provided via https://github.com/PokeAPI
