@@ -39,25 +39,29 @@ export default function CatchRate() {
     });
 
     useEffect(() => {
-        fetch(ApiDefinition.CATCHRATE, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(catchRateInput),
-        })
-            .then((response) => {
-                if (response.status === 422) {
-                    throw new Error("Invalid parameters provided");
-                }
+        const handler = setTimeout(() => {
+            fetch(ApiDefinition.CATCHRATE, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(catchRateInput),
+            })
+                .then((response) => {
+                    if (response.status === 422) {
+                        throw new Error("Invalid parameters provided");
+                    }
 
-                return response.json();
-            })
-            .then((responseBody: CatchRateOutputDto) => {
-                setHasBackendError(false);
-                setCatchRate(responseBody);
-            })
-            .catch(() => setHasBackendError(true));
+                    return response.json();
+                })
+                .then((responseBody: CatchRateOutputDto) => {
+                    setHasBackendError(false);
+                    setCatchRate(responseBody);
+                })
+                .catch(() => setHasBackendError(true));
+        }, 200);
+
+        return () => clearTimeout(handler);
     }, [catchRateInput]);
 
     function updateCatchRateInput(event: BaseSyntheticEvent) {
