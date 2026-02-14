@@ -1,8 +1,8 @@
 import { calculateProbability } from "@/catchRate/CatchRateCalculator";
+import type { CatchRateInputDto } from "@/dto/CatchRateInputDto";
+import { Generation } from "@/enum/Generation";
 import { PokeBalls } from "@/enum/PokeBalls";
 import { StatusCondition } from "@/enum/StatusCondition";
-import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
-import { Generation } from "@/enum/Generation";
 
 it("ensures level difference results using Rattata with pokéball at full hp, no status", () => {
     const baseParams = {

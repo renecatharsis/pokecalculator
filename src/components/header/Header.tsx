@@ -1,8 +1,8 @@
 "use client";
 
-import ListItem from "@/components/header/ListItem";
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
+import ListItem from "@/components/header/ListItem";
 
 export default function Header() {
     const [open, setOpen] = useState(false);
@@ -20,6 +20,7 @@ export default function Header() {
                         <div>
                             <button
                                 onClick={() => setOpen(!open)}
+                                type="button"
                                 className={` ${
                                     open && "navbarTogglerActive"
                                 } ring-primary absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] focus:ring-2 lg:hidden`}

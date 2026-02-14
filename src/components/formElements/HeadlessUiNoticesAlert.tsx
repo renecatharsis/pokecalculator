@@ -1,5 +1,5 @@
 import { ExclamationTriangleIcon } from "@heroicons/react/20/solid";
-import { CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
+import type { CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
 
 export default function HeadlessUiNoticesAlert({ messages }: { messages: CatchRateOutputNoticeDto[] }) {
     return (
@@ -12,9 +12,9 @@ export default function HeadlessUiNoticesAlert({ messages }: { messages: CatchRa
                     <h3 className="text-sm font-medium text-yellow-800">Attention!</h3>
                     <div className="mt-2 text-sm text-yellow-700">
                         <p>
-                            {messages.map((message, index) => {
+                            {messages.map((message) => {
                                 return (
-                                    <span key={index} className="block">
+                                    <span key={message.message} className="block">
                                         {message.message}
                                     </span>
                                 );

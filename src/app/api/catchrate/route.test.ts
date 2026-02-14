@@ -1,12 +1,13 @@
 /**
  * @jest-environment node
  */
-import { POST } from "./route";
-import { NextRequest } from "next/server";
+
+import type { NextRequest } from "next/server";
+import type { CatchRateOutputDto, CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
 import { Generation } from "@/enum/Generation";
 import { PokeBalls } from "@/enum/PokeBalls";
 import { StatusCondition } from "@/enum/StatusCondition";
-import { CatchRateOutputDto, CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
+import { POST } from "./route";
 
 it("should return error 422 on empty json body", async () => {
     const requestObj = {

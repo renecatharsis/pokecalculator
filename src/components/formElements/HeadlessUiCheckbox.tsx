@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { Checkbox, Field, Label } from "@headlessui/react";
+import { useState } from "react";
 
 export default function HeadlessUiCheckbox({
     name,
@@ -26,6 +26,7 @@ export default function HeadlessUiCheckbox({
                     className="stroke-white opacity-0 group-data-[checked]:opacity-100"
                     viewBox="0 0 14 14"
                     fill="none"
+                    aria-hidden="true"
                 >
                     <path d="M3 8L6 11L11 3.5" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
                 </svg>

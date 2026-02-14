@@ -1,13 +1,13 @@
 import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from "@headlessui/react";
 import { useState } from "react";
 import DropdownArrow from "@/components/formElements/DropdownArrow";
-import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
-import { mergeClassList } from "@/util/domAttributes";
 import {
-    GenerationListItem,
-    GenerationListItemHighlight,
+    type GenerationListItem,
+    type GenerationListItemHighlight,
     getGenerationsList,
 } from "@/dataProviders/GenerationProvider";
+import type { CatchRateInputDto } from "@/dto/CatchRateInputDto";
+import { mergeClassList } from "@/util/domAttributes";
 
 export default function PokemonGenerationListbox({
     state,
@@ -41,7 +41,7 @@ export default function PokemonGenerationListbox({
                                     key={appendix.displayShortcut}
                                     className={mergeClassList(
                                         "generation_box",
-                                        "generation_box--" + appendix.classNameAppendix,
+                                        `generation_box--${appendix.classNameAppendix}`,
                                     )}
                                 >
                                     {appendix.displayShortcut}
@@ -79,7 +79,7 @@ export default function PokemonGenerationListbox({
                                                     key={appendix.displayShortcut}
                                                     className={mergeClassList(
                                                         "generation_box",
-                                                        "generation_box--" + appendix.classNameAppendix,
+                                                        `generation_box--${appendix.classNameAppendix}`,
                                                     )}
                                                 >
                                                     {appendix.displayShortcut}

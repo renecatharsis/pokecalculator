@@ -5,38 +5,36 @@ interface StatusConditionListItem {
     display: string;
 }
 
-const getStatusConditionList = function (): StatusConditionListItem[] {
-    return [
-        {
-            id: StatusCondition.NONE,
-            display: "None",
-        },
-        {
-            id: StatusCondition.PARALYSIS,
-            display: "Paralysis",
-        },
-        {
-            id: StatusCondition.SLEEP,
-            display: "Sleep",
-        },
-        {
-            id: StatusCondition.POISON,
-            display: "Poison",
-        },
-        {
-            id: StatusCondition.BAD_POISON,
-            display: "Bad Poison",
-        },
-        {
-            id: StatusCondition.BURN,
-            display: "Burn",
-        },
-        {
-            id: StatusCondition.FREEZE,
-            display: "Freeze",
-        },
-    ];
-};
+const getStatusConditionList = (): StatusConditionListItem[] => [
+    {
+        id: StatusCondition.NONE,
+        display: "None",
+    },
+    {
+        id: StatusCondition.PARALYSIS,
+        display: "Paralysis",
+    },
+    {
+        id: StatusCondition.SLEEP,
+        display: "Sleep",
+    },
+    {
+        id: StatusCondition.POISON,
+        display: "Poison",
+    },
+    {
+        id: StatusCondition.BAD_POISON,
+        display: "Bad Poison",
+    },
+    {
+        id: StatusCondition.BURN,
+        display: "Burn",
+    },
+    {
+        id: StatusCondition.FREEZE,
+        display: "Freeze",
+    },
+];
 
 export { getStatusConditionList };
 export type { StatusConditionListItem };

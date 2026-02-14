@@ -31,7 +31,7 @@ function roundSequentiallyFromEnd(value: number, targetDecimals: number): number
 
             // this means the transfer went into the integer part (e.g., 0.99 -> 1.00)
             if (j < 0) {
-                integerPart = (parseInt(integerPart) + 1).toString();
+                integerPart = (parseInt(integerPart, 10) + 1).toString();
             }
         }
     }
@@ -53,7 +53,7 @@ function roundSequentiallyFromEnd(value: number, targetDecimals: number): number
 
     let finalNumberString = integerPart;
     if (finalDecimalPart.length > 0) {
-        finalNumberString += "." + finalDecimalPart;
+        finalNumberString += `.${finalDecimalPart}`;
     }
 
     return parseFloat(finalNumberString);

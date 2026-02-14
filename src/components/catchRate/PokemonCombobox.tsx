@@ -1,9 +1,9 @@
-import { ChangeEvent, useState } from "react";
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions, Label } from "@headlessui/react";
+import { type ChangeEvent, useState } from "react";
 import DropdownArrow from "@/components/formElements/DropdownArrow";
+import { getPokemonList, type PokemonListItem } from "@/dataProviders/PokemonProvider";
+import type { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { mergeClassList } from "@/util/domAttributes";
-import { getPokemonList, PokemonListItem } from "@/dataProviders/PokemonProvider";
-import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 
 const MAX_RESULTS: number = 25;
 
@@ -31,15 +31,15 @@ export default function PokemonCombobox({
                   .slice(0, MAX_RESULTS);
 
     function overridePokemonComboboxDisplayValue(pokemon: PokemonListItem) {
-        // show pokémon thumbnail in input matching the combobox options
-        // unfortunately html values are not supported, so using a background image seems like the only way to do it for now
+        // show Pokémon thumbnail in input matching the combobox options
+        //  unfortunately, HTML values are not supported, so using a background image seems like the only way to do it for now
         const element: HTMLElement | null = document.querySelector('input[name="pokemon"]');
 
         if (!element) {
             return;
         }
 
-        element.style.backgroundImage = 'url("' + pokemon.thumbnail + '")';
+        element.style.backgroundImage = `url("${pokemon.thumbnail}")`;
     }
 
     return (

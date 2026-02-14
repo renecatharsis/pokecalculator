@@ -1,8 +1,8 @@
-import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
-import { PokeBalls } from "@/enum/PokeBalls";
+import { getPokemonByNumberAndGeneration, type PokemonListItem } from "@/dataProviders/PokemonProvider";
+import type { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { Generation } from "@/enum/Generation";
+import { PokeBalls } from "@/enum/PokeBalls";
 import { StatusCondition } from "@/enum/StatusCondition";
-import { getPokemonByNumberAndGeneration, PokemonListItem } from "@/dataProviders/PokemonProvider";
 import { roundSequentiallyFromEnd } from "@/util/mathFunctions";
 
 const HP_PERCENTAGE_CUTOFF_YELLOW = 49;
@@ -33,7 +33,7 @@ function calculateGen1Probability(input: CatchRateInputDto): number {
     const pokemon = getPokemonByNumberAndGeneration(input.pokemon, input.generation);
     // technically never happening due to validation, but TS wants the safety net regardless
     if (!pokemon) {
-        throw new Error("Could not map Pokémon for provided id " + input.pokemon);
+        throw new Error(`Could not map Pokémon for provided id ${input.pokemon}`);
     }
 
     let ballModifier = 255;
@@ -86,7 +86,7 @@ function calculateGen2Probability(input: CatchRateInputDto): number {
     const pokemon = getPokemonByNumberAndGeneration(input.pokemon, input.generation);
     // technically never happening due to validation, but TS wants the safety net regardless
     if (!pokemon) {
-        throw new Error("Could not map Pokémon for provided id " + input.pokemon);
+        throw new Error(`Could not map Pokémon for provided id ${input.pokemon}`);
     }
 
     // a bug in the games prevents paralysis, poison and burn to have any effect

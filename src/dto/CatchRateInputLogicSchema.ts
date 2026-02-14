@@ -6,9 +6,9 @@ import { StatusCondition } from "@/enum/StatusCondition";
 export const catchRateInputLogicSchema = z
     .object({
         pokemon: z.number(),
-        generation: z.nativeEnum(Generation),
-        pokeball: z.nativeEnum(PokeBalls),
-        statusCondition: z.nativeEnum(StatusCondition),
+        generation: z.enum(Generation),
+        pokeball: z.enum(PokeBalls),
+        statusCondition: z.enum(StatusCondition),
         hpPercentage: z.number().nullable(),
         hpBarYellow: z.boolean(),
         hpBarRed: z.boolean(),
@@ -54,7 +54,7 @@ export const catchRateInputLogicSchema = z
         }
 
         if (
-            pokeball != PokeBalls.POKE_BALL &&
+            pokeball !== PokeBalls.POKE_BALL &&
             pokeball !== PokeBalls.SAFARI_BALL &&
             pokeball !== PokeBalls.GREAT_BALL &&
             pokeball !== PokeBalls.ULTRA_BALL &&
@@ -82,7 +82,7 @@ export const catchRateInputLogicSchema = z
         }
 
         if (
-            pokeball != PokeBalls.POKE_BALL &&
+            pokeball !== PokeBalls.POKE_BALL &&
             pokeball !== PokeBalls.GREAT_BALL &&
             pokeball !== PokeBalls.ULTRA_BALL &&
             pokeball !== PokeBalls.MASTER_BALL &&

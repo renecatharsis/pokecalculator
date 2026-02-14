@@ -1,20 +1,20 @@
 "use client";
 
-import { BaseSyntheticEvent, useEffect, useState } from "react";
-import UnorderedList from "@/components/list/UnorderedList";
+import { type BaseSyntheticEvent, useEffect, useState } from "react";
+import PokeballListbox from "@/components/catchRate/PokeballListbox";
 import PokemonCombobox from "@/components/catchRate/PokemonCombobox";
 import PokemonGenerationListbox from "@/components/catchRate/PokemonGenerationListbox";
-import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
-import { CatchRateOutputDto } from "@/dto/CatchRateOutputDto";
-import { ApiDefinition } from "@/enum/ApiDefinition";
-import PokeballListbox from "@/components/catchRate/PokeballListbox";
 import StatusConditionListbox from "@/components/catchRate/StatusConditionListbox";
 import HeadlessUiCheckbox from "@/components/formElements/HeadlessUiCheckbox";
-import HeadlessUiNoticesAlert from "@/components/formElements/HeadlessUiNoticesAlert";
-import { StatusCondition } from "@/enum/StatusCondition";
-import { PokeBalls } from "@/enum/PokeBalls";
-import { Generation } from "@/enum/Generation";
 import HeadlessUiErrors from "@/components/formElements/HeadlessUiErrors";
+import HeadlessUiNoticesAlert from "@/components/formElements/HeadlessUiNoticesAlert";
+import UnorderedList from "@/components/list/UnorderedList";
+import type { CatchRateInputDto } from "@/dto/CatchRateInputDto";
+import type { CatchRateOutputDto } from "@/dto/CatchRateOutputDto";
+import { ApiDefinition } from "@/enum/ApiDefinition";
+import { Generation } from "@/enum/Generation";
+import { PokeBalls } from "@/enum/PokeBalls";
+import { StatusCondition } from "@/enum/StatusCondition";
 
 export default function CatchRate() {
     const [hasBackendError, setHasBackendError] = useState<boolean>(false);

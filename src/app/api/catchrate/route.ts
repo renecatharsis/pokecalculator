@@ -1,8 +1,8 @@
-import { type NextRequest } from "next/server";
-import { catchRateInputSchema } from "@/dto/CatchRateInputDto";
-import { CatchRateOutputDto, CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
+import type { NextRequest } from "next/server";
 import { calculateProbability } from "@/catchRate/CatchRateCalculator";
+import { catchRateInputSchema } from "@/dto/CatchRateInputDto";
 import { catchRateInputLogicSchema } from "@/dto/CatchRateInputLogicSchema";
+import type { CatchRateOutputDto, CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
 
 export async function POST(request: NextRequest) {
     // step 1: validate request schema

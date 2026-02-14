@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { Label, Listbox, ListboxButton, ListboxOption, ListboxOptions } from "@headlessui/react";
-import { CatchRateInputDto } from "@/dto/CatchRateInputDto";
-import { getPokeballList, PokeballListItem } from "@/dataProviders/PokeballProvider";
-import { mergeClassList } from "@/util/domAttributes";
+import { useState } from "react";
 import DropdownArrow from "@/components/formElements/DropdownArrow";
+import { getPokeballList, type PokeballListItem } from "@/dataProviders/PokeballProvider";
+import type { CatchRateInputDto } from "@/dto/CatchRateInputDto";
+import { mergeClassList } from "@/util/domAttributes";
 
 export default function PokeballListbox({
     state,

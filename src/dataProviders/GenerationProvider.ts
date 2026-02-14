@@ -11,34 +11,33 @@ interface GenerationListItemHighlight {
     classNameAppendix: string;
 }
 
-const getGenerationsList = function (): GenerationListItem[] {
-    return [
-        {
-            id: Generation.GEN1_RB,
-            classAppendix: [
-                { displayShortcut: "R", classNameAppendix: "red" },
-                { displayShortcut: "B", classNameAppendix: "blue" },
-            ],
-            displayName: "Gen1",
-        },
-        {
-            id: Generation.GEN1_Y,
-            classAppendix: [{ displayShortcut: "Y", classNameAppendix: "yellow" }],
-            displayName: "Gen1",
-        },
-        {
-            id: Generation.GEN2_GS,
-            classAppendix: [
-                { displayShortcut: "G", classNameAppendix: "gold" },
-                { displayShortcut: "S", classNameAppendix: "silver" },
-            ],
-            displayName: "Gen2",
-        },
-        {
-            id: Generation.GEN2_C,
-            classAppendix: [{ displayShortcut: "C", classNameAppendix: "crystal" }],
-            displayName: "Gen2",
-        } /*,
+const getGenerationsList = (): GenerationListItem[] => [
+    {
+        id: Generation.GEN1_RB,
+        classAppendix: [
+            { displayShortcut: "R", classNameAppendix: "red" },
+            { displayShortcut: "B", classNameAppendix: "blue" },
+        ],
+        displayName: "Gen1",
+    },
+    {
+        id: Generation.GEN1_Y,
+        classAppendix: [{ displayShortcut: "Y", classNameAppendix: "yellow" }],
+        displayName: "Gen1",
+    },
+    {
+        id: Generation.GEN2_GS,
+        classAppendix: [
+            { displayShortcut: "G", classNameAppendix: "gold" },
+            { displayShortcut: "S", classNameAppendix: "silver" },
+        ],
+        displayName: "Gen2",
+    },
+    {
+        id: Generation.GEN2_C,
+        classAppendix: [{ displayShortcut: "C", classNameAppendix: "crystal" }],
+        displayName: "Gen2",
+    } /*,
         {
             id: Generation.GEN3,
             classAppendix: [
@@ -109,8 +108,7 @@ const getGenerationsList = function (): GenerationListItem[] {
             ],
             displayName: "Gen9",
         },*/,
-    ];
-};
+];
 
 export { getGenerationsList };
 export type { GenerationListItem, GenerationListItemHighlight };

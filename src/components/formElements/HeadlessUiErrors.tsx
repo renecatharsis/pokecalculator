@@ -11,9 +11,9 @@ export default function HeadlessUiErrors({ messages }: { messages: string[] }) {
                     <h3 className="text-sm font-medium text-red-800">Ooops!</h3>
                     <div className="mt-2 text-sm text-red-700">
                         <p>
-                            {messages.map((message, index) => {
+                            {messages.map((message) => {
                                 return (
-                                    <span key={index} className="block">
+                                    <span key={message} className="block">
                                         {message}
                                     </span>
                                 );
