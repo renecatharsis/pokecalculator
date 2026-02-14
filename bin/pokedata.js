@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-"use strict";
 
 import fs from "node:fs";
-import path from "node:path";
 import { access, constants } from "node:fs/promises";
+import path from "node:path";
 import { parse } from "csv-parse";
 
 const parameters = process.argv.pop();
@@ -43,7 +42,7 @@ async function parsePokemon(pokemonPath, pokemonSpeciesPath, pokemonStatsPath) {
             .map((row) => {
                 // skip alternate forms
                 if (row[0] > 10000) {
-                    return;
+                    return null;
                 }
 
                 const species = pokemonSpecies.find((speciesRow) => speciesRow[0] === row[0]);
@@ -51,14 +50,14 @@ async function parsePokemon(pokemonPath, pokemonSpeciesPath, pokemonStatsPath) {
 
                 // Combine the data
                 return {
-                    id: parseInt(row[0]),
+                    id: parseInt(row[0], 10),
                     name:
                         row[1].charAt(0).toUpperCase() +
                         row[1].slice(1).replace(/-[a-z]/g, (match) => match.toUpperCase()),
-                    captureRate: parseInt(species[9]),
-                    baseHp: parseInt(stats[2]),
-                    weight: parseInt(row[4]),
-                    thumbnail: "sprites/pokemon/" + row[2] + ".png",
+                    captureRate: parseInt(species[9], 10),
+                    baseHp: parseInt(stats[2], 10),
+                    weight: parseInt(row[4], 10),
+                    thumbnail: `sprites/pokemon/${row[2]}.png`,
                 };
             })
             .filter((row) => row); // filter null rows for pokémon id > 10000

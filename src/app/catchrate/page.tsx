@@ -65,11 +65,11 @@ export default function CatchRate() {
     }, [catchRateInput]);
 
     function updateCatchRateInput(event: BaseSyntheticEvent) {
-        let value = parseInt(event.target.value);
+        let value = parseInt(event.target.value, 10);
 
         if (event.target.type === "number") {
-            const min = event.target.getAttribute("min") ? parseInt(event.target.getAttribute("min")) : null;
-            const max = event.target.getAttribute("max") ? parseInt(event.target.getAttribute("max")) : null;
+            const min = event.target.getAttribute("min") ? parseInt(event.target.getAttribute("min"), 10) : null;
+            const max = event.target.getAttribute("max") ? parseInt(event.target.getAttribute("max"), 10) : null;
 
             if (min !== null && min > value) {
                 event.target.value = value = min;
@@ -95,7 +95,7 @@ export default function CatchRate() {
     return (
         <div className="min-h-screen md:w-3/5">
             <div className="flex flex-wrap sm:flex-none md:flex-nowrap md:space-x-10 gap-y-5">
-                <div className="md:basis-3/4 pt-5 p-5 border border-gray-200 bg-secondary shadow-sm rounded-lg">
+                <div className="md:basis-3/4 pt-5 p-5 border border-gray-200 bg-secondary shadow-xs rounded-lg">
                     <form autoComplete="off">
                         <div className="pb-8">
                             <h2 className="text-base font-semibold leading-7">Check your approximate catch rate.</h2>
@@ -128,7 +128,7 @@ export default function CatchRate() {
                                             min="2"
                                             max="70"
                                             onChange={updateCatchRateInput}
-                                            className="block min-w-0 grow py-1.5 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+                                            className="block min-w-0 grow py-1.5 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-solid focus:outline-0 sm:text-sm/6"
                                         />
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@ export default function CatchRate() {
                                                 min="1"
                                                 max="100"
                                                 onChange={updateCatchRateInput}
-                                                className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+                                                className="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline-solid focus:outline-0 sm:text-sm/6"
                                             />
                                             <div className="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">
                                                 %
@@ -235,7 +235,7 @@ export default function CatchRate() {
                                                     min="1"
                                                     max="100"
                                                     onChange={updateCatchRateInput}
-                                                    className="block min-w-0 grow py-1.5 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6"
+                                                    className="block min-w-0 grow py-1.5 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-solid focus:outline-0 sm:text-sm/6"
                                                 />
                                             </div>
                                         </div>
@@ -262,7 +262,7 @@ export default function CatchRate() {
                     </div>
                 </div>
 
-                <div className="md:basis-1/3 pt-5 p-5 border border-gray-200 bg-secondary shadow-sm rounded-lg">
+                <div className="md:basis-1/3 pt-5 p-5 border border-gray-200 bg-secondary shadow-xs rounded-lg">
                     <h2 className="text-base font-semibold leading-7">Good to know:</h2>
                     <ul className="mt-2">
                         <UnorderedList text="No support for Shadow Pokémon" />

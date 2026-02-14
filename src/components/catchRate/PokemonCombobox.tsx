@@ -1,4 +1,5 @@
 import { Combobox, ComboboxButton, ComboboxInput, ComboboxOption, ComboboxOptions, Label } from "@headlessui/react";
+import Image from "next/image";
 import { type ChangeEvent, useState } from "react";
 import DropdownArrow from "@/components/formElements/DropdownArrow";
 import { getPokemonList, type PokemonListItem } from "@/dataProviders/PokemonProvider";
@@ -63,7 +64,7 @@ export default function PokemonCombobox({
             <Label className="block text-sm font-medium leading-6">Pokémon</Label>
             <div className="relative mt-2">
                 <ComboboxInput
-                    className="w-full rounded-md border-0 bg-white py-1.5 pl-3 pr-12 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-gray-900 sm:text-sm sm:leading-6"
+                    className="w-full rounded-md border-0 bg-white py-1.5 pl-3 pr-12 shadow-xs ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-gray-900 sm:text-sm sm:leading-6"
                     style={{
                         backgroundImage: "url(sprites/pokemon/1.png)",
                         backgroundRepeat: "no-repeat",
@@ -75,12 +76,12 @@ export default function PokemonCombobox({
                     displayValue={(pokemon: PokemonListItem) => pokemon.name}
                     name="pokemon"
                 />
-                <ComboboxButton className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none">
+                <ComboboxButton className="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-hidden">
                     <DropdownArrow />
                 </ComboboxButton>
 
                 {filteredPokemon.length > 0 && (
-                    <ComboboxOptions className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                    <ComboboxOptions className="absolute z-10 mt-1 max-h-56 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden sm:text-sm">
                         {filteredPokemon.map((pokemon: PokemonListItem) => (
                             <ComboboxOption
                                 key={pokemon.id}
@@ -93,20 +94,18 @@ export default function PokemonCombobox({
                                 }
                             >
                                 {({ selected }) => (
-                                    <>
-                                        <div className="flex items-center">
-                                            <img
-                                                src={pokemon.thumbnail}
-                                                alt={pokemon.name}
-                                                className="h-6 w-6 flex-shrink-0 rounded-full"
-                                            />
-                                            <span
-                                                className={mergeClassList("ml-3 truncate", selected && "font-semibold")}
-                                            >
-                                                {pokemon.name}
-                                            </span>
-                                        </div>
-                                    </>
+                                    <div className="flex items-center">
+                                        <Image
+                                            src={pokemon.thumbnail}
+                                            alt={pokemon.name}
+                                            width={96}
+                                            height={96}
+                                            className="h-6 w-6 shrink-0 rounded-full"
+                                        />
+                                        <span className={mergeClassList("ml-3 truncate", selected && "font-semibold")}>
+                                            {pokemon.name}
+                                        </span>
+                                    </div>
                                 )}
                             </ComboboxOption>
                         ))}

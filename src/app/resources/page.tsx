@@ -2,7 +2,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/16/solid";
 
 export default function Resources() {
     return (
-        <div className="md:w-3/5 border border-gray-200 bg-secondary shadow-sm rounded-lg px-6 lg:px-8 py-4 lg:py-4">
+        <div className="md:w-3/5 border border-gray-200 bg-secondary shadow-xs rounded-lg px-6 lg:px-8 py-4 lg:py-4">
             <div className="mx-8 text-base/7">
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">Resources</h1>
                 <div className="mt-10 max-w-2xl">
@@ -11,7 +11,7 @@ export default function Resources() {
                         <br />
                         Without them, none of this would have been possible.
                     </p>
-                    <ul role="list" className="mt-8 max-w-xl space-y-4">
+                    <ul className="mt-8 max-w-xl space-y-4">
                         <li className="flex gap-x-3">
                             <ArrowTopRightOnSquareIcon aria-hidden="true" className="size-5 flex-none" />
                             <span>

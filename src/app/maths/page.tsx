@@ -1,6 +1,6 @@
 export default function Maths() {
     return (
-        <div className="md:w-3/5 border border-gray-200 bg-secondary shadow-sm rounded-lg px-6 lg:px-8 py-4 lg:py-4">
+        <div className="md:w-3/5 border border-gray-200 bg-secondary shadow-xs rounded-lg px-6 lg:px-8 py-4 lg:py-4">
             <div className="mx-8 text-base/7">
                 <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight sm:text-5xl">
                     A tale of technicalities

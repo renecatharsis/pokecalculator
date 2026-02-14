@@ -18,7 +18,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 69,
-            thumbnail: "sprites/pokemon/1.png",
+            thumbnail: "/sprites/pokemon/1.png",
         },
         {
             id: 2,
@@ -26,7 +26,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 130,
-            thumbnail: "sprites/pokemon/2.png",
+            thumbnail: "/sprites/pokemon/2.png",
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 1000,
-            thumbnail: "sprites/pokemon/3.png",
+            thumbnail: "/sprites/pokemon/3.png",
         },
         {
             id: 4,
@@ -42,7 +42,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 39,
             weight: 85,
-            thumbnail: "sprites/pokemon/4.png",
+            thumbnail: "/sprites/pokemon/4.png",
         },
         {
             id: 5,
@@ -50,7 +50,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 58,
             weight: 190,
-            thumbnail: "sprites/pokemon/5.png",
+            thumbnail: "/sprites/pokemon/5.png",
         },
         {
             id: 6,
@@ -58,7 +58,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 78,
             weight: 905,
-            thumbnail: "sprites/pokemon/6.png",
+            thumbnail: "/sprites/pokemon/6.png",
         },
         {
             id: 7,
@@ -66,7 +66,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 44,
             weight: 90,
-            thumbnail: "sprites/pokemon/7.png",
+            thumbnail: "/sprites/pokemon/7.png",
         },
         {
             id: 8,
@@ -74,7 +74,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 59,
             weight: 225,
-            thumbnail: "sprites/pokemon/8.png",
+            thumbnail: "/sprites/pokemon/8.png",
         },
         {
             id: 9,
@@ -82,7 +82,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 79,
             weight: 855,
-            thumbnail: "sprites/pokemon/9.png",
+            thumbnail: "/sprites/pokemon/9.png",
         },
         {
             id: 10,
@@ -90,7 +90,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 29,
-            thumbnail: "sprites/pokemon/10.png",
+            thumbnail: "/sprites/pokemon/10.png",
         },
         {
             id: 11,
@@ -98,7 +98,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 50,
             weight: 99,
-            thumbnail: "sprites/pokemon/11.png",
+            thumbnail: "/sprites/pokemon/11.png",
         },
         {
             id: 12,
@@ -106,7 +106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 320,
-            thumbnail: "sprites/pokemon/12.png",
+            thumbnail: "/sprites/pokemon/12.png",
         },
         {
             id: 13,
@@ -114,7 +114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 32,
-            thumbnail: "sprites/pokemon/13.png",
+            thumbnail: "/sprites/pokemon/13.png",
         },
         {
             id: 14,
@@ -122,7 +122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 45,
             weight: 100,
-            thumbnail: "sprites/pokemon/14.png",
+            thumbnail: "/sprites/pokemon/14.png",
         },
         {
             id: 15,
@@ -130,7 +130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 295,
-            thumbnail: "sprites/pokemon/15.png",
+            thumbnail: "/sprites/pokemon/15.png",
         },
         {
             id: 16,
@@ -138,7 +138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 18,
-            thumbnail: "sprites/pokemon/16.png",
+            thumbnail: "/sprites/pokemon/16.png",
         },
         {
             id: 17,
@@ -146,7 +146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 63,
             weight: 300,
-            thumbnail: "sprites/pokemon/17.png",
+            thumbnail: "/sprites/pokemon/17.png",
         },
         {
             id: 18,
@@ -154,7 +154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 83,
             weight: 395,
-            thumbnail: "sprites/pokemon/18.png",
+            thumbnail: "/sprites/pokemon/18.png",
         },
         {
             id: 19,
@@ -162,7 +162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 30,
             weight: 35,
-            thumbnail: "sprites/pokemon/19.png",
+            thumbnail: "/sprites/pokemon/19.png",
         },
         {
             id: 20,
@@ -170,7 +170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 127,
             baseHp: 55,
             weight: 185,
-            thumbnail: "sprites/pokemon/20.png",
+            thumbnail: "/sprites/pokemon/20.png",
         },
         {
             id: 21,
@@ -178,7 +178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 20,
-            thumbnail: "sprites/pokemon/21.png",
+            thumbnail: "/sprites/pokemon/21.png",
         },
         {
             id: 22,
@@ -186,7 +186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 65,
             weight: 380,
-            thumbnail: "sprites/pokemon/22.png",
+            thumbnail: "/sprites/pokemon/22.png",
         },
         {
             id: 23,
@@ -194,7 +194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 35,
             weight: 69,
-            thumbnail: "sprites/pokemon/23.png",
+            thumbnail: "/sprites/pokemon/23.png",
         },
         {
             id: 24,
@@ -202,7 +202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 60,
             weight: 650,
-            thumbnail: "sprites/pokemon/24.png",
+            thumbnail: "/sprites/pokemon/24.png",
         },
         {
             id: 25,
@@ -210,7 +210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 35,
             weight: 60,
-            thumbnail: "sprites/pokemon/25.png",
+            thumbnail: "/sprites/pokemon/25.png",
         },
         {
             id: 26,
@@ -218,7 +218,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 300,
-            thumbnail: "sprites/pokemon/26.png",
+            thumbnail: "/sprites/pokemon/26.png",
         },
         {
             id: 27,
@@ -226,7 +226,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 50,
             weight: 120,
-            thumbnail: "sprites/pokemon/27.png",
+            thumbnail: "/sprites/pokemon/27.png",
         },
         {
             id: 28,
@@ -234,7 +234,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 75,
             weight: 295,
-            thumbnail: "sprites/pokemon/28.png",
+            thumbnail: "/sprites/pokemon/28.png",
         },
         {
             id: 29,
@@ -242,7 +242,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 235,
             baseHp: 55,
             weight: 70,
-            thumbnail: "sprites/pokemon/29.png",
+            thumbnail: "/sprites/pokemon/29.png",
         },
         {
             id: 30,
@@ -250,7 +250,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 70,
             weight: 200,
-            thumbnail: "sprites/pokemon/30.png",
+            thumbnail: "/sprites/pokemon/30.png",
         },
         {
             id: 31,
@@ -258,7 +258,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 600,
-            thumbnail: "sprites/pokemon/31.png",
+            thumbnail: "/sprites/pokemon/31.png",
         },
         {
             id: 32,
@@ -266,7 +266,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 235,
             baseHp: 46,
             weight: 90,
-            thumbnail: "sprites/pokemon/32.png",
+            thumbnail: "/sprites/pokemon/32.png",
         },
         {
             id: 33,
@@ -274,7 +274,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 61,
             weight: 195,
-            thumbnail: "sprites/pokemon/33.png",
+            thumbnail: "/sprites/pokemon/33.png",
         },
         {
             id: 34,
@@ -282,7 +282,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 81,
             weight: 620,
-            thumbnail: "sprites/pokemon/34.png",
+            thumbnail: "/sprites/pokemon/34.png",
         },
         {
             id: 35,
@@ -290,7 +290,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 70,
             weight: 75,
-            thumbnail: "sprites/pokemon/35.png",
+            thumbnail: "/sprites/pokemon/35.png",
         },
         {
             id: 36,
@@ -298,7 +298,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 95,
             weight: 400,
-            thumbnail: "sprites/pokemon/36.png",
+            thumbnail: "/sprites/pokemon/36.png",
         },
         {
             id: 37,
@@ -306,7 +306,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 38,
             weight: 99,
-            thumbnail: "sprites/pokemon/37.png",
+            thumbnail: "/sprites/pokemon/37.png",
         },
         {
             id: 38,
@@ -314,7 +314,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 73,
             weight: 199,
-            thumbnail: "sprites/pokemon/38.png",
+            thumbnail: "/sprites/pokemon/38.png",
         },
         {
             id: 39,
@@ -322,7 +322,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 170,
             baseHp: 115,
             weight: 55,
-            thumbnail: "sprites/pokemon/39.png",
+            thumbnail: "/sprites/pokemon/39.png",
         },
         {
             id: 40,
@@ -330,7 +330,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 140,
             weight: 120,
-            thumbnail: "sprites/pokemon/40.png",
+            thumbnail: "/sprites/pokemon/40.png",
         },
         {
             id: 41,
@@ -338,7 +338,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 75,
-            thumbnail: "sprites/pokemon/41.png",
+            thumbnail: "/sprites/pokemon/41.png",
         },
         {
             id: 42,
@@ -346,7 +346,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 75,
             weight: 550,
-            thumbnail: "sprites/pokemon/42.png",
+            thumbnail: "/sprites/pokemon/42.png",
         },
         {
             id: 43,
@@ -354,7 +354,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 54,
-            thumbnail: "sprites/pokemon/43.png",
+            thumbnail: "/sprites/pokemon/43.png",
         },
         {
             id: 44,
@@ -362,7 +362,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 60,
             weight: 86,
-            thumbnail: "sprites/pokemon/44.png",
+            thumbnail: "/sprites/pokemon/44.png",
         },
         {
             id: 45,
@@ -370,7 +370,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 186,
-            thumbnail: "sprites/pokemon/45.png",
+            thumbnail: "/sprites/pokemon/45.png",
         },
         {
             id: 46,
@@ -378,7 +378,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 35,
             weight: 54,
-            thumbnail: "sprites/pokemon/46.png",
+            thumbnail: "/sprites/pokemon/46.png",
         },
         {
             id: 47,
@@ -386,7 +386,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 295,
-            thumbnail: "sprites/pokemon/47.png",
+            thumbnail: "/sprites/pokemon/47.png",
         },
         {
             id: 48,
@@ -394,7 +394,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 60,
             weight: 300,
-            thumbnail: "sprites/pokemon/48.png",
+            thumbnail: "/sprites/pokemon/48.png",
         },
         {
             id: 49,
@@ -402,7 +402,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 125,
-            thumbnail: "sprites/pokemon/49.png",
+            thumbnail: "/sprites/pokemon/49.png",
         },
         {
             id: 50,
@@ -410,7 +410,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 10,
             weight: 8,
-            thumbnail: "sprites/pokemon/50.png",
+            thumbnail: "/sprites/pokemon/50.png",
         },
         {
             id: 51,
@@ -418,7 +418,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 35,
             weight: 333,
-            thumbnail: "sprites/pokemon/51.png",
+            thumbnail: "/sprites/pokemon/51.png",
         },
         {
             id: 52,
@@ -426,7 +426,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 42,
-            thumbnail: "sprites/pokemon/52.png",
+            thumbnail: "/sprites/pokemon/52.png",
         },
         {
             id: 53,
@@ -434,7 +434,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 65,
             weight: 320,
-            thumbnail: "sprites/pokemon/53.png",
+            thumbnail: "/sprites/pokemon/53.png",
         },
         {
             id: 54,
@@ -442,7 +442,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 196,
-            thumbnail: "sprites/pokemon/54.png",
+            thumbnail: "/sprites/pokemon/54.png",
         },
         {
             id: 55,
@@ -450,7 +450,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 80,
             weight: 766,
-            thumbnail: "sprites/pokemon/55.png",
+            thumbnail: "/sprites/pokemon/55.png",
         },
         {
             id: 56,
@@ -458,7 +458,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 280,
-            thumbnail: "sprites/pokemon/56.png",
+            thumbnail: "/sprites/pokemon/56.png",
         },
         {
             id: 57,
@@ -466,7 +466,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 65,
             weight: 320,
-            thumbnail: "sprites/pokemon/57.png",
+            thumbnail: "/sprites/pokemon/57.png",
         },
         {
             id: 58,
@@ -474,7 +474,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 55,
             weight: 190,
-            thumbnail: "sprites/pokemon/58.png",
+            thumbnail: "/sprites/pokemon/58.png",
         },
         {
             id: 59,
@@ -482,7 +482,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 90,
             weight: 1550,
-            thumbnail: "sprites/pokemon/59.png",
+            thumbnail: "/sprites/pokemon/59.png",
         },
         {
             id: 60,
@@ -490,7 +490,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 124,
-            thumbnail: "sprites/pokemon/60.png",
+            thumbnail: "/sprites/pokemon/60.png",
         },
         {
             id: 61,
@@ -498,7 +498,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 65,
             weight: 200,
-            thumbnail: "sprites/pokemon/61.png",
+            thumbnail: "/sprites/pokemon/61.png",
         },
         {
             id: 62,
@@ -506,7 +506,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 540,
-            thumbnail: "sprites/pokemon/62.png",
+            thumbnail: "/sprites/pokemon/62.png",
         },
         {
             id: 63,
@@ -514,7 +514,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 25,
             weight: 195,
-            thumbnail: "sprites/pokemon/63.png",
+            thumbnail: "/sprites/pokemon/63.png",
         },
         {
             id: 64,
@@ -522,7 +522,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 40,
             weight: 565,
-            thumbnail: "sprites/pokemon/64.png",
+            thumbnail: "/sprites/pokemon/64.png",
         },
         {
             id: 65,
@@ -530,7 +530,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 55,
             weight: 480,
-            thumbnail: "sprites/pokemon/65.png",
+            thumbnail: "/sprites/pokemon/65.png",
         },
         {
             id: 66,
@@ -538,7 +538,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 70,
             weight: 195,
-            thumbnail: "sprites/pokemon/66.png",
+            thumbnail: "/sprites/pokemon/66.png",
         },
         {
             id: 67,
@@ -546,7 +546,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 80,
             weight: 705,
-            thumbnail: "sprites/pokemon/67.png",
+            thumbnail: "/sprites/pokemon/67.png",
         },
         {
             id: 68,
@@ -554,7 +554,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 1300,
-            thumbnail: "sprites/pokemon/68.png",
+            thumbnail: "/sprites/pokemon/68.png",
         },
         {
             id: 69,
@@ -562,7 +562,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 50,
             weight: 40,
-            thumbnail: "sprites/pokemon/69.png",
+            thumbnail: "/sprites/pokemon/69.png",
         },
         {
             id: 70,
@@ -570,7 +570,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 65,
             weight: 64,
-            thumbnail: "sprites/pokemon/70.png",
+            thumbnail: "/sprites/pokemon/70.png",
         },
         {
             id: 71,
@@ -578,7 +578,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 155,
-            thumbnail: "sprites/pokemon/71.png",
+            thumbnail: "/sprites/pokemon/71.png",
         },
         {
             id: 72,
@@ -586,7 +586,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 455,
-            thumbnail: "sprites/pokemon/72.png",
+            thumbnail: "/sprites/pokemon/72.png",
         },
         {
             id: 73,
@@ -594,7 +594,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 80,
             weight: 550,
-            thumbnail: "sprites/pokemon/73.png",
+            thumbnail: "/sprites/pokemon/73.png",
         },
         {
             id: 74,
@@ -602,7 +602,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 200,
-            thumbnail: "sprites/pokemon/74.png",
+            thumbnail: "/sprites/pokemon/74.png",
         },
         {
             id: 75,
@@ -610,7 +610,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 55,
             weight: 1050,
-            thumbnail: "sprites/pokemon/75.png",
+            thumbnail: "/sprites/pokemon/75.png",
         },
         {
             id: 76,
@@ -618,7 +618,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 3000,
-            thumbnail: "sprites/pokemon/76.png",
+            thumbnail: "/sprites/pokemon/76.png",
         },
         {
             id: 77,
@@ -626,7 +626,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 300,
-            thumbnail: "sprites/pokemon/77.png",
+            thumbnail: "/sprites/pokemon/77.png",
         },
         {
             id: 78,
@@ -634,7 +634,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 65,
             weight: 950,
-            thumbnail: "sprites/pokemon/78.png",
+            thumbnail: "/sprites/pokemon/78.png",
         },
         {
             id: 79,
@@ -642,7 +642,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 90,
             weight: 360,
-            thumbnail: "sprites/pokemon/79.png",
+            thumbnail: "/sprites/pokemon/79.png",
         },
         {
             id: 80,
@@ -650,7 +650,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 95,
             weight: 785,
-            thumbnail: "sprites/pokemon/80.png",
+            thumbnail: "/sprites/pokemon/80.png",
         },
         {
             id: 81,
@@ -658,7 +658,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 25,
             weight: 60,
-            thumbnail: "sprites/pokemon/81.png",
+            thumbnail: "/sprites/pokemon/81.png",
         },
         {
             id: 82,
@@ -666,7 +666,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 50,
             weight: 600,
-            thumbnail: "sprites/pokemon/82.png",
+            thumbnail: "/sprites/pokemon/82.png",
         },
         {
             id: 83,
@@ -674,7 +674,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 52,
             weight: 150,
-            thumbnail: "sprites/pokemon/83.png",
+            thumbnail: "/sprites/pokemon/83.png",
         },
         {
             id: 84,
@@ -682,7 +682,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 35,
             weight: 392,
-            thumbnail: "sprites/pokemon/84.png",
+            thumbnail: "/sprites/pokemon/84.png",
         },
         {
             id: 85,
@@ -690,7 +690,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 852,
-            thumbnail: "sprites/pokemon/85.png",
+            thumbnail: "/sprites/pokemon/85.png",
         },
         {
             id: 86,
@@ -698,7 +698,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 65,
             weight: 900,
-            thumbnail: "sprites/pokemon/86.png",
+            thumbnail: "/sprites/pokemon/86.png",
         },
         {
             id: 87,
@@ -706,7 +706,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 90,
             weight: 1200,
-            thumbnail: "sprites/pokemon/87.png",
+            thumbnail: "/sprites/pokemon/87.png",
         },
         {
             id: 88,
@@ -714,7 +714,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 80,
             weight: 300,
-            thumbnail: "sprites/pokemon/88.png",
+            thumbnail: "/sprites/pokemon/88.png",
         },
         {
             id: 89,
@@ -722,7 +722,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 105,
             weight: 300,
-            thumbnail: "sprites/pokemon/89.png",
+            thumbnail: "/sprites/pokemon/89.png",
         },
         {
             id: 90,
@@ -730,7 +730,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 30,
             weight: 40,
-            thumbnail: "sprites/pokemon/90.png",
+            thumbnail: "/sprites/pokemon/90.png",
         },
         {
             id: 91,
@@ -738,7 +738,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 50,
             weight: 1325,
-            thumbnail: "sprites/pokemon/91.png",
+            thumbnail: "/sprites/pokemon/91.png",
         },
         {
             id: 92,
@@ -746,7 +746,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 30,
             weight: 1,
-            thumbnail: "sprites/pokemon/92.png",
+            thumbnail: "/sprites/pokemon/92.png",
         },
         {
             id: 93,
@@ -754,7 +754,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 45,
             weight: 1,
-            thumbnail: "sprites/pokemon/93.png",
+            thumbnail: "/sprites/pokemon/93.png",
         },
         {
             id: 94,
@@ -762,7 +762,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 405,
-            thumbnail: "sprites/pokemon/94.png",
+            thumbnail: "/sprites/pokemon/94.png",
         },
         {
             id: 95,
@@ -770,7 +770,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 35,
             weight: 2100,
-            thumbnail: "sprites/pokemon/95.png",
+            thumbnail: "/sprites/pokemon/95.png",
         },
         {
             id: 96,
@@ -778,7 +778,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 60,
             weight: 324,
-            thumbnail: "sprites/pokemon/96.png",
+            thumbnail: "/sprites/pokemon/96.png",
         },
         {
             id: 97,
@@ -786,7 +786,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 85,
             weight: 756,
-            thumbnail: "sprites/pokemon/97.png",
+            thumbnail: "/sprites/pokemon/97.png",
         },
         {
             id: 98,
@@ -794,7 +794,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 30,
             weight: 65,
-            thumbnail: "sprites/pokemon/98.png",
+            thumbnail: "/sprites/pokemon/98.png",
         },
         {
             id: 99,
@@ -802,7 +802,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 55,
             weight: 600,
-            thumbnail: "sprites/pokemon/99.png",
+            thumbnail: "/sprites/pokemon/99.png",
         },
         {
             id: 100,
@@ -810,7 +810,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 104,
-            thumbnail: "sprites/pokemon/100.png",
+            thumbnail: "/sprites/pokemon/100.png",
         },
         {
             id: 101,
@@ -818,7 +818,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 60,
             weight: 666,
-            thumbnail: "sprites/pokemon/101.png",
+            thumbnail: "/sprites/pokemon/101.png",
         },
         {
             id: 102,
@@ -826,7 +826,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 60,
             weight: 25,
-            thumbnail: "sprites/pokemon/102.png",
+            thumbnail: "/sprites/pokemon/102.png",
         },
         {
             id: 103,
@@ -834,7 +834,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 1200,
-            thumbnail: "sprites/pokemon/103.png",
+            thumbnail: "/sprites/pokemon/103.png",
         },
         {
             id: 104,
@@ -842,7 +842,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 65,
-            thumbnail: "sprites/pokemon/104.png",
+            thumbnail: "/sprites/pokemon/104.png",
         },
         {
             id: 105,
@@ -850,7 +850,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 450,
-            thumbnail: "sprites/pokemon/105.png",
+            thumbnail: "/sprites/pokemon/105.png",
         },
         {
             id: 106,
@@ -858,7 +858,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 498,
-            thumbnail: "sprites/pokemon/106.png",
+            thumbnail: "/sprites/pokemon/106.png",
         },
         {
             id: 107,
@@ -866,7 +866,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 502,
-            thumbnail: "sprites/pokemon/107.png",
+            thumbnail: "/sprites/pokemon/107.png",
         },
         {
             id: 108,
@@ -874,7 +874,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 655,
-            thumbnail: "sprites/pokemon/108.png",
+            thumbnail: "/sprites/pokemon/108.png",
         },
         {
             id: 109,
@@ -882,7 +882,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 10,
-            thumbnail: "sprites/pokemon/109.png",
+            thumbnail: "/sprites/pokemon/109.png",
         },
         {
             id: 110,
@@ -890,7 +890,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 65,
             weight: 95,
-            thumbnail: "sprites/pokemon/110.png",
+            thumbnail: "/sprites/pokemon/110.png",
         },
         {
             id: 111,
@@ -898,7 +898,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 80,
             weight: 1150,
-            thumbnail: "sprites/pokemon/111.png",
+            thumbnail: "/sprites/pokemon/111.png",
         },
         {
             id: 112,
@@ -906,7 +906,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 105,
             weight: 1200,
-            thumbnail: "sprites/pokemon/112.png",
+            thumbnail: "/sprites/pokemon/112.png",
         },
         {
             id: 113,
@@ -914,7 +914,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 250,
             weight: 346,
-            thumbnail: "sprites/pokemon/113.png",
+            thumbnail: "/sprites/pokemon/113.png",
         },
         {
             id: 114,
@@ -922,7 +922,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 350,
-            thumbnail: "sprites/pokemon/114.png",
+            thumbnail: "/sprites/pokemon/114.png",
         },
         {
             id: 115,
@@ -930,7 +930,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 105,
             weight: 800,
-            thumbnail: "sprites/pokemon/115.png",
+            thumbnail: "/sprites/pokemon/115.png",
         },
         {
             id: 116,
@@ -938,7 +938,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 30,
             weight: 80,
-            thumbnail: "sprites/pokemon/116.png",
+            thumbnail: "/sprites/pokemon/116.png",
         },
         {
             id: 117,
@@ -946,7 +946,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 55,
             weight: 250,
-            thumbnail: "sprites/pokemon/117.png",
+            thumbnail: "/sprites/pokemon/117.png",
         },
         {
             id: 118,
@@ -954,7 +954,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 45,
             weight: 150,
-            thumbnail: "sprites/pokemon/118.png",
+            thumbnail: "/sprites/pokemon/118.png",
         },
         {
             id: 119,
@@ -962,7 +962,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 80,
             weight: 390,
-            thumbnail: "sprites/pokemon/119.png",
+            thumbnail: "/sprites/pokemon/119.png",
         },
         {
             id: 120,
@@ -970,7 +970,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 30,
             weight: 345,
-            thumbnail: "sprites/pokemon/120.png",
+            thumbnail: "/sprites/pokemon/120.png",
         },
         {
             id: 121,
@@ -978,7 +978,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 60,
             weight: 800,
-            thumbnail: "sprites/pokemon/121.png",
+            thumbnail: "/sprites/pokemon/121.png",
         },
         {
             id: 122,
@@ -986,7 +986,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 40,
             weight: 545,
-            thumbnail: "sprites/pokemon/122.png",
+            thumbnail: "/sprites/pokemon/122.png",
         },
         {
             id: 123,
@@ -994,7 +994,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 560,
-            thumbnail: "sprites/pokemon/123.png",
+            thumbnail: "/sprites/pokemon/123.png",
         },
         {
             id: 124,
@@ -1002,7 +1002,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 406,
-            thumbnail: "sprites/pokemon/124.png",
+            thumbnail: "/sprites/pokemon/124.png",
         },
         {
             id: 125,
@@ -1010,7 +1010,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 300,
-            thumbnail: "sprites/pokemon/125.png",
+            thumbnail: "/sprites/pokemon/125.png",
         },
         {
             id: 126,
@@ -1018,7 +1018,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 445,
-            thumbnail: "sprites/pokemon/126.png",
+            thumbnail: "/sprites/pokemon/126.png",
         },
         {
             id: 127,
@@ -1026,7 +1026,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 550,
-            thumbnail: "sprites/pokemon/127.png",
+            thumbnail: "/sprites/pokemon/127.png",
         },
         {
             id: 128,
@@ -1034,7 +1034,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 884,
-            thumbnail: "sprites/pokemon/128.png",
+            thumbnail: "/sprites/pokemon/128.png",
         },
         {
             id: 129,
@@ -1042,7 +1042,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 20,
             weight: 100,
-            thumbnail: "sprites/pokemon/129.png",
+            thumbnail: "/sprites/pokemon/129.png",
         },
         {
             id: 130,
@@ -1050,7 +1050,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 2350,
-            thumbnail: "sprites/pokemon/130.png",
+            thumbnail: "/sprites/pokemon/130.png",
         },
         {
             id: 131,
@@ -1058,7 +1058,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 130,
             weight: 2200,
-            thumbnail: "sprites/pokemon/131.png",
+            thumbnail: "/sprites/pokemon/131.png",
         },
         {
             id: 132,
@@ -1066,7 +1066,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 35,
             baseHp: 48,
             weight: 40,
-            thumbnail: "sprites/pokemon/132.png",
+            thumbnail: "/sprites/pokemon/132.png",
         },
         {
             id: 133,
@@ -1074,7 +1074,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 65,
-            thumbnail: "sprites/pokemon/133.png",
+            thumbnail: "/sprites/pokemon/133.png",
         },
         {
             id: 134,
@@ -1082,7 +1082,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 130,
             weight: 290,
-            thumbnail: "sprites/pokemon/134.png",
+            thumbnail: "/sprites/pokemon/134.png",
         },
         {
             id: 135,
@@ -1090,7 +1090,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 245,
-            thumbnail: "sprites/pokemon/135.png",
+            thumbnail: "/sprites/pokemon/135.png",
         },
         {
             id: 136,
@@ -1098,7 +1098,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 250,
-            thumbnail: "sprites/pokemon/136.png",
+            thumbnail: "/sprites/pokemon/136.png",
         },
         {
             id: 137,
@@ -1106,7 +1106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 365,
-            thumbnail: "sprites/pokemon/137.png",
+            thumbnail: "/sprites/pokemon/137.png",
         },
         {
             id: 138,
@@ -1114,7 +1114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 35,
             weight: 75,
-            thumbnail: "sprites/pokemon/138.png",
+            thumbnail: "/sprites/pokemon/138.png",
         },
         {
             id: 139,
@@ -1122,7 +1122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 350,
-            thumbnail: "sprites/pokemon/139.png",
+            thumbnail: "/sprites/pokemon/139.png",
         },
         {
             id: 140,
@@ -1130,7 +1130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 30,
             weight: 115,
-            thumbnail: "sprites/pokemon/140.png",
+            thumbnail: "/sprites/pokemon/140.png",
         },
         {
             id: 141,
@@ -1138,7 +1138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 405,
-            thumbnail: "sprites/pokemon/141.png",
+            thumbnail: "/sprites/pokemon/141.png",
         },
         {
             id: 142,
@@ -1146,7 +1146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 590,
-            thumbnail: "sprites/pokemon/142.png",
+            thumbnail: "/sprites/pokemon/142.png",
         },
         {
             id: 143,
@@ -1154,7 +1154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 160,
             weight: 4600,
-            thumbnail: "sprites/pokemon/143.png",
+            thumbnail: "/sprites/pokemon/143.png",
         },
         {
             id: 144,
@@ -1162,7 +1162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 90,
             weight: 554,
-            thumbnail: "sprites/pokemon/144.png",
+            thumbnail: "/sprites/pokemon/144.png",
         },
         {
             id: 145,
@@ -1170,7 +1170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 90,
             weight: 526,
-            thumbnail: "sprites/pokemon/145.png",
+            thumbnail: "/sprites/pokemon/145.png",
         },
         {
             id: 146,
@@ -1178,7 +1178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 90,
             weight: 600,
-            thumbnail: "sprites/pokemon/146.png",
+            thumbnail: "/sprites/pokemon/146.png",
         },
         {
             id: 147,
@@ -1186,7 +1186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 41,
             weight: 33,
-            thumbnail: "sprites/pokemon/147.png",
+            thumbnail: "/sprites/pokemon/147.png",
         },
         {
             id: 148,
@@ -1194,7 +1194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 61,
             weight: 165,
-            thumbnail: "sprites/pokemon/148.png",
+            thumbnail: "/sprites/pokemon/148.png",
         },
         {
             id: 149,
@@ -1202,7 +1202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 91,
             weight: 2100,
-            thumbnail: "sprites/pokemon/149.png",
+            thumbnail: "/sprites/pokemon/149.png",
         },
         {
             id: 150,
@@ -1210,7 +1210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 106,
             weight: 1220,
-            thumbnail: "sprites/pokemon/150.png",
+            thumbnail: "/sprites/pokemon/150.png",
         },
         {
             id: 151,
@@ -1218,7 +1218,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 40,
-            thumbnail: "sprites/pokemon/151.png",
+            thumbnail: "/sprites/pokemon/151.png",
         },
         {
             id: 152,
@@ -1226,7 +1226,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 64,
-            thumbnail: "sprites/pokemon/152.png",
+            thumbnail: "/sprites/pokemon/152.png",
         },
         {
             id: 153,
@@ -1234,7 +1234,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 158,
-            thumbnail: "sprites/pokemon/153.png",
+            thumbnail: "/sprites/pokemon/153.png",
         },
         {
             id: 154,
@@ -1242,7 +1242,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 1005,
-            thumbnail: "sprites/pokemon/154.png",
+            thumbnail: "/sprites/pokemon/154.png",
         },
         {
             id: 155,
@@ -1250,7 +1250,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 39,
             weight: 79,
-            thumbnail: "sprites/pokemon/155.png",
+            thumbnail: "/sprites/pokemon/155.png",
         },
         {
             id: 156,
@@ -1258,7 +1258,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 58,
             weight: 190,
-            thumbnail: "sprites/pokemon/156.png",
+            thumbnail: "/sprites/pokemon/156.png",
         },
         {
             id: 157,
@@ -1266,7 +1266,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 78,
             weight: 795,
-            thumbnail: "sprites/pokemon/157.png",
+            thumbnail: "/sprites/pokemon/157.png",
         },
         {
             id: 158,
@@ -1274,7 +1274,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 95,
-            thumbnail: "sprites/pokemon/158.png",
+            thumbnail: "/sprites/pokemon/158.png",
         },
         {
             id: 159,
@@ -1282,7 +1282,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 250,
-            thumbnail: "sprites/pokemon/159.png",
+            thumbnail: "/sprites/pokemon/159.png",
         },
         {
             id: 160,
@@ -1290,7 +1290,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 85,
             weight: 888,
-            thumbnail: "sprites/pokemon/160.png",
+            thumbnail: "/sprites/pokemon/160.png",
         },
         {
             id: 161,
@@ -1298,7 +1298,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 35,
             weight: 60,
-            thumbnail: "sprites/pokemon/161.png",
+            thumbnail: "/sprites/pokemon/161.png",
         },
         {
             id: 162,
@@ -1306,7 +1306,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 85,
             weight: 325,
-            thumbnail: "sprites/pokemon/162.png",
+            thumbnail: "/sprites/pokemon/162.png",
         },
         {
             id: 163,
@@ -1314,7 +1314,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 60,
             weight: 212,
-            thumbnail: "sprites/pokemon/163.png",
+            thumbnail: "/sprites/pokemon/163.png",
         },
         {
             id: 164,
@@ -1322,7 +1322,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 100,
             weight: 408,
-            thumbnail: "sprites/pokemon/164.png",
+            thumbnail: "/sprites/pokemon/164.png",
         },
         {
             id: 165,
@@ -1330,7 +1330,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 108,
-            thumbnail: "sprites/pokemon/165.png",
+            thumbnail: "/sprites/pokemon/165.png",
         },
         {
             id: 166,
@@ -1338,7 +1338,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 55,
             weight: 356,
-            thumbnail: "sprites/pokemon/166.png",
+            thumbnail: "/sprites/pokemon/166.png",
         },
         {
             id: 167,
@@ -1346,7 +1346,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 85,
-            thumbnail: "sprites/pokemon/167.png",
+            thumbnail: "/sprites/pokemon/167.png",
         },
         {
             id: 168,
@@ -1354,7 +1354,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 70,
             weight: 335,
-            thumbnail: "sprites/pokemon/168.png",
+            thumbnail: "/sprites/pokemon/168.png",
         },
         {
             id: 169,
@@ -1362,7 +1362,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 85,
             weight: 750,
-            thumbnail: "sprites/pokemon/169.png",
+            thumbnail: "/sprites/pokemon/169.png",
         },
         {
             id: 170,
@@ -1370,7 +1370,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 75,
             weight: 120,
-            thumbnail: "sprites/pokemon/170.png",
+            thumbnail: "/sprites/pokemon/170.png",
         },
         {
             id: 171,
@@ -1378,7 +1378,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 125,
             weight: 225,
-            thumbnail: "sprites/pokemon/171.png",
+            thumbnail: "/sprites/pokemon/171.png",
         },
         {
             id: 172,
@@ -1386,7 +1386,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 20,
             weight: 20,
-            thumbnail: "sprites/pokemon/172.png",
+            thumbnail: "/sprites/pokemon/172.png",
         },
         {
             id: 173,
@@ -1394,7 +1394,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 50,
             weight: 30,
-            thumbnail: "sprites/pokemon/173.png",
+            thumbnail: "/sprites/pokemon/173.png",
         },
         {
             id: 174,
@@ -1402,7 +1402,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 170,
             baseHp: 90,
             weight: 10,
-            thumbnail: "sprites/pokemon/174.png",
+            thumbnail: "/sprites/pokemon/174.png",
         },
         {
             id: 175,
@@ -1410,7 +1410,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 35,
             weight: 15,
-            thumbnail: "sprites/pokemon/175.png",
+            thumbnail: "/sprites/pokemon/175.png",
         },
         {
             id: 176,
@@ -1418,7 +1418,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 55,
             weight: 32,
-            thumbnail: "sprites/pokemon/176.png",
+            thumbnail: "/sprites/pokemon/176.png",
         },
         {
             id: 177,
@@ -1426,7 +1426,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 20,
-            thumbnail: "sprites/pokemon/177.png",
+            thumbnail: "/sprites/pokemon/177.png",
         },
         {
             id: 178,
@@ -1434,7 +1434,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 65,
             weight: 150,
-            thumbnail: "sprites/pokemon/178.png",
+            thumbnail: "/sprites/pokemon/178.png",
         },
         {
             id: 179,
@@ -1442,7 +1442,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 235,
             baseHp: 55,
             weight: 78,
-            thumbnail: "sprites/pokemon/179.png",
+            thumbnail: "/sprites/pokemon/179.png",
         },
         {
             id: 180,
@@ -1450,7 +1450,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 70,
             weight: 133,
-            thumbnail: "sprites/pokemon/180.png",
+            thumbnail: "/sprites/pokemon/180.png",
         },
         {
             id: 181,
@@ -1458,7 +1458,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 615,
-            thumbnail: "sprites/pokemon/181.png",
+            thumbnail: "/sprites/pokemon/181.png",
         },
         {
             id: 182,
@@ -1466,7 +1466,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 58,
-            thumbnail: "sprites/pokemon/182.png",
+            thumbnail: "/sprites/pokemon/182.png",
         },
         {
             id: 183,
@@ -1474,7 +1474,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 70,
             weight: 85,
-            thumbnail: "sprites/pokemon/183.png",
+            thumbnail: "/sprites/pokemon/183.png",
         },
         {
             id: 184,
@@ -1482,7 +1482,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 100,
             weight: 285,
-            thumbnail: "sprites/pokemon/184.png",
+            thumbnail: "/sprites/pokemon/184.png",
         },
         {
             id: 185,
@@ -1490,7 +1490,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 65,
             baseHp: 70,
             weight: 380,
-            thumbnail: "sprites/pokemon/185.png",
+            thumbnail: "/sprites/pokemon/185.png",
         },
         {
             id: 186,
@@ -1498,7 +1498,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 339,
-            thumbnail: "sprites/pokemon/186.png",
+            thumbnail: "/sprites/pokemon/186.png",
         },
         {
             id: 187,
@@ -1506,7 +1506,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 35,
             weight: 5,
-            thumbnail: "sprites/pokemon/187.png",
+            thumbnail: "/sprites/pokemon/187.png",
         },
         {
             id: 188,
@@ -1514,7 +1514,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 55,
             weight: 10,
-            thumbnail: "sprites/pokemon/188.png",
+            thumbnail: "/sprites/pokemon/188.png",
         },
         {
             id: 189,
@@ -1522,7 +1522,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 30,
-            thumbnail: "sprites/pokemon/189.png",
+            thumbnail: "/sprites/pokemon/189.png",
         },
         {
             id: 190,
@@ -1530,7 +1530,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 115,
-            thumbnail: "sprites/pokemon/190.png",
+            thumbnail: "/sprites/pokemon/190.png",
         },
         {
             id: 191,
@@ -1538,7 +1538,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 235,
             baseHp: 30,
             weight: 18,
-            thumbnail: "sprites/pokemon/191.png",
+            thumbnail: "/sprites/pokemon/191.png",
         },
         {
             id: 192,
@@ -1546,7 +1546,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 75,
             weight: 85,
-            thumbnail: "sprites/pokemon/192.png",
+            thumbnail: "/sprites/pokemon/192.png",
         },
         {
             id: 193,
@@ -1554,7 +1554,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 65,
             weight: 380,
-            thumbnail: "sprites/pokemon/193.png",
+            thumbnail: "/sprites/pokemon/193.png",
         },
         {
             id: 194,
@@ -1562,7 +1562,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 55,
             weight: 85,
-            thumbnail: "sprites/pokemon/194.png",
+            thumbnail: "/sprites/pokemon/194.png",
         },
         {
             id: 195,
@@ -1570,7 +1570,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 95,
             weight: 750,
-            thumbnail: "sprites/pokemon/195.png",
+            thumbnail: "/sprites/pokemon/195.png",
         },
         {
             id: 196,
@@ -1578,7 +1578,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 265,
-            thumbnail: "sprites/pokemon/196.png",
+            thumbnail: "/sprites/pokemon/196.png",
         },
         {
             id: 197,
@@ -1586,7 +1586,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 270,
-            thumbnail: "sprites/pokemon/197.png",
+            thumbnail: "/sprites/pokemon/197.png",
         },
         {
             id: 198,
@@ -1594,7 +1594,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 60,
             weight: 21,
-            thumbnail: "sprites/pokemon/198.png",
+            thumbnail: "/sprites/pokemon/198.png",
         },
         {
             id: 199,
@@ -1602,7 +1602,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 70,
             baseHp: 95,
             weight: 795,
-            thumbnail: "sprites/pokemon/199.png",
+            thumbnail: "/sprites/pokemon/199.png",
         },
         {
             id: 200,
@@ -1610,7 +1610,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 10,
-            thumbnail: "sprites/pokemon/200.png",
+            thumbnail: "/sprites/pokemon/200.png",
         },
         {
             id: 201,
@@ -1618,7 +1618,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 48,
             weight: 50,
-            thumbnail: "sprites/pokemon/201.png",
+            thumbnail: "/sprites/pokemon/201.png",
         },
         {
             id: 202,
@@ -1626,7 +1626,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 190,
             weight: 285,
-            thumbnail: "sprites/pokemon/202.png",
+            thumbnail: "/sprites/pokemon/202.png",
         },
         {
             id: 203,
@@ -1634,7 +1634,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 70,
             weight: 415,
-            thumbnail: "sprites/pokemon/203.png",
+            thumbnail: "/sprites/pokemon/203.png",
         },
         {
             id: 204,
@@ -1642,7 +1642,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 72,
-            thumbnail: "sprites/pokemon/204.png",
+            thumbnail: "/sprites/pokemon/204.png",
         },
         {
             id: 205,
@@ -1650,7 +1650,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 75,
             weight: 1258,
-            thumbnail: "sprites/pokemon/205.png",
+            thumbnail: "/sprites/pokemon/205.png",
         },
         {
             id: 206,
@@ -1658,7 +1658,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 100,
             weight: 140,
-            thumbnail: "sprites/pokemon/206.png",
+            thumbnail: "/sprites/pokemon/206.png",
         },
         {
             id: 207,
@@ -1666,7 +1666,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 65,
             weight: 648,
-            thumbnail: "sprites/pokemon/207.png",
+            thumbnail: "/sprites/pokemon/207.png",
         },
         {
             id: 208,
@@ -1674,7 +1674,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 75,
             weight: 4000,
-            thumbnail: "sprites/pokemon/208.png",
+            thumbnail: "/sprites/pokemon/208.png",
         },
         {
             id: 209,
@@ -1682,7 +1682,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 60,
             weight: 78,
-            thumbnail: "sprites/pokemon/209.png",
+            thumbnail: "/sprites/pokemon/209.png",
         },
         {
             id: 210,
@@ -1690,7 +1690,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 90,
             weight: 487,
-            thumbnail: "sprites/pokemon/210.png",
+            thumbnail: "/sprites/pokemon/210.png",
         },
         {
             id: 211,
@@ -1698,7 +1698,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 39,
-            thumbnail: "sprites/pokemon/211.png",
+            thumbnail: "/sprites/pokemon/211.png",
         },
         {
             id: 212,
@@ -1706,7 +1706,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 70,
             weight: 1180,
-            thumbnail: "sprites/pokemon/212.png",
+            thumbnail: "/sprites/pokemon/212.png",
         },
         {
             id: 213,
@@ -1714,7 +1714,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 20,
             weight: 205,
-            thumbnail: "sprites/pokemon/213.png",
+            thumbnail: "/sprites/pokemon/213.png",
         },
         {
             id: 214,
@@ -1722,7 +1722,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 540,
-            thumbnail: "sprites/pokemon/214.png",
+            thumbnail: "/sprites/pokemon/214.png",
         },
         {
             id: 215,
@@ -1730,7 +1730,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 55,
             weight: 280,
-            thumbnail: "sprites/pokemon/215.png",
+            thumbnail: "/sprites/pokemon/215.png",
         },
         {
             id: 216,
@@ -1738,7 +1738,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 60,
             weight: 88,
-            thumbnail: "sprites/pokemon/216.png",
+            thumbnail: "/sprites/pokemon/216.png",
         },
         {
             id: 217,
@@ -1746,7 +1746,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 90,
             weight: 1258,
-            thumbnail: "sprites/pokemon/217.png",
+            thumbnail: "/sprites/pokemon/217.png",
         },
         {
             id: 218,
@@ -1754,7 +1754,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 350,
-            thumbnail: "sprites/pokemon/218.png",
+            thumbnail: "/sprites/pokemon/218.png",
         },
         {
             id: 219,
@@ -1762,7 +1762,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 550,
-            thumbnail: "sprites/pokemon/219.png",
+            thumbnail: "/sprites/pokemon/219.png",
         },
         {
             id: 220,
@@ -1770,7 +1770,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 50,
             weight: 65,
-            thumbnail: "sprites/pokemon/220.png",
+            thumbnail: "/sprites/pokemon/220.png",
         },
         {
             id: 221,
@@ -1778,7 +1778,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 100,
             weight: 558,
-            thumbnail: "sprites/pokemon/221.png",
+            thumbnail: "/sprites/pokemon/221.png",
         },
         {
             id: 222,
@@ -1786,7 +1786,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 65,
             weight: 50,
-            thumbnail: "sprites/pokemon/222.png",
+            thumbnail: "/sprites/pokemon/222.png",
         },
         {
             id: 223,
@@ -1794,7 +1794,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 35,
             weight: 120,
-            thumbnail: "sprites/pokemon/223.png",
+            thumbnail: "/sprites/pokemon/223.png",
         },
         {
             id: 224,
@@ -1802,7 +1802,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 75,
             weight: 285,
-            thumbnail: "sprites/pokemon/224.png",
+            thumbnail: "/sprites/pokemon/224.png",
         },
         {
             id: 225,
@@ -1810,7 +1810,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 160,
-            thumbnail: "sprites/pokemon/225.png",
+            thumbnail: "/sprites/pokemon/225.png",
         },
         {
             id: 226,
@@ -1818,7 +1818,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 85,
             weight: 2200,
-            thumbnail: "sprites/pokemon/226.png",
+            thumbnail: "/sprites/pokemon/226.png",
         },
         {
             id: 227,
@@ -1826,7 +1826,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 65,
             weight: 505,
-            thumbnail: "sprites/pokemon/227.png",
+            thumbnail: "/sprites/pokemon/227.png",
         },
         {
             id: 228,
@@ -1834,7 +1834,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 45,
             weight: 108,
-            thumbnail: "sprites/pokemon/228.png",
+            thumbnail: "/sprites/pokemon/228.png",
         },
         {
             id: 229,
@@ -1842,7 +1842,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 350,
-            thumbnail: "sprites/pokemon/229.png",
+            thumbnail: "/sprites/pokemon/229.png",
         },
         {
             id: 230,
@@ -1850,7 +1850,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 1520,
-            thumbnail: "sprites/pokemon/230.png",
+            thumbnail: "/sprites/pokemon/230.png",
         },
         {
             id: 231,
@@ -1858,7 +1858,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 90,
             weight: 335,
-            thumbnail: "sprites/pokemon/231.png",
+            thumbnail: "/sprites/pokemon/231.png",
         },
         {
             id: 232,
@@ -1866,7 +1866,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 90,
             weight: 1200,
-            thumbnail: "sprites/pokemon/232.png",
+            thumbnail: "/sprites/pokemon/232.png",
         },
         {
             id: 233,
@@ -1874,7 +1874,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 85,
             weight: 325,
-            thumbnail: "sprites/pokemon/233.png",
+            thumbnail: "/sprites/pokemon/233.png",
         },
         {
             id: 234,
@@ -1882,7 +1882,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 73,
             weight: 712,
-            thumbnail: "sprites/pokemon/234.png",
+            thumbnail: "/sprites/pokemon/234.png",
         },
         {
             id: 235,
@@ -1890,7 +1890,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 580,
-            thumbnail: "sprites/pokemon/235.png",
+            thumbnail: "/sprites/pokemon/235.png",
         },
         {
             id: 236,
@@ -1898,7 +1898,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 35,
             weight: 210,
-            thumbnail: "sprites/pokemon/236.png",
+            thumbnail: "/sprites/pokemon/236.png",
         },
         {
             id: 237,
@@ -1906,7 +1906,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 480,
-            thumbnail: "sprites/pokemon/237.png",
+            thumbnail: "/sprites/pokemon/237.png",
         },
         {
             id: 238,
@@ -1914,7 +1914,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 60,
-            thumbnail: "sprites/pokemon/238.png",
+            thumbnail: "/sprites/pokemon/238.png",
         },
         {
             id: 239,
@@ -1922,7 +1922,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 235,
-            thumbnail: "sprites/pokemon/239.png",
+            thumbnail: "/sprites/pokemon/239.png",
         },
         {
             id: 240,
@@ -1930,7 +1930,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 214,
-            thumbnail: "sprites/pokemon/240.png",
+            thumbnail: "/sprites/pokemon/240.png",
         },
         {
             id: 241,
@@ -1938,7 +1938,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 755,
-            thumbnail: "sprites/pokemon/241.png",
+            thumbnail: "/sprites/pokemon/241.png",
         },
         {
             id: 242,
@@ -1946,7 +1946,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 255,
             weight: 468,
-            thumbnail: "sprites/pokemon/242.png",
+            thumbnail: "/sprites/pokemon/242.png",
         },
         {
             id: 243,
@@ -1954,7 +1954,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 90,
             weight: 1780,
-            thumbnail: "sprites/pokemon/243.png",
+            thumbnail: "/sprites/pokemon/243.png",
         },
         {
             id: 244,
@@ -1962,7 +1962,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 115,
             weight: 1980,
-            thumbnail: "sprites/pokemon/244.png",
+            thumbnail: "/sprites/pokemon/244.png",
         },
         {
             id: 245,
@@ -1970,7 +1970,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 1870,
-            thumbnail: "sprites/pokemon/245.png",
+            thumbnail: "/sprites/pokemon/245.png",
         },
         {
             id: 246,
@@ -1978,7 +1978,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 720,
-            thumbnail: "sprites/pokemon/246.png",
+            thumbnail: "/sprites/pokemon/246.png",
         },
         {
             id: 247,
@@ -1986,7 +1986,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 1520,
-            thumbnail: "sprites/pokemon/247.png",
+            thumbnail: "/sprites/pokemon/247.png",
         },
         {
             id: 248,
@@ -1994,7 +1994,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 2020,
-            thumbnail: "sprites/pokemon/248.png",
+            thumbnail: "/sprites/pokemon/248.png",
         },
         {
             id: 249,
@@ -2002,7 +2002,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 106,
             weight: 2160,
-            thumbnail: "sprites/pokemon/249.png",
+            thumbnail: "/sprites/pokemon/249.png",
         },
         {
             id: 250,
@@ -2010,7 +2010,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 106,
             weight: 1990,
-            thumbnail: "sprites/pokemon/250.png",
+            thumbnail: "/sprites/pokemon/250.png",
         },
         {
             id: 251,
@@ -2018,7 +2018,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 50,
-            thumbnail: "sprites/pokemon/251.png",
+            thumbnail: "/sprites/pokemon/251.png",
         },
         {
             id: 252,
@@ -2026,7 +2026,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 40,
             weight: 50,
-            thumbnail: "sprites/pokemon/252.png",
+            thumbnail: "/sprites/pokemon/252.png",
         },
         {
             id: 253,
@@ -2034,7 +2034,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 216,
-            thumbnail: "sprites/pokemon/253.png",
+            thumbnail: "/sprites/pokemon/253.png",
         },
         {
             id: 254,
@@ -2042,7 +2042,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 522,
-            thumbnail: "sprites/pokemon/254.png",
+            thumbnail: "/sprites/pokemon/254.png",
         },
         {
             id: 255,
@@ -2050,7 +2050,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 25,
-            thumbnail: "sprites/pokemon/255.png",
+            thumbnail: "/sprites/pokemon/255.png",
         },
         {
             id: 256,
@@ -2058,7 +2058,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 195,
-            thumbnail: "sprites/pokemon/256.png",
+            thumbnail: "/sprites/pokemon/256.png",
         },
         {
             id: 257,
@@ -2066,7 +2066,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 520,
-            thumbnail: "sprites/pokemon/257.png",
+            thumbnail: "/sprites/pokemon/257.png",
         },
         {
             id: 258,
@@ -2074,7 +2074,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 76,
-            thumbnail: "sprites/pokemon/258.png",
+            thumbnail: "/sprites/pokemon/258.png",
         },
         {
             id: 259,
@@ -2082,7 +2082,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 280,
-            thumbnail: "sprites/pokemon/259.png",
+            thumbnail: "/sprites/pokemon/259.png",
         },
         {
             id: 260,
@@ -2090,7 +2090,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 819,
-            thumbnail: "sprites/pokemon/260.png",
+            thumbnail: "/sprites/pokemon/260.png",
         },
         {
             id: 261,
@@ -2098,7 +2098,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 35,
             weight: 136,
-            thumbnail: "sprites/pokemon/261.png",
+            thumbnail: "/sprites/pokemon/261.png",
         },
         {
             id: 262,
@@ -2106,7 +2106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 127,
             baseHp: 70,
             weight: 370,
-            thumbnail: "sprites/pokemon/262.png",
+            thumbnail: "/sprites/pokemon/262.png",
         },
         {
             id: 263,
@@ -2114,7 +2114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 38,
             weight: 175,
-            thumbnail: "sprites/pokemon/263.png",
+            thumbnail: "/sprites/pokemon/263.png",
         },
         {
             id: 264,
@@ -2122,7 +2122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 78,
             weight: 325,
-            thumbnail: "sprites/pokemon/264.png",
+            thumbnail: "/sprites/pokemon/264.png",
         },
         {
             id: 265,
@@ -2130,7 +2130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 36,
-            thumbnail: "sprites/pokemon/265.png",
+            thumbnail: "/sprites/pokemon/265.png",
         },
         {
             id: 266,
@@ -2138,7 +2138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 50,
             weight: 100,
-            thumbnail: "sprites/pokemon/266.png",
+            thumbnail: "/sprites/pokemon/266.png",
         },
         {
             id: 267,
@@ -2146,7 +2146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 284,
-            thumbnail: "sprites/pokemon/267.png",
+            thumbnail: "/sprites/pokemon/267.png",
         },
         {
             id: 268,
@@ -2154,7 +2154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 50,
             weight: 115,
-            thumbnail: "sprites/pokemon/268.png",
+            thumbnail: "/sprites/pokemon/268.png",
         },
         {
             id: 269,
@@ -2162,7 +2162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 316,
-            thumbnail: "sprites/pokemon/269.png",
+            thumbnail: "/sprites/pokemon/269.png",
         },
         {
             id: 270,
@@ -2170,7 +2170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 26,
-            thumbnail: "sprites/pokemon/270.png",
+            thumbnail: "/sprites/pokemon/270.png",
         },
         {
             id: 271,
@@ -2178,7 +2178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 60,
             weight: 325,
-            thumbnail: "sprites/pokemon/271.png",
+            thumbnail: "/sprites/pokemon/271.png",
         },
         {
             id: 272,
@@ -2186,7 +2186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 550,
-            thumbnail: "sprites/pokemon/272.png",
+            thumbnail: "/sprites/pokemon/272.png",
         },
         {
             id: 273,
@@ -2194,7 +2194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 40,
-            thumbnail: "sprites/pokemon/273.png",
+            thumbnail: "/sprites/pokemon/273.png",
         },
         {
             id: 274,
@@ -2202,7 +2202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 70,
             weight: 280,
-            thumbnail: "sprites/pokemon/274.png",
+            thumbnail: "/sprites/pokemon/274.png",
         },
         {
             id: 275,
@@ -2210,7 +2210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 596,
-            thumbnail: "sprites/pokemon/275.png",
+            thumbnail: "/sprites/pokemon/275.png",
         },
         {
             id: 276,
@@ -2218,7 +2218,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 40,
             weight: 23,
-            thumbnail: "sprites/pokemon/276.png",
+            thumbnail: "/sprites/pokemon/276.png",
         },
         {
             id: 277,
@@ -2226,7 +2226,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 198,
-            thumbnail: "sprites/pokemon/277.png",
+            thumbnail: "/sprites/pokemon/277.png",
         },
         {
             id: 278,
@@ -2234,7 +2234,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 95,
-            thumbnail: "sprites/pokemon/278.png",
+            thumbnail: "/sprites/pokemon/278.png",
         },
         {
             id: 279,
@@ -2242,7 +2242,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 280,
-            thumbnail: "sprites/pokemon/279.png",
+            thumbnail: "/sprites/pokemon/279.png",
         },
         {
             id: 280,
@@ -2250,7 +2250,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 235,
             baseHp: 28,
             weight: 66,
-            thumbnail: "sprites/pokemon/280.png",
+            thumbnail: "/sprites/pokemon/280.png",
         },
         {
             id: 281,
@@ -2258,7 +2258,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 38,
             weight: 202,
-            thumbnail: "sprites/pokemon/281.png",
+            thumbnail: "/sprites/pokemon/281.png",
         },
         {
             id: 282,
@@ -2266,7 +2266,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 68,
             weight: 484,
-            thumbnail: "sprites/pokemon/282.png",
+            thumbnail: "/sprites/pokemon/282.png",
         },
         {
             id: 283,
@@ -2274,7 +2274,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 40,
             weight: 17,
-            thumbnail: "sprites/pokemon/283.png",
+            thumbnail: "/sprites/pokemon/283.png",
         },
         {
             id: 284,
@@ -2282,7 +2282,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 36,
-            thumbnail: "sprites/pokemon/284.png",
+            thumbnail: "/sprites/pokemon/284.png",
         },
         {
             id: 285,
@@ -2290,7 +2290,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 60,
             weight: 45,
-            thumbnail: "sprites/pokemon/285.png",
+            thumbnail: "/sprites/pokemon/285.png",
         },
         {
             id: 286,
@@ -2298,7 +2298,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 60,
             weight: 392,
-            thumbnail: "sprites/pokemon/286.png",
+            thumbnail: "/sprites/pokemon/286.png",
         },
         {
             id: 287,
@@ -2306,7 +2306,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 60,
             weight: 240,
-            thumbnail: "sprites/pokemon/287.png",
+            thumbnail: "/sprites/pokemon/287.png",
         },
         {
             id: 288,
@@ -2314,7 +2314,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 80,
             weight: 465,
-            thumbnail: "sprites/pokemon/288.png",
+            thumbnail: "/sprites/pokemon/288.png",
         },
         {
             id: 289,
@@ -2322,7 +2322,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 150,
             weight: 1305,
-            thumbnail: "sprites/pokemon/289.png",
+            thumbnail: "/sprites/pokemon/289.png",
         },
         {
             id: 290,
@@ -2330,7 +2330,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 31,
             weight: 55,
-            thumbnail: "sprites/pokemon/290.png",
+            thumbnail: "/sprites/pokemon/290.png",
         },
         {
             id: 291,
@@ -2338,7 +2338,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 61,
             weight: 120,
-            thumbnail: "sprites/pokemon/291.png",
+            thumbnail: "/sprites/pokemon/291.png",
         },
         {
             id: 292,
@@ -2346,7 +2346,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 1,
             weight: 12,
-            thumbnail: "sprites/pokemon/292.png",
+            thumbnail: "/sprites/pokemon/292.png",
         },
         {
             id: 293,
@@ -2354,7 +2354,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 64,
             weight: 163,
-            thumbnail: "sprites/pokemon/293.png",
+            thumbnail: "/sprites/pokemon/293.png",
         },
         {
             id: 294,
@@ -2362,7 +2362,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 84,
             weight: 405,
-            thumbnail: "sprites/pokemon/294.png",
+            thumbnail: "/sprites/pokemon/294.png",
         },
         {
             id: 295,
@@ -2370,7 +2370,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 104,
             weight: 840,
-            thumbnail: "sprites/pokemon/295.png",
+            thumbnail: "/sprites/pokemon/295.png",
         },
         {
             id: 296,
@@ -2378,7 +2378,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 72,
             weight: 864,
-            thumbnail: "sprites/pokemon/296.png",
+            thumbnail: "/sprites/pokemon/296.png",
         },
         {
             id: 297,
@@ -2386,7 +2386,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 144,
             weight: 2538,
-            thumbnail: "sprites/pokemon/297.png",
+            thumbnail: "/sprites/pokemon/297.png",
         },
         {
             id: 298,
@@ -2394,7 +2394,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 50,
             weight: 20,
-            thumbnail: "sprites/pokemon/298.png",
+            thumbnail: "/sprites/pokemon/298.png",
         },
         {
             id: 299,
@@ -2402,7 +2402,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 30,
             weight: 970,
-            thumbnail: "sprites/pokemon/299.png",
+            thumbnail: "/sprites/pokemon/299.png",
         },
         {
             id: 300,
@@ -2410,7 +2410,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 50,
             weight: 110,
-            thumbnail: "sprites/pokemon/300.png",
+            thumbnail: "/sprites/pokemon/300.png",
         },
         {
             id: 301,
@@ -2418,7 +2418,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 70,
             weight: 326,
-            thumbnail: "sprites/pokemon/301.png",
+            thumbnail: "/sprites/pokemon/301.png",
         },
         {
             id: 302,
@@ -2426,7 +2426,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 110,
-            thumbnail: "sprites/pokemon/302.png",
+            thumbnail: "/sprites/pokemon/302.png",
         },
         {
             id: 303,
@@ -2434,7 +2434,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 115,
-            thumbnail: "sprites/pokemon/303.png",
+            thumbnail: "/sprites/pokemon/303.png",
         },
         {
             id: 304,
@@ -2442,7 +2442,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 50,
             weight: 600,
-            thumbnail: "sprites/pokemon/304.png",
+            thumbnail: "/sprites/pokemon/304.png",
         },
         {
             id: 305,
@@ -2450,7 +2450,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 60,
             weight: 1200,
-            thumbnail: "sprites/pokemon/305.png",
+            thumbnail: "/sprites/pokemon/305.png",
         },
         {
             id: 306,
@@ -2458,7 +2458,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 3600,
-            thumbnail: "sprites/pokemon/306.png",
+            thumbnail: "/sprites/pokemon/306.png",
         },
         {
             id: 307,
@@ -2466,7 +2466,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 30,
             weight: 112,
-            thumbnail: "sprites/pokemon/307.png",
+            thumbnail: "/sprites/pokemon/307.png",
         },
         {
             id: 308,
@@ -2474,7 +2474,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 60,
             weight: 315,
-            thumbnail: "sprites/pokemon/308.png",
+            thumbnail: "/sprites/pokemon/308.png",
         },
         {
             id: 309,
@@ -2482,7 +2482,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 40,
             weight: 152,
-            thumbnail: "sprites/pokemon/309.png",
+            thumbnail: "/sprites/pokemon/309.png",
         },
         {
             id: 310,
@@ -2490,7 +2490,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 402,
-            thumbnail: "sprites/pokemon/310.png",
+            thumbnail: "/sprites/pokemon/310.png",
         },
         {
             id: 311,
@@ -2498,7 +2498,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 60,
             weight: 42,
-            thumbnail: "sprites/pokemon/311.png",
+            thumbnail: "/sprites/pokemon/311.png",
         },
         {
             id: 312,
@@ -2506,7 +2506,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 60,
             weight: 42,
-            thumbnail: "sprites/pokemon/312.png",
+            thumbnail: "/sprites/pokemon/312.png",
         },
         {
             id: 313,
@@ -2514,7 +2514,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 65,
             weight: 177,
-            thumbnail: "sprites/pokemon/313.png",
+            thumbnail: "/sprites/pokemon/313.png",
         },
         {
             id: 314,
@@ -2522,7 +2522,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 65,
             weight: 177,
-            thumbnail: "sprites/pokemon/314.png",
+            thumbnail: "/sprites/pokemon/314.png",
         },
         {
             id: 315,
@@ -2530,7 +2530,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 50,
             weight: 20,
-            thumbnail: "sprites/pokemon/315.png",
+            thumbnail: "/sprites/pokemon/315.png",
         },
         {
             id: 316,
@@ -2538,7 +2538,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 70,
             weight: 103,
-            thumbnail: "sprites/pokemon/316.png",
+            thumbnail: "/sprites/pokemon/316.png",
         },
         {
             id: 317,
@@ -2546,7 +2546,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 100,
             weight: 800,
-            thumbnail: "sprites/pokemon/317.png",
+            thumbnail: "/sprites/pokemon/317.png",
         },
         {
             id: 318,
@@ -2554,7 +2554,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 45,
             weight: 208,
-            thumbnail: "sprites/pokemon/318.png",
+            thumbnail: "/sprites/pokemon/318.png",
         },
         {
             id: 319,
@@ -2562,7 +2562,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 70,
             weight: 888,
-            thumbnail: "sprites/pokemon/319.png",
+            thumbnail: "/sprites/pokemon/319.png",
         },
         {
             id: 320,
@@ -2570,7 +2570,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 125,
             baseHp: 130,
             weight: 1300,
-            thumbnail: "sprites/pokemon/320.png",
+            thumbnail: "/sprites/pokemon/320.png",
         },
         {
             id: 321,
@@ -2578,7 +2578,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 170,
             weight: 3980,
-            thumbnail: "sprites/pokemon/321.png",
+            thumbnail: "/sprites/pokemon/321.png",
         },
         {
             id: 322,
@@ -2586,7 +2586,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 60,
             weight: 240,
-            thumbnail: "sprites/pokemon/322.png",
+            thumbnail: "/sprites/pokemon/322.png",
         },
         {
             id: 323,
@@ -2594,7 +2594,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 70,
             weight: 2200,
-            thumbnail: "sprites/pokemon/323.png",
+            thumbnail: "/sprites/pokemon/323.png",
         },
         {
             id: 324,
@@ -2602,7 +2602,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 70,
             weight: 804,
-            thumbnail: "sprites/pokemon/324.png",
+            thumbnail: "/sprites/pokemon/324.png",
         },
         {
             id: 325,
@@ -2610,7 +2610,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 60,
             weight: 306,
-            thumbnail: "sprites/pokemon/325.png",
+            thumbnail: "/sprites/pokemon/325.png",
         },
         {
             id: 326,
@@ -2618,7 +2618,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 80,
             weight: 715,
-            thumbnail: "sprites/pokemon/326.png",
+            thumbnail: "/sprites/pokemon/326.png",
         },
         {
             id: 327,
@@ -2626,7 +2626,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 60,
             weight: 50,
-            thumbnail: "sprites/pokemon/327.png",
+            thumbnail: "/sprites/pokemon/327.png",
         },
         {
             id: 328,
@@ -2634,7 +2634,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 150,
-            thumbnail: "sprites/pokemon/328.png",
+            thumbnail: "/sprites/pokemon/328.png",
         },
         {
             id: 329,
@@ -2642,7 +2642,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 50,
             weight: 153,
-            thumbnail: "sprites/pokemon/329.png",
+            thumbnail: "/sprites/pokemon/329.png",
         },
         {
             id: 330,
@@ -2650,7 +2650,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 820,
-            thumbnail: "sprites/pokemon/330.png",
+            thumbnail: "/sprites/pokemon/330.png",
         },
         {
             id: 331,
@@ -2658,7 +2658,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 513,
-            thumbnail: "sprites/pokemon/331.png",
+            thumbnail: "/sprites/pokemon/331.png",
         },
         {
             id: 332,
@@ -2666,7 +2666,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 70,
             weight: 774,
-            thumbnail: "sprites/pokemon/332.png",
+            thumbnail: "/sprites/pokemon/332.png",
         },
         {
             id: 333,
@@ -2674,7 +2674,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 12,
-            thumbnail: "sprites/pokemon/333.png",
+            thumbnail: "/sprites/pokemon/333.png",
         },
         {
             id: 334,
@@ -2682,7 +2682,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 206,
-            thumbnail: "sprites/pokemon/334.png",
+            thumbnail: "/sprites/pokemon/334.png",
         },
         {
             id: 335,
@@ -2690,7 +2690,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 73,
             weight: 403,
-            thumbnail: "sprites/pokemon/335.png",
+            thumbnail: "/sprites/pokemon/335.png",
         },
         {
             id: 336,
@@ -2698,7 +2698,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 73,
             weight: 525,
-            thumbnail: "sprites/pokemon/336.png",
+            thumbnail: "/sprites/pokemon/336.png",
         },
         {
             id: 337,
@@ -2706,7 +2706,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 1680,
-            thumbnail: "sprites/pokemon/337.png",
+            thumbnail: "/sprites/pokemon/337.png",
         },
         {
             id: 338,
@@ -2714,7 +2714,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 1540,
-            thumbnail: "sprites/pokemon/338.png",
+            thumbnail: "/sprites/pokemon/338.png",
         },
         {
             id: 339,
@@ -2722,7 +2722,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 19,
-            thumbnail: "sprites/pokemon/339.png",
+            thumbnail: "/sprites/pokemon/339.png",
         },
         {
             id: 340,
@@ -2730,7 +2730,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 110,
             weight: 236,
-            thumbnail: "sprites/pokemon/340.png",
+            thumbnail: "/sprites/pokemon/340.png",
         },
         {
             id: 341,
@@ -2738,7 +2738,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 205,
             baseHp: 43,
             weight: 115,
-            thumbnail: "sprites/pokemon/341.png",
+            thumbnail: "/sprites/pokemon/341.png",
         },
         {
             id: 342,
@@ -2746,7 +2746,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 155,
             baseHp: 63,
             weight: 328,
-            thumbnail: "sprites/pokemon/342.png",
+            thumbnail: "/sprites/pokemon/342.png",
         },
         {
             id: 343,
@@ -2754,7 +2754,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 215,
-            thumbnail: "sprites/pokemon/343.png",
+            thumbnail: "/sprites/pokemon/343.png",
         },
         {
             id: 344,
@@ -2762,7 +2762,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 60,
             weight: 1080,
-            thumbnail: "sprites/pokemon/344.png",
+            thumbnail: "/sprites/pokemon/344.png",
         },
         {
             id: 345,
@@ -2770,7 +2770,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 66,
             weight: 238,
-            thumbnail: "sprites/pokemon/345.png",
+            thumbnail: "/sprites/pokemon/345.png",
         },
         {
             id: 346,
@@ -2778,7 +2778,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 86,
             weight: 604,
-            thumbnail: "sprites/pokemon/346.png",
+            thumbnail: "/sprites/pokemon/346.png",
         },
         {
             id: 347,
@@ -2786,7 +2786,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 125,
-            thumbnail: "sprites/pokemon/347.png",
+            thumbnail: "/sprites/pokemon/347.png",
         },
         {
             id: 348,
@@ -2794,7 +2794,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 682,
-            thumbnail: "sprites/pokemon/348.png",
+            thumbnail: "/sprites/pokemon/348.png",
         },
         {
             id: 349,
@@ -2802,7 +2802,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 20,
             weight: 74,
-            thumbnail: "sprites/pokemon/349.png",
+            thumbnail: "/sprites/pokemon/349.png",
         },
         {
             id: 350,
@@ -2810,7 +2810,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 95,
             weight: 1620,
-            thumbnail: "sprites/pokemon/350.png",
+            thumbnail: "/sprites/pokemon/350.png",
         },
         {
             id: 351,
@@ -2818,7 +2818,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 8,
-            thumbnail: "sprites/pokemon/351.png",
+            thumbnail: "/sprites/pokemon/351.png",
         },
         {
             id: 352,
@@ -2826,7 +2826,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 60,
             weight: 220,
-            thumbnail: "sprites/pokemon/352.png",
+            thumbnail: "/sprites/pokemon/352.png",
         },
         {
             id: 353,
@@ -2834,7 +2834,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 44,
             weight: 23,
-            thumbnail: "sprites/pokemon/353.png",
+            thumbnail: "/sprites/pokemon/353.png",
         },
         {
             id: 354,
@@ -2842,7 +2842,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 64,
             weight: 125,
-            thumbnail: "sprites/pokemon/354.png",
+            thumbnail: "/sprites/pokemon/354.png",
         },
         {
             id: 355,
@@ -2850,7 +2850,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 20,
             weight: 150,
-            thumbnail: "sprites/pokemon/355.png",
+            thumbnail: "/sprites/pokemon/355.png",
         },
         {
             id: 356,
@@ -2858,7 +2858,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 40,
             weight: 306,
-            thumbnail: "sprites/pokemon/356.png",
+            thumbnail: "/sprites/pokemon/356.png",
         },
         {
             id: 357,
@@ -2866,7 +2866,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 99,
             weight: 1000,
-            thumbnail: "sprites/pokemon/357.png",
+            thumbnail: "/sprites/pokemon/357.png",
         },
         {
             id: 358,
@@ -2874,7 +2874,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 10,
-            thumbnail: "sprites/pokemon/358.png",
+            thumbnail: "/sprites/pokemon/358.png",
         },
         {
             id: 359,
@@ -2882,7 +2882,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 65,
             weight: 470,
-            thumbnail: "sprites/pokemon/359.png",
+            thumbnail: "/sprites/pokemon/359.png",
         },
         {
             id: 360,
@@ -2890,7 +2890,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 125,
             baseHp: 95,
             weight: 140,
-            thumbnail: "sprites/pokemon/360.png",
+            thumbnail: "/sprites/pokemon/360.png",
         },
         {
             id: 361,
@@ -2898,7 +2898,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 168,
-            thumbnail: "sprites/pokemon/361.png",
+            thumbnail: "/sprites/pokemon/361.png",
         },
         {
             id: 362,
@@ -2906,7 +2906,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 80,
             weight: 2565,
-            thumbnail: "sprites/pokemon/362.png",
+            thumbnail: "/sprites/pokemon/362.png",
         },
         {
             id: 363,
@@ -2914,7 +2914,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 70,
             weight: 395,
-            thumbnail: "sprites/pokemon/363.png",
+            thumbnail: "/sprites/pokemon/363.png",
         },
         {
             id: 364,
@@ -2922,7 +2922,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 90,
             weight: 876,
-            thumbnail: "sprites/pokemon/364.png",
+            thumbnail: "/sprites/pokemon/364.png",
         },
         {
             id: 365,
@@ -2930,7 +2930,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 110,
             weight: 1506,
-            thumbnail: "sprites/pokemon/365.png",
+            thumbnail: "/sprites/pokemon/365.png",
         },
         {
             id: 366,
@@ -2938,7 +2938,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 35,
             weight: 525,
-            thumbnail: "sprites/pokemon/366.png",
+            thumbnail: "/sprites/pokemon/366.png",
         },
         {
             id: 367,
@@ -2946,7 +2946,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 55,
             weight: 270,
-            thumbnail: "sprites/pokemon/367.png",
+            thumbnail: "/sprites/pokemon/367.png",
         },
         {
             id: 368,
@@ -2954,7 +2954,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 55,
             weight: 226,
-            thumbnail: "sprites/pokemon/368.png",
+            thumbnail: "/sprites/pokemon/368.png",
         },
         {
             id: 369,
@@ -2962,7 +2962,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 100,
             weight: 234,
-            thumbnail: "sprites/pokemon/369.png",
+            thumbnail: "/sprites/pokemon/369.png",
         },
         {
             id: 370,
@@ -2970,7 +2970,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 43,
             weight: 87,
-            thumbnail: "sprites/pokemon/370.png",
+            thumbnail: "/sprites/pokemon/370.png",
         },
         {
             id: 371,
@@ -2978,7 +2978,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 421,
-            thumbnail: "sprites/pokemon/371.png",
+            thumbnail: "/sprites/pokemon/371.png",
         },
         {
             id: 372,
@@ -2986,7 +2986,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 1105,
-            thumbnail: "sprites/pokemon/372.png",
+            thumbnail: "/sprites/pokemon/372.png",
         },
         {
             id: 373,
@@ -2994,7 +2994,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 1026,
-            thumbnail: "sprites/pokemon/373.png",
+            thumbnail: "/sprites/pokemon/373.png",
         },
         {
             id: 374,
@@ -3002,7 +3002,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 40,
             weight: 952,
-            thumbnail: "sprites/pokemon/374.png",
+            thumbnail: "/sprites/pokemon/374.png",
         },
         {
             id: 375,
@@ -3010,7 +3010,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 60,
             weight: 2025,
-            thumbnail: "sprites/pokemon/375.png",
+            thumbnail: "/sprites/pokemon/375.png",
         },
         {
             id: 376,
@@ -3018,7 +3018,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 5500,
-            thumbnail: "sprites/pokemon/376.png",
+            thumbnail: "/sprites/pokemon/376.png",
         },
         {
             id: 377,
@@ -3026,7 +3026,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 2300,
-            thumbnail: "sprites/pokemon/377.png",
+            thumbnail: "/sprites/pokemon/377.png",
         },
         {
             id: 378,
@@ -3034,7 +3034,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 1750,
-            thumbnail: "sprites/pokemon/378.png",
+            thumbnail: "/sprites/pokemon/378.png",
         },
         {
             id: 379,
@@ -3042,7 +3042,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 2050,
-            thumbnail: "sprites/pokemon/379.png",
+            thumbnail: "/sprites/pokemon/379.png",
         },
         {
             id: 380,
@@ -3050,7 +3050,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 400,
-            thumbnail: "sprites/pokemon/380.png",
+            thumbnail: "/sprites/pokemon/380.png",
         },
         {
             id: 381,
@@ -3058,7 +3058,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 600,
-            thumbnail: "sprites/pokemon/381.png",
+            thumbnail: "/sprites/pokemon/381.png",
         },
         {
             id: 382,
@@ -3066,7 +3066,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 3520,
-            thumbnail: "sprites/pokemon/382.png",
+            thumbnail: "/sprites/pokemon/382.png",
         },
         {
             id: 383,
@@ -3074,7 +3074,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 9500,
-            thumbnail: "sprites/pokemon/383.png",
+            thumbnail: "/sprites/pokemon/383.png",
         },
         {
             id: 384,
@@ -3082,7 +3082,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 105,
             weight: 2065,
-            thumbnail: "sprites/pokemon/384.png",
+            thumbnail: "/sprites/pokemon/384.png",
         },
         {
             id: 385,
@@ -3090,7 +3090,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 11,
-            thumbnail: "sprites/pokemon/385.png",
+            thumbnail: "/sprites/pokemon/385.png",
         },
         {
             id: 386,
@@ -3098,7 +3098,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 50,
             weight: 608,
-            thumbnail: "sprites/pokemon/386.png",
+            thumbnail: "/sprites/pokemon/386.png",
         },
         {
             id: 387,
@@ -3106,7 +3106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 102,
-            thumbnail: "sprites/pokemon/387.png",
+            thumbnail: "/sprites/pokemon/387.png",
         },
         {
             id: 388,
@@ -3114,7 +3114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 970,
-            thumbnail: "sprites/pokemon/388.png",
+            thumbnail: "/sprites/pokemon/388.png",
         },
         {
             id: 389,
@@ -3122,7 +3122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 3100,
-            thumbnail: "sprites/pokemon/389.png",
+            thumbnail: "/sprites/pokemon/389.png",
         },
         {
             id: 390,
@@ -3130,7 +3130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 44,
             weight: 62,
-            thumbnail: "sprites/pokemon/390.png",
+            thumbnail: "/sprites/pokemon/390.png",
         },
         {
             id: 391,
@@ -3138,7 +3138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 64,
             weight: 220,
-            thumbnail: "sprites/pokemon/391.png",
+            thumbnail: "/sprites/pokemon/391.png",
         },
         {
             id: 392,
@@ -3146,7 +3146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 76,
             weight: 550,
-            thumbnail: "sprites/pokemon/392.png",
+            thumbnail: "/sprites/pokemon/392.png",
         },
         {
             id: 393,
@@ -3154,7 +3154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 53,
             weight: 52,
-            thumbnail: "sprites/pokemon/393.png",
+            thumbnail: "/sprites/pokemon/393.png",
         },
         {
             id: 394,
@@ -3162,7 +3162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 64,
             weight: 230,
-            thumbnail: "sprites/pokemon/394.png",
+            thumbnail: "/sprites/pokemon/394.png",
         },
         {
             id: 395,
@@ -3170,7 +3170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 84,
             weight: 845,
-            thumbnail: "sprites/pokemon/395.png",
+            thumbnail: "/sprites/pokemon/395.png",
         },
         {
             id: 396,
@@ -3178,7 +3178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 20,
-            thumbnail: "sprites/pokemon/396.png",
+            thumbnail: "/sprites/pokemon/396.png",
         },
         {
             id: 397,
@@ -3186,7 +3186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 55,
             weight: 155,
-            thumbnail: "sprites/pokemon/397.png",
+            thumbnail: "/sprites/pokemon/397.png",
         },
         {
             id: 398,
@@ -3194,7 +3194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 85,
             weight: 249,
-            thumbnail: "sprites/pokemon/398.png",
+            thumbnail: "/sprites/pokemon/398.png",
         },
         {
             id: 399,
@@ -3202,7 +3202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 59,
             weight: 200,
-            thumbnail: "sprites/pokemon/399.png",
+            thumbnail: "/sprites/pokemon/399.png",
         },
         {
             id: 400,
@@ -3210,7 +3210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 127,
             baseHp: 79,
             weight: 315,
-            thumbnail: "sprites/pokemon/400.png",
+            thumbnail: "/sprites/pokemon/400.png",
         },
         {
             id: 401,
@@ -3218,7 +3218,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 37,
             weight: 22,
-            thumbnail: "sprites/pokemon/401.png",
+            thumbnail: "/sprites/pokemon/401.png",
         },
         {
             id: 402,
@@ -3226,7 +3226,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 77,
             weight: 255,
-            thumbnail: "sprites/pokemon/402.png",
+            thumbnail: "/sprites/pokemon/402.png",
         },
         {
             id: 403,
@@ -3234,7 +3234,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 235,
             baseHp: 45,
             weight: 95,
-            thumbnail: "sprites/pokemon/403.png",
+            thumbnail: "/sprites/pokemon/403.png",
         },
         {
             id: 404,
@@ -3242,7 +3242,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 60,
             weight: 305,
-            thumbnail: "sprites/pokemon/404.png",
+            thumbnail: "/sprites/pokemon/404.png",
         },
         {
             id: 405,
@@ -3250,7 +3250,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 420,
-            thumbnail: "sprites/pokemon/405.png",
+            thumbnail: "/sprites/pokemon/405.png",
         },
         {
             id: 406,
@@ -3258,7 +3258,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 12,
-            thumbnail: "sprites/pokemon/406.png",
+            thumbnail: "/sprites/pokemon/406.png",
         },
         {
             id: 407,
@@ -3266,7 +3266,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 145,
-            thumbnail: "sprites/pokemon/407.png",
+            thumbnail: "/sprites/pokemon/407.png",
         },
         {
             id: 408,
@@ -3274,7 +3274,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 67,
             weight: 315,
-            thumbnail: "sprites/pokemon/408.png",
+            thumbnail: "/sprites/pokemon/408.png",
         },
         {
             id: 409,
@@ -3282,7 +3282,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 97,
             weight: 1025,
-            thumbnail: "sprites/pokemon/409.png",
+            thumbnail: "/sprites/pokemon/409.png",
         },
         {
             id: 410,
@@ -3290,7 +3290,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 30,
             weight: 570,
-            thumbnail: "sprites/pokemon/410.png",
+            thumbnail: "/sprites/pokemon/410.png",
         },
         {
             id: 411,
@@ -3298,7 +3298,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 1495,
-            thumbnail: "sprites/pokemon/411.png",
+            thumbnail: "/sprites/pokemon/411.png",
         },
         {
             id: 412,
@@ -3306,7 +3306,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 40,
             weight: 34,
-            thumbnail: "sprites/pokemon/412.png",
+            thumbnail: "/sprites/pokemon/412.png",
         },
         {
             id: 413,
@@ -3314,7 +3314,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 65,
-            thumbnail: "sprites/pokemon/413.png",
+            thumbnail: "/sprites/pokemon/413.png",
         },
         {
             id: 414,
@@ -3322,7 +3322,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 233,
-            thumbnail: "sprites/pokemon/414.png",
+            thumbnail: "/sprites/pokemon/414.png",
         },
         {
             id: 415,
@@ -3330,7 +3330,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 30,
             weight: 55,
-            thumbnail: "sprites/pokemon/415.png",
+            thumbnail: "/sprites/pokemon/415.png",
         },
         {
             id: 416,
@@ -3338,7 +3338,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 385,
-            thumbnail: "sprites/pokemon/416.png",
+            thumbnail: "/sprites/pokemon/416.png",
         },
         {
             id: 417,
@@ -3346,7 +3346,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 60,
             weight: 39,
-            thumbnail: "sprites/pokemon/417.png",
+            thumbnail: "/sprites/pokemon/417.png",
         },
         {
             id: 418,
@@ -3354,7 +3354,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 55,
             weight: 295,
-            thumbnail: "sprites/pokemon/418.png",
+            thumbnail: "/sprites/pokemon/418.png",
         },
         {
             id: 419,
@@ -3362,7 +3362,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 85,
             weight: 335,
-            thumbnail: "sprites/pokemon/419.png",
+            thumbnail: "/sprites/pokemon/419.png",
         },
         {
             id: 420,
@@ -3370,7 +3370,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 45,
             weight: 33,
-            thumbnail: "sprites/pokemon/420.png",
+            thumbnail: "/sprites/pokemon/420.png",
         },
         {
             id: 421,
@@ -3378,7 +3378,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 93,
-            thumbnail: "sprites/pokemon/421.png",
+            thumbnail: "/sprites/pokemon/421.png",
         },
         {
             id: 422,
@@ -3386,7 +3386,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 76,
             weight: 63,
-            thumbnail: "sprites/pokemon/422.png",
+            thumbnail: "/sprites/pokemon/422.png",
         },
         {
             id: 423,
@@ -3394,7 +3394,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 111,
             weight: 299,
-            thumbnail: "sprites/pokemon/423.png",
+            thumbnail: "/sprites/pokemon/423.png",
         },
         {
             id: 424,
@@ -3402,7 +3402,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 203,
-            thumbnail: "sprites/pokemon/424.png",
+            thumbnail: "/sprites/pokemon/424.png",
         },
         {
             id: 425,
@@ -3410,7 +3410,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 125,
             baseHp: 90,
             weight: 12,
-            thumbnail: "sprites/pokemon/425.png",
+            thumbnail: "/sprites/pokemon/425.png",
         },
         {
             id: 426,
@@ -3418,7 +3418,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 150,
             weight: 150,
-            thumbnail: "sprites/pokemon/426.png",
+            thumbnail: "/sprites/pokemon/426.png",
         },
         {
             id: 427,
@@ -3426,7 +3426,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 55,
             weight: 55,
-            thumbnail: "sprites/pokemon/427.png",
+            thumbnail: "/sprites/pokemon/427.png",
         },
         {
             id: 428,
@@ -3434,7 +3434,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 65,
             weight: 333,
-            thumbnail: "sprites/pokemon/428.png",
+            thumbnail: "/sprites/pokemon/428.png",
         },
         {
             id: 429,
@@ -3442,7 +3442,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 44,
-            thumbnail: "sprites/pokemon/429.png",
+            thumbnail: "/sprites/pokemon/429.png",
         },
         {
             id: 430,
@@ -3450,7 +3450,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 100,
             weight: 273,
-            thumbnail: "sprites/pokemon/430.png",
+            thumbnail: "/sprites/pokemon/430.png",
         },
         {
             id: 431,
@@ -3458,7 +3458,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 49,
             weight: 39,
-            thumbnail: "sprites/pokemon/431.png",
+            thumbnail: "/sprites/pokemon/431.png",
         },
         {
             id: 432,
@@ -3466,7 +3466,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 71,
             weight: 438,
-            thumbnail: "sprites/pokemon/432.png",
+            thumbnail: "/sprites/pokemon/432.png",
         },
         {
             id: 433,
@@ -3474,7 +3474,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 45,
             weight: 6,
-            thumbnail: "sprites/pokemon/433.png",
+            thumbnail: "/sprites/pokemon/433.png",
         },
         {
             id: 434,
@@ -3482,7 +3482,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 63,
             weight: 192,
-            thumbnail: "sprites/pokemon/434.png",
+            thumbnail: "/sprites/pokemon/434.png",
         },
         {
             id: 435,
@@ -3490,7 +3490,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 103,
             weight: 380,
-            thumbnail: "sprites/pokemon/435.png",
+            thumbnail: "/sprites/pokemon/435.png",
         },
         {
             id: 436,
@@ -3498,7 +3498,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 57,
             weight: 605,
-            thumbnail: "sprites/pokemon/436.png",
+            thumbnail: "/sprites/pokemon/436.png",
         },
         {
             id: 437,
@@ -3506,7 +3506,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 67,
             weight: 1870,
-            thumbnail: "sprites/pokemon/437.png",
+            thumbnail: "/sprites/pokemon/437.png",
         },
         {
             id: 438,
@@ -3514,7 +3514,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 50,
             weight: 150,
-            thumbnail: "sprites/pokemon/438.png",
+            thumbnail: "/sprites/pokemon/438.png",
         },
         {
             id: 439,
@@ -3522,7 +3522,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 145,
             baseHp: 20,
             weight: 130,
-            thumbnail: "sprites/pokemon/439.png",
+            thumbnail: "/sprites/pokemon/439.png",
         },
         {
             id: 440,
@@ -3530,7 +3530,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 130,
             baseHp: 100,
             weight: 244,
-            thumbnail: "sprites/pokemon/440.png",
+            thumbnail: "/sprites/pokemon/440.png",
         },
         {
             id: 441,
@@ -3538,7 +3538,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 76,
             weight: 19,
-            thumbnail: "sprites/pokemon/441.png",
+            thumbnail: "/sprites/pokemon/441.png",
         },
         {
             id: 442,
@@ -3546,7 +3546,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 50,
             weight: 1080,
-            thumbnail: "sprites/pokemon/442.png",
+            thumbnail: "/sprites/pokemon/442.png",
         },
         {
             id: 443,
@@ -3554,7 +3554,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 58,
             weight: 205,
-            thumbnail: "sprites/pokemon/443.png",
+            thumbnail: "/sprites/pokemon/443.png",
         },
         {
             id: 444,
@@ -3562,7 +3562,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 68,
             weight: 560,
-            thumbnail: "sprites/pokemon/444.png",
+            thumbnail: "/sprites/pokemon/444.png",
         },
         {
             id: 445,
@@ -3570,7 +3570,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 108,
             weight: 950,
-            thumbnail: "sprites/pokemon/445.png",
+            thumbnail: "/sprites/pokemon/445.png",
         },
         {
             id: 446,
@@ -3578,7 +3578,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 135,
             weight: 1050,
-            thumbnail: "sprites/pokemon/446.png",
+            thumbnail: "/sprites/pokemon/446.png",
         },
         {
             id: 447,
@@ -3586,7 +3586,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 40,
             weight: 202,
-            thumbnail: "sprites/pokemon/447.png",
+            thumbnail: "/sprites/pokemon/447.png",
         },
         {
             id: 448,
@@ -3594,7 +3594,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 540,
-            thumbnail: "sprites/pokemon/448.png",
+            thumbnail: "/sprites/pokemon/448.png",
         },
         {
             id: 449,
@@ -3602,7 +3602,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 140,
             baseHp: 68,
             weight: 495,
-            thumbnail: "sprites/pokemon/449.png",
+            thumbnail: "/sprites/pokemon/449.png",
         },
         {
             id: 450,
@@ -3610,7 +3610,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 108,
             weight: 3000,
-            thumbnail: "sprites/pokemon/450.png",
+            thumbnail: "/sprites/pokemon/450.png",
         },
         {
             id: 451,
@@ -3618,7 +3618,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 40,
             weight: 120,
-            thumbnail: "sprites/pokemon/451.png",
+            thumbnail: "/sprites/pokemon/451.png",
         },
         {
             id: 452,
@@ -3626,7 +3626,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 615,
-            thumbnail: "sprites/pokemon/452.png",
+            thumbnail: "/sprites/pokemon/452.png",
         },
         {
             id: 453,
@@ -3634,7 +3634,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 140,
             baseHp: 48,
             weight: 230,
-            thumbnail: "sprites/pokemon/453.png",
+            thumbnail: "/sprites/pokemon/453.png",
         },
         {
             id: 454,
@@ -3642,7 +3642,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 83,
             weight: 444,
-            thumbnail: "sprites/pokemon/454.png",
+            thumbnail: "/sprites/pokemon/454.png",
         },
         {
             id: 455,
@@ -3650,7 +3650,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 74,
             weight: 270,
-            thumbnail: "sprites/pokemon/455.png",
+            thumbnail: "/sprites/pokemon/455.png",
         },
         {
             id: 456,
@@ -3658,7 +3658,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 49,
             weight: 70,
-            thumbnail: "sprites/pokemon/456.png",
+            thumbnail: "/sprites/pokemon/456.png",
         },
         {
             id: 457,
@@ -3666,7 +3666,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 69,
             weight: 240,
-            thumbnail: "sprites/pokemon/457.png",
+            thumbnail: "/sprites/pokemon/457.png",
         },
         {
             id: 458,
@@ -3674,7 +3674,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 45,
             weight: 650,
-            thumbnail: "sprites/pokemon/458.png",
+            thumbnail: "/sprites/pokemon/458.png",
         },
         {
             id: 459,
@@ -3682,7 +3682,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 60,
             weight: 505,
-            thumbnail: "sprites/pokemon/459.png",
+            thumbnail: "/sprites/pokemon/459.png",
         },
         {
             id: 460,
@@ -3690,7 +3690,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 90,
             weight: 1355,
-            thumbnail: "sprites/pokemon/460.png",
+            thumbnail: "/sprites/pokemon/460.png",
         },
         {
             id: 461,
@@ -3698,7 +3698,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 340,
-            thumbnail: "sprites/pokemon/461.png",
+            thumbnail: "/sprites/pokemon/461.png",
         },
         {
             id: 462,
@@ -3706,7 +3706,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 70,
             weight: 1800,
-            thumbnail: "sprites/pokemon/462.png",
+            thumbnail: "/sprites/pokemon/462.png",
         },
         {
             id: 463,
@@ -3714,7 +3714,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 110,
             weight: 1400,
-            thumbnail: "sprites/pokemon/463.png",
+            thumbnail: "/sprites/pokemon/463.png",
         },
         {
             id: 464,
@@ -3722,7 +3722,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 115,
             weight: 2828,
-            thumbnail: "sprites/pokemon/464.png",
+            thumbnail: "/sprites/pokemon/464.png",
         },
         {
             id: 465,
@@ -3730,7 +3730,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 100,
             weight: 1286,
-            thumbnail: "sprites/pokemon/465.png",
+            thumbnail: "/sprites/pokemon/465.png",
         },
         {
             id: 466,
@@ -3738,7 +3738,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 75,
             weight: 1386,
-            thumbnail: "sprites/pokemon/466.png",
+            thumbnail: "/sprites/pokemon/466.png",
         },
         {
             id: 467,
@@ -3746,7 +3746,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 75,
             weight: 680,
-            thumbnail: "sprites/pokemon/467.png",
+            thumbnail: "/sprites/pokemon/467.png",
         },
         {
             id: 468,
@@ -3754,7 +3754,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 85,
             weight: 380,
-            thumbnail: "sprites/pokemon/468.png",
+            thumbnail: "/sprites/pokemon/468.png",
         },
         {
             id: 469,
@@ -3762,7 +3762,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 86,
             weight: 515,
-            thumbnail: "sprites/pokemon/469.png",
+            thumbnail: "/sprites/pokemon/469.png",
         },
         {
             id: 470,
@@ -3770,7 +3770,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 255,
-            thumbnail: "sprites/pokemon/470.png",
+            thumbnail: "/sprites/pokemon/470.png",
         },
         {
             id: 471,
@@ -3778,7 +3778,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 259,
-            thumbnail: "sprites/pokemon/471.png",
+            thumbnail: "/sprites/pokemon/471.png",
         },
         {
             id: 472,
@@ -3786,7 +3786,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 75,
             weight: 425,
-            thumbnail: "sprites/pokemon/472.png",
+            thumbnail: "/sprites/pokemon/472.png",
         },
         {
             id: 473,
@@ -3794,7 +3794,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 110,
             weight: 2910,
-            thumbnail: "sprites/pokemon/473.png",
+            thumbnail: "/sprites/pokemon/473.png",
         },
         {
             id: 474,
@@ -3802,7 +3802,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 85,
             weight: 340,
-            thumbnail: "sprites/pokemon/474.png",
+            thumbnail: "/sprites/pokemon/474.png",
         },
         {
             id: 475,
@@ -3810,7 +3810,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 68,
             weight: 520,
-            thumbnail: "sprites/pokemon/475.png",
+            thumbnail: "/sprites/pokemon/475.png",
         },
         {
             id: 476,
@@ -3818,7 +3818,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 60,
             weight: 3400,
-            thumbnail: "sprites/pokemon/476.png",
+            thumbnail: "/sprites/pokemon/476.png",
         },
         {
             id: 477,
@@ -3826,7 +3826,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 1066,
-            thumbnail: "sprites/pokemon/477.png",
+            thumbnail: "/sprites/pokemon/477.png",
         },
         {
             id: 478,
@@ -3834,7 +3834,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 266,
-            thumbnail: "sprites/pokemon/478.png",
+            thumbnail: "/sprites/pokemon/478.png",
         },
         {
             id: 479,
@@ -3842,7 +3842,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 3,
-            thumbnail: "sprites/pokemon/479.png",
+            thumbnail: "/sprites/pokemon/479.png",
         },
         {
             id: 480,
@@ -3850,7 +3850,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 75,
             weight: 3,
-            thumbnail: "sprites/pokemon/480.png",
+            thumbnail: "/sprites/pokemon/480.png",
         },
         {
             id: 481,
@@ -3858,7 +3858,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 3,
-            thumbnail: "sprites/pokemon/481.png",
+            thumbnail: "/sprites/pokemon/481.png",
         },
         {
             id: 482,
@@ -3866,7 +3866,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 75,
             weight: 3,
-            thumbnail: "sprites/pokemon/482.png",
+            thumbnail: "/sprites/pokemon/482.png",
         },
         {
             id: 483,
@@ -3874,7 +3874,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 6830,
-            thumbnail: "sprites/pokemon/483.png",
+            thumbnail: "/sprites/pokemon/483.png",
         },
         {
             id: 484,
@@ -3882,7 +3882,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 90,
             weight: 3360,
-            thumbnail: "sprites/pokemon/484.png",
+            thumbnail: "/sprites/pokemon/484.png",
         },
         {
             id: 485,
@@ -3890,7 +3890,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 91,
             weight: 4300,
-            thumbnail: "sprites/pokemon/485.png",
+            thumbnail: "/sprites/pokemon/485.png",
         },
         {
             id: 486,
@@ -3898,7 +3898,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 110,
             weight: 4200,
-            thumbnail: "sprites/pokemon/486.png",
+            thumbnail: "/sprites/pokemon/486.png",
         },
         {
             id: 487,
@@ -3906,7 +3906,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 150,
             weight: 7500,
-            thumbnail: "sprites/pokemon/487.png",
+            thumbnail: "/sprites/pokemon/487.png",
         },
         {
             id: 488,
@@ -3914,7 +3914,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 120,
             weight: 856,
-            thumbnail: "sprites/pokemon/488.png",
+            thumbnail: "/sprites/pokemon/488.png",
         },
         {
             id: 489,
@@ -3922,7 +3922,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 80,
             weight: 31,
-            thumbnail: "sprites/pokemon/489.png",
+            thumbnail: "/sprites/pokemon/489.png",
         },
         {
             id: 490,
@@ -3930,7 +3930,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 14,
-            thumbnail: "sprites/pokemon/490.png",
+            thumbnail: "/sprites/pokemon/490.png",
         },
         {
             id: 491,
@@ -3938,7 +3938,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 70,
             weight: 505,
-            thumbnail: "sprites/pokemon/491.png",
+            thumbnail: "/sprites/pokemon/491.png",
         },
         {
             id: 492,
@@ -3946,7 +3946,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 21,
-            thumbnail: "sprites/pokemon/492.png",
+            thumbnail: "/sprites/pokemon/492.png",
         },
         {
             id: 493,
@@ -3954,7 +3954,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 120,
             weight: 3200,
-            thumbnail: "sprites/pokemon/493.png",
+            thumbnail: "/sprites/pokemon/493.png",
         },
         {
             id: 494,
@@ -3962,7 +3962,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 40,
-            thumbnail: "sprites/pokemon/494.png",
+            thumbnail: "/sprites/pokemon/494.png",
         },
         {
             id: 495,
@@ -3970,7 +3970,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 81,
-            thumbnail: "sprites/pokemon/495.png",
+            thumbnail: "/sprites/pokemon/495.png",
         },
         {
             id: 496,
@@ -3978,7 +3978,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 160,
-            thumbnail: "sprites/pokemon/496.png",
+            thumbnail: "/sprites/pokemon/496.png",
         },
         {
             id: 497,
@@ -3986,7 +3986,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 630,
-            thumbnail: "sprites/pokemon/497.png",
+            thumbnail: "/sprites/pokemon/497.png",
         },
         {
             id: 498,
@@ -3994,7 +3994,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 99,
-            thumbnail: "sprites/pokemon/498.png",
+            thumbnail: "/sprites/pokemon/498.png",
         },
         {
             id: 499,
@@ -4002,7 +4002,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 555,
-            thumbnail: "sprites/pokemon/499.png",
+            thumbnail: "/sprites/pokemon/499.png",
         },
         {
             id: 500,
@@ -4010,7 +4010,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 110,
             weight: 1500,
-            thumbnail: "sprites/pokemon/500.png",
+            thumbnail: "/sprites/pokemon/500.png",
         },
         {
             id: 501,
@@ -4018,7 +4018,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 59,
-            thumbnail: "sprites/pokemon/501.png",
+            thumbnail: "/sprites/pokemon/501.png",
         },
         {
             id: 502,
@@ -4026,7 +4026,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 245,
-            thumbnail: "sprites/pokemon/502.png",
+            thumbnail: "/sprites/pokemon/502.png",
         },
         {
             id: 503,
@@ -4034,7 +4034,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 946,
-            thumbnail: "sprites/pokemon/503.png",
+            thumbnail: "/sprites/pokemon/503.png",
         },
         {
             id: 504,
@@ -4042,7 +4042,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 116,
-            thumbnail: "sprites/pokemon/504.png",
+            thumbnail: "/sprites/pokemon/504.png",
         },
         {
             id: 505,
@@ -4050,7 +4050,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 60,
             weight: 270,
-            thumbnail: "sprites/pokemon/505.png",
+            thumbnail: "/sprites/pokemon/505.png",
         },
         {
             id: 506,
@@ -4058,7 +4058,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 41,
-            thumbnail: "sprites/pokemon/506.png",
+            thumbnail: "/sprites/pokemon/506.png",
         },
         {
             id: 507,
@@ -4066,7 +4066,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 65,
             weight: 147,
-            thumbnail: "sprites/pokemon/507.png",
+            thumbnail: "/sprites/pokemon/507.png",
         },
         {
             id: 508,
@@ -4074,7 +4074,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 85,
             weight: 610,
-            thumbnail: "sprites/pokemon/508.png",
+            thumbnail: "/sprites/pokemon/508.png",
         },
         {
             id: 509,
@@ -4082,7 +4082,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 41,
             weight: 101,
-            thumbnail: "sprites/pokemon/509.png",
+            thumbnail: "/sprites/pokemon/509.png",
         },
         {
             id: 510,
@@ -4090,7 +4090,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 64,
             weight: 375,
-            thumbnail: "sprites/pokemon/510.png",
+            thumbnail: "/sprites/pokemon/510.png",
         },
         {
             id: 511,
@@ -4098,7 +4098,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 105,
-            thumbnail: "sprites/pokemon/511.png",
+            thumbnail: "/sprites/pokemon/511.png",
         },
         {
             id: 512,
@@ -4106,7 +4106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 75,
             weight: 305,
-            thumbnail: "sprites/pokemon/512.png",
+            thumbnail: "/sprites/pokemon/512.png",
         },
         {
             id: 513,
@@ -4114,7 +4114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 110,
-            thumbnail: "sprites/pokemon/513.png",
+            thumbnail: "/sprites/pokemon/513.png",
         },
         {
             id: 514,
@@ -4122,7 +4122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 75,
             weight: 280,
-            thumbnail: "sprites/pokemon/514.png",
+            thumbnail: "/sprites/pokemon/514.png",
         },
         {
             id: 515,
@@ -4130,7 +4130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 135,
-            thumbnail: "sprites/pokemon/515.png",
+            thumbnail: "/sprites/pokemon/515.png",
         },
         {
             id: 516,
@@ -4138,7 +4138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 75,
             weight: 290,
-            thumbnail: "sprites/pokemon/516.png",
+            thumbnail: "/sprites/pokemon/516.png",
         },
         {
             id: 517,
@@ -4146,7 +4146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 76,
             weight: 233,
-            thumbnail: "sprites/pokemon/517.png",
+            thumbnail: "/sprites/pokemon/517.png",
         },
         {
             id: 518,
@@ -4154,7 +4154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 116,
             weight: 605,
-            thumbnail: "sprites/pokemon/518.png",
+            thumbnail: "/sprites/pokemon/518.png",
         },
         {
             id: 519,
@@ -4162,7 +4162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 50,
             weight: 21,
-            thumbnail: "sprites/pokemon/519.png",
+            thumbnail: "/sprites/pokemon/519.png",
         },
         {
             id: 520,
@@ -4170,7 +4170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 62,
             weight: 150,
-            thumbnail: "sprites/pokemon/520.png",
+            thumbnail: "/sprites/pokemon/520.png",
         },
         {
             id: 521,
@@ -4178,7 +4178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 290,
-            thumbnail: "sprites/pokemon/521.png",
+            thumbnail: "/sprites/pokemon/521.png",
         },
         {
             id: 522,
@@ -4186,7 +4186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 45,
             weight: 298,
-            thumbnail: "sprites/pokemon/522.png",
+            thumbnail: "/sprites/pokemon/522.png",
         },
         {
             id: 523,
@@ -4194,7 +4194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 75,
             weight: 795,
-            thumbnail: "sprites/pokemon/523.png",
+            thumbnail: "/sprites/pokemon/523.png",
         },
         {
             id: 524,
@@ -4202,7 +4202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 55,
             weight: 180,
-            thumbnail: "sprites/pokemon/524.png",
+            thumbnail: "/sprites/pokemon/524.png",
         },
         {
             id: 525,
@@ -4210,7 +4210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 70,
             weight: 1020,
-            thumbnail: "sprites/pokemon/525.png",
+            thumbnail: "/sprites/pokemon/525.png",
         },
         {
             id: 526,
@@ -4218,7 +4218,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 85,
             weight: 2600,
-            thumbnail: "sprites/pokemon/526.png",
+            thumbnail: "/sprites/pokemon/526.png",
         },
         {
             id: 527,
@@ -4226,7 +4226,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 65,
             weight: 21,
-            thumbnail: "sprites/pokemon/527.png",
+            thumbnail: "/sprites/pokemon/527.png",
         },
         {
             id: 528,
@@ -4234,7 +4234,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 67,
             weight: 105,
-            thumbnail: "sprites/pokemon/528.png",
+            thumbnail: "/sprites/pokemon/528.png",
         },
         {
             id: 529,
@@ -4242,7 +4242,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 60,
             weight: 85,
-            thumbnail: "sprites/pokemon/529.png",
+            thumbnail: "/sprites/pokemon/529.png",
         },
         {
             id: 530,
@@ -4250,7 +4250,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 110,
             weight: 404,
-            thumbnail: "sprites/pokemon/530.png",
+            thumbnail: "/sprites/pokemon/530.png",
         },
         {
             id: 531,
@@ -4258,7 +4258,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 103,
             weight: 310,
-            thumbnail: "sprites/pokemon/531.png",
+            thumbnail: "/sprites/pokemon/531.png",
         },
         {
             id: 532,
@@ -4266,7 +4266,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 75,
             weight: 125,
-            thumbnail: "sprites/pokemon/532.png",
+            thumbnail: "/sprites/pokemon/532.png",
         },
         {
             id: 533,
@@ -4274,7 +4274,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 85,
             weight: 400,
-            thumbnail: "sprites/pokemon/533.png",
+            thumbnail: "/sprites/pokemon/533.png",
         },
         {
             id: 534,
@@ -4282,7 +4282,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 105,
             weight: 870,
-            thumbnail: "sprites/pokemon/534.png",
+            thumbnail: "/sprites/pokemon/534.png",
         },
         {
             id: 535,
@@ -4290,7 +4290,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 50,
             weight: 45,
-            thumbnail: "sprites/pokemon/535.png",
+            thumbnail: "/sprites/pokemon/535.png",
         },
         {
             id: 536,
@@ -4298,7 +4298,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 75,
             weight: 170,
-            thumbnail: "sprites/pokemon/536.png",
+            thumbnail: "/sprites/pokemon/536.png",
         },
         {
             id: 537,
@@ -4306,7 +4306,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 105,
             weight: 620,
-            thumbnail: "sprites/pokemon/537.png",
+            thumbnail: "/sprites/pokemon/537.png",
         },
         {
             id: 538,
@@ -4314,7 +4314,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 120,
             weight: 555,
-            thumbnail: "sprites/pokemon/538.png",
+            thumbnail: "/sprites/pokemon/538.png",
         },
         {
             id: 539,
@@ -4322,7 +4322,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 510,
-            thumbnail: "sprites/pokemon/539.png",
+            thumbnail: "/sprites/pokemon/539.png",
         },
         {
             id: 540,
@@ -4330,7 +4330,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 25,
-            thumbnail: "sprites/pokemon/540.png",
+            thumbnail: "/sprites/pokemon/540.png",
         },
         {
             id: 541,
@@ -4338,7 +4338,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 55,
             weight: 73,
-            thumbnail: "sprites/pokemon/541.png",
+            thumbnail: "/sprites/pokemon/541.png",
         },
         {
             id: 542,
@@ -4346,7 +4346,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 205,
-            thumbnail: "sprites/pokemon/542.png",
+            thumbnail: "/sprites/pokemon/542.png",
         },
         {
             id: 543,
@@ -4354,7 +4354,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 30,
             weight: 53,
-            thumbnail: "sprites/pokemon/543.png",
+            thumbnail: "/sprites/pokemon/543.png",
         },
         {
             id: 544,
@@ -4362,7 +4362,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 40,
             weight: 585,
-            thumbnail: "sprites/pokemon/544.png",
+            thumbnail: "/sprites/pokemon/544.png",
         },
         {
             id: 545,
@@ -4370,7 +4370,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 2005,
-            thumbnail: "sprites/pokemon/545.png",
+            thumbnail: "/sprites/pokemon/545.png",
         },
         {
             id: 546,
@@ -4378,7 +4378,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 6,
-            thumbnail: "sprites/pokemon/546.png",
+            thumbnail: "/sprites/pokemon/546.png",
         },
         {
             id: 547,
@@ -4386,7 +4386,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 66,
-            thumbnail: "sprites/pokemon/547.png",
+            thumbnail: "/sprites/pokemon/547.png",
         },
         {
             id: 548,
@@ -4394,7 +4394,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 45,
             weight: 66,
-            thumbnail: "sprites/pokemon/548.png",
+            thumbnail: "/sprites/pokemon/548.png",
         },
         {
             id: 549,
@@ -4402,7 +4402,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 163,
-            thumbnail: "sprites/pokemon/549.png",
+            thumbnail: "/sprites/pokemon/549.png",
         },
         {
             id: 550,
@@ -4410,7 +4410,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 70,
             weight: 180,
-            thumbnail: "sprites/pokemon/550.png",
+            thumbnail: "/sprites/pokemon/550.png",
         },
         {
             id: 551,
@@ -4418,7 +4418,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 50,
             weight: 152,
-            thumbnail: "sprites/pokemon/551.png",
+            thumbnail: "/sprites/pokemon/551.png",
         },
         {
             id: 552,
@@ -4426,7 +4426,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 60,
             weight: 334,
-            thumbnail: "sprites/pokemon/552.png",
+            thumbnail: "/sprites/pokemon/552.png",
         },
         {
             id: 553,
@@ -4434,7 +4434,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 963,
-            thumbnail: "sprites/pokemon/553.png",
+            thumbnail: "/sprites/pokemon/553.png",
         },
         {
             id: 554,
@@ -4442,7 +4442,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 70,
             weight: 375,
-            thumbnail: "sprites/pokemon/554.png",
+            thumbnail: "/sprites/pokemon/554.png",
         },
         {
             id: 555,
@@ -4450,7 +4450,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 105,
             weight: 929,
-            thumbnail: "sprites/pokemon/555.png",
+            thumbnail: "/sprites/pokemon/555.png",
         },
         {
             id: 556,
@@ -4458,7 +4458,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 75,
             weight: 280,
-            thumbnail: "sprites/pokemon/556.png",
+            thumbnail: "/sprites/pokemon/556.png",
         },
         {
             id: 557,
@@ -4466,7 +4466,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 145,
-            thumbnail: "sprites/pokemon/557.png",
+            thumbnail: "/sprites/pokemon/557.png",
         },
         {
             id: 558,
@@ -4474,7 +4474,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 2000,
-            thumbnail: "sprites/pokemon/558.png",
+            thumbnail: "/sprites/pokemon/558.png",
         },
         {
             id: 559,
@@ -4482,7 +4482,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 50,
             weight: 118,
-            thumbnail: "sprites/pokemon/559.png",
+            thumbnail: "/sprites/pokemon/559.png",
         },
         {
             id: 560,
@@ -4490,7 +4490,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 65,
             weight: 300,
-            thumbnail: "sprites/pokemon/560.png",
+            thumbnail: "/sprites/pokemon/560.png",
         },
         {
             id: 561,
@@ -4498,7 +4498,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 72,
             weight: 140,
-            thumbnail: "sprites/pokemon/561.png",
+            thumbnail: "/sprites/pokemon/561.png",
         },
         {
             id: 562,
@@ -4506,7 +4506,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 38,
             weight: 15,
-            thumbnail: "sprites/pokemon/562.png",
+            thumbnail: "/sprites/pokemon/562.png",
         },
         {
             id: 563,
@@ -4514,7 +4514,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 58,
             weight: 765,
-            thumbnail: "sprites/pokemon/563.png",
+            thumbnail: "/sprites/pokemon/563.png",
         },
         {
             id: 564,
@@ -4522,7 +4522,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 54,
             weight: 165,
-            thumbnail: "sprites/pokemon/564.png",
+            thumbnail: "/sprites/pokemon/564.png",
         },
         {
             id: 565,
@@ -4530,7 +4530,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 74,
             weight: 810,
-            thumbnail: "sprites/pokemon/565.png",
+            thumbnail: "/sprites/pokemon/565.png",
         },
         {
             id: 566,
@@ -4538,7 +4538,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 95,
-            thumbnail: "sprites/pokemon/566.png",
+            thumbnail: "/sprites/pokemon/566.png",
         },
         {
             id: 567,
@@ -4546,7 +4546,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 320,
-            thumbnail: "sprites/pokemon/567.png",
+            thumbnail: "/sprites/pokemon/567.png",
         },
         {
             id: 568,
@@ -4554,7 +4554,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 310,
-            thumbnail: "sprites/pokemon/568.png",
+            thumbnail: "/sprites/pokemon/568.png",
         },
         {
             id: 569,
@@ -4562,7 +4562,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 80,
             weight: 1073,
-            thumbnail: "sprites/pokemon/569.png",
+            thumbnail: "/sprites/pokemon/569.png",
         },
         {
             id: 570,
@@ -4570,7 +4570,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 40,
             weight: 125,
-            thumbnail: "sprites/pokemon/570.png",
+            thumbnail: "/sprites/pokemon/570.png",
         },
         {
             id: 571,
@@ -4578,7 +4578,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 811,
-            thumbnail: "sprites/pokemon/571.png",
+            thumbnail: "/sprites/pokemon/571.png",
         },
         {
             id: 572,
@@ -4586,7 +4586,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 55,
             weight: 58,
-            thumbnail: "sprites/pokemon/572.png",
+            thumbnail: "/sprites/pokemon/572.png",
         },
         {
             id: 573,
@@ -4594,7 +4594,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 75,
             weight: 75,
-            thumbnail: "sprites/pokemon/573.png",
+            thumbnail: "/sprites/pokemon/573.png",
         },
         {
             id: 574,
@@ -4602,7 +4602,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 45,
             weight: 58,
-            thumbnail: "sprites/pokemon/574.png",
+            thumbnail: "/sprites/pokemon/574.png",
         },
         {
             id: 575,
@@ -4610,7 +4610,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 60,
             weight: 180,
-            thumbnail: "sprites/pokemon/575.png",
+            thumbnail: "/sprites/pokemon/575.png",
         },
         {
             id: 576,
@@ -4618,7 +4618,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 70,
             weight: 440,
-            thumbnail: "sprites/pokemon/576.png",
+            thumbnail: "/sprites/pokemon/576.png",
         },
         {
             id: 577,
@@ -4626,7 +4626,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 45,
             weight: 10,
-            thumbnail: "sprites/pokemon/577.png",
+            thumbnail: "/sprites/pokemon/577.png",
         },
         {
             id: 578,
@@ -4634,7 +4634,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 65,
             weight: 80,
-            thumbnail: "sprites/pokemon/578.png",
+            thumbnail: "/sprites/pokemon/578.png",
         },
         {
             id: 579,
@@ -4642,7 +4642,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 110,
             weight: 201,
-            thumbnail: "sprites/pokemon/579.png",
+            thumbnail: "/sprites/pokemon/579.png",
         },
         {
             id: 580,
@@ -4650,7 +4650,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 62,
             weight: 55,
-            thumbnail: "sprites/pokemon/580.png",
+            thumbnail: "/sprites/pokemon/580.png",
         },
         {
             id: 581,
@@ -4658,7 +4658,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 242,
-            thumbnail: "sprites/pokemon/581.png",
+            thumbnail: "/sprites/pokemon/581.png",
         },
         {
             id: 582,
@@ -4666,7 +4666,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 36,
             weight: 57,
-            thumbnail: "sprites/pokemon/582.png",
+            thumbnail: "/sprites/pokemon/582.png",
         },
         {
             id: 583,
@@ -4674,7 +4674,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 51,
             weight: 410,
-            thumbnail: "sprites/pokemon/583.png",
+            thumbnail: "/sprites/pokemon/583.png",
         },
         {
             id: 584,
@@ -4682,7 +4682,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 71,
             weight: 575,
-            thumbnail: "sprites/pokemon/584.png",
+            thumbnail: "/sprites/pokemon/584.png",
         },
         {
             id: 585,
@@ -4690,7 +4690,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 60,
             weight: 195,
-            thumbnail: "sprites/pokemon/585.png",
+            thumbnail: "/sprites/pokemon/585.png",
         },
         {
             id: 586,
@@ -4698,7 +4698,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 80,
             weight: 925,
-            thumbnail: "sprites/pokemon/586.png",
+            thumbnail: "/sprites/pokemon/586.png",
         },
         {
             id: 587,
@@ -4706,7 +4706,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 55,
             weight: 50,
-            thumbnail: "sprites/pokemon/587.png",
+            thumbnail: "/sprites/pokemon/587.png",
         },
         {
             id: 588,
@@ -4714,7 +4714,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 50,
             weight: 59,
-            thumbnail: "sprites/pokemon/588.png",
+            thumbnail: "/sprites/pokemon/588.png",
         },
         {
             id: 589,
@@ -4722,7 +4722,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 330,
-            thumbnail: "sprites/pokemon/589.png",
+            thumbnail: "/sprites/pokemon/589.png",
         },
         {
             id: 590,
@@ -4730,7 +4730,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 69,
             weight: 10,
-            thumbnail: "sprites/pokemon/590.png",
+            thumbnail: "/sprites/pokemon/590.png",
         },
         {
             id: 591,
@@ -4738,7 +4738,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 114,
             weight: 105,
-            thumbnail: "sprites/pokemon/591.png",
+            thumbnail: "/sprites/pokemon/591.png",
         },
         {
             id: 592,
@@ -4746,7 +4746,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 55,
             weight: 330,
-            thumbnail: "sprites/pokemon/592.png",
+            thumbnail: "/sprites/pokemon/592.png",
         },
         {
             id: 593,
@@ -4754,7 +4754,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 100,
             weight: 1350,
-            thumbnail: "sprites/pokemon/593.png",
+            thumbnail: "/sprites/pokemon/593.png",
         },
         {
             id: 594,
@@ -4762,7 +4762,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 165,
             weight: 316,
-            thumbnail: "sprites/pokemon/594.png",
+            thumbnail: "/sprites/pokemon/594.png",
         },
         {
             id: 595,
@@ -4770,7 +4770,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 6,
-            thumbnail: "sprites/pokemon/595.png",
+            thumbnail: "/sprites/pokemon/595.png",
         },
         {
             id: 596,
@@ -4778,7 +4778,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 143,
-            thumbnail: "sprites/pokemon/596.png",
+            thumbnail: "/sprites/pokemon/596.png",
         },
         {
             id: 597,
@@ -4786,7 +4786,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 44,
             weight: 188,
-            thumbnail: "sprites/pokemon/597.png",
+            thumbnail: "/sprites/pokemon/597.png",
         },
         {
             id: 598,
@@ -4794,7 +4794,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 74,
             weight: 1100,
-            thumbnail: "sprites/pokemon/598.png",
+            thumbnail: "/sprites/pokemon/598.png",
         },
         {
             id: 599,
@@ -4802,7 +4802,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 130,
             baseHp: 40,
             weight: 210,
-            thumbnail: "sprites/pokemon/599.png",
+            thumbnail: "/sprites/pokemon/599.png",
         },
         {
             id: 600,
@@ -4810,7 +4810,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 60,
             weight: 510,
-            thumbnail: "sprites/pokemon/600.png",
+            thumbnail: "/sprites/pokemon/600.png",
         },
         {
             id: 601,
@@ -4818,7 +4818,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 60,
             weight: 810,
-            thumbnail: "sprites/pokemon/601.png",
+            thumbnail: "/sprites/pokemon/601.png",
         },
         {
             id: 602,
@@ -4826,7 +4826,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 35,
             weight: 3,
-            thumbnail: "sprites/pokemon/602.png",
+            thumbnail: "/sprites/pokemon/602.png",
         },
         {
             id: 603,
@@ -4834,7 +4834,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 65,
             weight: 220,
-            thumbnail: "sprites/pokemon/603.png",
+            thumbnail: "/sprites/pokemon/603.png",
         },
         {
             id: 604,
@@ -4842,7 +4842,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 85,
             weight: 805,
-            thumbnail: "sprites/pokemon/604.png",
+            thumbnail: "/sprites/pokemon/604.png",
         },
         {
             id: 605,
@@ -4850,7 +4850,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 55,
             weight: 90,
-            thumbnail: "sprites/pokemon/605.png",
+            thumbnail: "/sprites/pokemon/605.png",
         },
         {
             id: 606,
@@ -4858,7 +4858,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 75,
             weight: 345,
-            thumbnail: "sprites/pokemon/606.png",
+            thumbnail: "/sprites/pokemon/606.png",
         },
         {
             id: 607,
@@ -4866,7 +4866,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 31,
-            thumbnail: "sprites/pokemon/607.png",
+            thumbnail: "/sprites/pokemon/607.png",
         },
         {
             id: 608,
@@ -4874,7 +4874,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 60,
             weight: 130,
-            thumbnail: "sprites/pokemon/608.png",
+            thumbnail: "/sprites/pokemon/608.png",
         },
         {
             id: 609,
@@ -4882,7 +4882,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 343,
-            thumbnail: "sprites/pokemon/609.png",
+            thumbnail: "/sprites/pokemon/609.png",
         },
         {
             id: 610,
@@ -4890,7 +4890,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 46,
             weight: 180,
-            thumbnail: "sprites/pokemon/610.png",
+            thumbnail: "/sprites/pokemon/610.png",
         },
         {
             id: 611,
@@ -4898,7 +4898,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 66,
             weight: 360,
-            thumbnail: "sprites/pokemon/611.png",
+            thumbnail: "/sprites/pokemon/611.png",
         },
         {
             id: 612,
@@ -4906,7 +4906,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 76,
             weight: 1055,
-            thumbnail: "sprites/pokemon/612.png",
+            thumbnail: "/sprites/pokemon/612.png",
         },
         {
             id: 613,
@@ -4914,7 +4914,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 55,
             weight: 85,
-            thumbnail: "sprites/pokemon/613.png",
+            thumbnail: "/sprites/pokemon/613.png",
         },
         {
             id: 614,
@@ -4922,7 +4922,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 95,
             weight: 2600,
-            thumbnail: "sprites/pokemon/614.png",
+            thumbnail: "/sprites/pokemon/614.png",
         },
         {
             id: 615,
@@ -4930,7 +4930,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 80,
             weight: 1480,
-            thumbnail: "sprites/pokemon/615.png",
+            thumbnail: "/sprites/pokemon/615.png",
         },
         {
             id: 616,
@@ -4938,7 +4938,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 50,
             weight: 77,
-            thumbnail: "sprites/pokemon/616.png",
+            thumbnail: "/sprites/pokemon/616.png",
         },
         {
             id: 617,
@@ -4946,7 +4946,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 80,
             weight: 253,
-            thumbnail: "sprites/pokemon/617.png",
+            thumbnail: "/sprites/pokemon/617.png",
         },
         {
             id: 618,
@@ -4954,7 +4954,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 109,
             weight: 110,
-            thumbnail: "sprites/pokemon/618.png",
+            thumbnail: "/sprites/pokemon/618.png",
         },
         {
             id: 619,
@@ -4962,7 +4962,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 45,
             weight: 200,
-            thumbnail: "sprites/pokemon/619.png",
+            thumbnail: "/sprites/pokemon/619.png",
         },
         {
             id: 620,
@@ -4970,7 +4970,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 355,
-            thumbnail: "sprites/pokemon/620.png",
+            thumbnail: "/sprites/pokemon/620.png",
         },
         {
             id: 621,
@@ -4978,7 +4978,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 77,
             weight: 1390,
-            thumbnail: "sprites/pokemon/621.png",
+            thumbnail: "/sprites/pokemon/621.png",
         },
         {
             id: 622,
@@ -4986,7 +4986,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 59,
             weight: 920,
-            thumbnail: "sprites/pokemon/622.png",
+            thumbnail: "/sprites/pokemon/622.png",
         },
         {
             id: 623,
@@ -4994,7 +4994,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 89,
             weight: 3300,
-            thumbnail: "sprites/pokemon/623.png",
+            thumbnail: "/sprites/pokemon/623.png",
         },
         {
             id: 624,
@@ -5002,7 +5002,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 45,
             weight: 102,
-            thumbnail: "sprites/pokemon/624.png",
+            thumbnail: "/sprites/pokemon/624.png",
         },
         {
             id: 625,
@@ -5010,7 +5010,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 700,
-            thumbnail: "sprites/pokemon/625.png",
+            thumbnail: "/sprites/pokemon/625.png",
         },
         {
             id: 626,
@@ -5018,7 +5018,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 946,
-            thumbnail: "sprites/pokemon/626.png",
+            thumbnail: "/sprites/pokemon/626.png",
         },
         {
             id: 627,
@@ -5026,7 +5026,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 70,
             weight: 105,
-            thumbnail: "sprites/pokemon/627.png",
+            thumbnail: "/sprites/pokemon/627.png",
         },
         {
             id: 628,
@@ -5034,7 +5034,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 100,
             weight: 410,
-            thumbnail: "sprites/pokemon/628.png",
+            thumbnail: "/sprites/pokemon/628.png",
         },
         {
             id: 629,
@@ -5042,7 +5042,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 70,
             weight: 90,
-            thumbnail: "sprites/pokemon/629.png",
+            thumbnail: "/sprites/pokemon/629.png",
         },
         {
             id: 630,
@@ -5050,7 +5050,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 110,
             weight: 395,
-            thumbnail: "sprites/pokemon/630.png",
+            thumbnail: "/sprites/pokemon/630.png",
         },
         {
             id: 631,
@@ -5058,7 +5058,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 85,
             weight: 580,
-            thumbnail: "sprites/pokemon/631.png",
+            thumbnail: "/sprites/pokemon/631.png",
         },
         {
             id: 632,
@@ -5066,7 +5066,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 58,
             weight: 330,
-            thumbnail: "sprites/pokemon/632.png",
+            thumbnail: "/sprites/pokemon/632.png",
         },
         {
             id: 633,
@@ -5074,7 +5074,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 52,
             weight: 173,
-            thumbnail: "sprites/pokemon/633.png",
+            thumbnail: "/sprites/pokemon/633.png",
         },
         {
             id: 634,
@@ -5082,7 +5082,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 72,
             weight: 500,
-            thumbnail: "sprites/pokemon/634.png",
+            thumbnail: "/sprites/pokemon/634.png",
         },
         {
             id: 635,
@@ -5090,7 +5090,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 92,
             weight: 1600,
-            thumbnail: "sprites/pokemon/635.png",
+            thumbnail: "/sprites/pokemon/635.png",
         },
         {
             id: 636,
@@ -5098,7 +5098,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 288,
-            thumbnail: "sprites/pokemon/636.png",
+            thumbnail: "/sprites/pokemon/636.png",
         },
         {
             id: 637,
@@ -5106,7 +5106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 15,
             baseHp: 85,
             weight: 460,
-            thumbnail: "sprites/pokemon/637.png",
+            thumbnail: "/sprites/pokemon/637.png",
         },
         {
             id: 638,
@@ -5114,7 +5114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 91,
             weight: 2500,
-            thumbnail: "sprites/pokemon/638.png",
+            thumbnail: "/sprites/pokemon/638.png",
         },
         {
             id: 639,
@@ -5122,7 +5122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 91,
             weight: 2600,
-            thumbnail: "sprites/pokemon/639.png",
+            thumbnail: "/sprites/pokemon/639.png",
         },
         {
             id: 640,
@@ -5130,7 +5130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 91,
             weight: 2000,
-            thumbnail: "sprites/pokemon/640.png",
+            thumbnail: "/sprites/pokemon/640.png",
         },
         {
             id: 641,
@@ -5138,7 +5138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 79,
             weight: 630,
-            thumbnail: "sprites/pokemon/641.png",
+            thumbnail: "/sprites/pokemon/641.png",
         },
         {
             id: 642,
@@ -5146,7 +5146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 79,
             weight: 610,
-            thumbnail: "sprites/pokemon/642.png",
+            thumbnail: "/sprites/pokemon/642.png",
         },
         {
             id: 643,
@@ -5154,7 +5154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 3300,
-            thumbnail: "sprites/pokemon/643.png",
+            thumbnail: "/sprites/pokemon/643.png",
         },
         {
             id: 644,
@@ -5162,7 +5162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 3450,
-            thumbnail: "sprites/pokemon/644.png",
+            thumbnail: "/sprites/pokemon/644.png",
         },
         {
             id: 645,
@@ -5170,7 +5170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 89,
             weight: 680,
-            thumbnail: "sprites/pokemon/645.png",
+            thumbnail: "/sprites/pokemon/645.png",
         },
         {
             id: 646,
@@ -5178,7 +5178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 125,
             weight: 3250,
-            thumbnail: "sprites/pokemon/646.png",
+            thumbnail: "/sprites/pokemon/646.png",
         },
         {
             id: 647,
@@ -5186,7 +5186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 91,
             weight: 485,
-            thumbnail: "sprites/pokemon/647.png",
+            thumbnail: "/sprites/pokemon/647.png",
         },
         {
             id: 648,
@@ -5194,7 +5194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 65,
-            thumbnail: "sprites/pokemon/648.png",
+            thumbnail: "/sprites/pokemon/648.png",
         },
         {
             id: 649,
@@ -5202,7 +5202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 71,
             weight: 825,
-            thumbnail: "sprites/pokemon/649.png",
+            thumbnail: "/sprites/pokemon/649.png",
         },
         {
             id: 650,
@@ -5210,7 +5210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 56,
             weight: 90,
-            thumbnail: "sprites/pokemon/650.png",
+            thumbnail: "/sprites/pokemon/650.png",
         },
         {
             id: 651,
@@ -5218,7 +5218,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 61,
             weight: 290,
-            thumbnail: "sprites/pokemon/651.png",
+            thumbnail: "/sprites/pokemon/651.png",
         },
         {
             id: 652,
@@ -5226,7 +5226,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 88,
             weight: 900,
-            thumbnail: "sprites/pokemon/652.png",
+            thumbnail: "/sprites/pokemon/652.png",
         },
         {
             id: 653,
@@ -5234,7 +5234,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 40,
             weight: 94,
-            thumbnail: "sprites/pokemon/653.png",
+            thumbnail: "/sprites/pokemon/653.png",
         },
         {
             id: 654,
@@ -5242,7 +5242,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 59,
             weight: 145,
-            thumbnail: "sprites/pokemon/654.png",
+            thumbnail: "/sprites/pokemon/654.png",
         },
         {
             id: 655,
@@ -5250,7 +5250,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 390,
-            thumbnail: "sprites/pokemon/655.png",
+            thumbnail: "/sprites/pokemon/655.png",
         },
         {
             id: 656,
@@ -5258,7 +5258,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 41,
             weight: 70,
-            thumbnail: "sprites/pokemon/656.png",
+            thumbnail: "/sprites/pokemon/656.png",
         },
         {
             id: 657,
@@ -5266,7 +5266,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 54,
             weight: 109,
-            thumbnail: "sprites/pokemon/657.png",
+            thumbnail: "/sprites/pokemon/657.png",
         },
         {
             id: 658,
@@ -5274,7 +5274,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 72,
             weight: 400,
-            thumbnail: "sprites/pokemon/658.png",
+            thumbnail: "/sprites/pokemon/658.png",
         },
         {
             id: 659,
@@ -5282,7 +5282,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 38,
             weight: 50,
-            thumbnail: "sprites/pokemon/659.png",
+            thumbnail: "/sprites/pokemon/659.png",
         },
         {
             id: 660,
@@ -5290,7 +5290,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 127,
             baseHp: 85,
             weight: 424,
-            thumbnail: "sprites/pokemon/660.png",
+            thumbnail: "/sprites/pokemon/660.png",
         },
         {
             id: 661,
@@ -5298,7 +5298,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 17,
-            thumbnail: "sprites/pokemon/661.png",
+            thumbnail: "/sprites/pokemon/661.png",
         },
         {
             id: 662,
@@ -5306,7 +5306,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 62,
             weight: 160,
-            thumbnail: "sprites/pokemon/662.png",
+            thumbnail: "/sprites/pokemon/662.png",
         },
         {
             id: 663,
@@ -5314,7 +5314,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 78,
             weight: 245,
-            thumbnail: "sprites/pokemon/663.png",
+            thumbnail: "/sprites/pokemon/663.png",
         },
         {
             id: 664,
@@ -5322,7 +5322,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 38,
             weight: 25,
-            thumbnail: "sprites/pokemon/664.png",
+            thumbnail: "/sprites/pokemon/664.png",
         },
         {
             id: 665,
@@ -5330,7 +5330,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 45,
             weight: 84,
-            thumbnail: "sprites/pokemon/665.png",
+            thumbnail: "/sprites/pokemon/665.png",
         },
         {
             id: 666,
@@ -5338,7 +5338,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 170,
-            thumbnail: "sprites/pokemon/666.png",
+            thumbnail: "/sprites/pokemon/666.png",
         },
         {
             id: 667,
@@ -5346,7 +5346,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 220,
             baseHp: 62,
             weight: 135,
-            thumbnail: "sprites/pokemon/667.png",
+            thumbnail: "/sprites/pokemon/667.png",
         },
         {
             id: 668,
@@ -5354,7 +5354,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 65,
             baseHp: 86,
             weight: 815,
-            thumbnail: "sprites/pokemon/668.png",
+            thumbnail: "/sprites/pokemon/668.png",
         },
         {
             id: 669,
@@ -5362,7 +5362,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 44,
             weight: 1,
-            thumbnail: "sprites/pokemon/669.png",
+            thumbnail: "/sprites/pokemon/669.png",
         },
         {
             id: 670,
@@ -5370,7 +5370,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 54,
             weight: 9,
-            thumbnail: "sprites/pokemon/670.png",
+            thumbnail: "/sprites/pokemon/670.png",
         },
         {
             id: 671,
@@ -5378,7 +5378,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 78,
             weight: 100,
-            thumbnail: "sprites/pokemon/671.png",
+            thumbnail: "/sprites/pokemon/671.png",
         },
         {
             id: 672,
@@ -5386,7 +5386,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 66,
             weight: 310,
-            thumbnail: "sprites/pokemon/672.png",
+            thumbnail: "/sprites/pokemon/672.png",
         },
         {
             id: 673,
@@ -5394,7 +5394,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 123,
             weight: 910,
-            thumbnail: "sprites/pokemon/673.png",
+            thumbnail: "/sprites/pokemon/673.png",
         },
         {
             id: 674,
@@ -5402,7 +5402,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 220,
             baseHp: 67,
             weight: 80,
-            thumbnail: "sprites/pokemon/674.png",
+            thumbnail: "/sprites/pokemon/674.png",
         },
         {
             id: 675,
@@ -5410,7 +5410,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 65,
             baseHp: 95,
             weight: 1360,
-            thumbnail: "sprites/pokemon/675.png",
+            thumbnail: "/sprites/pokemon/675.png",
         },
         {
             id: 676,
@@ -5418,7 +5418,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 160,
             baseHp: 75,
             weight: 280,
-            thumbnail: "sprites/pokemon/676.png",
+            thumbnail: "/sprites/pokemon/676.png",
         },
         {
             id: 677,
@@ -5426,7 +5426,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 62,
             weight: 35,
-            thumbnail: "sprites/pokemon/677.png",
+            thumbnail: "/sprites/pokemon/677.png",
         },
         {
             id: 678,
@@ -5434,7 +5434,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 74,
             weight: 85,
-            thumbnail: "sprites/pokemon/678.png",
+            thumbnail: "/sprites/pokemon/678.png",
         },
         {
             id: 679,
@@ -5442,7 +5442,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 45,
             weight: 20,
-            thumbnail: "sprites/pokemon/679.png",
+            thumbnail: "/sprites/pokemon/679.png",
         },
         {
             id: 680,
@@ -5450,7 +5450,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 59,
             weight: 45,
-            thumbnail: "sprites/pokemon/680.png",
+            thumbnail: "/sprites/pokemon/680.png",
         },
         {
             id: 681,
@@ -5458,7 +5458,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 530,
-            thumbnail: "sprites/pokemon/681.png",
+            thumbnail: "/sprites/pokemon/681.png",
         },
         {
             id: 682,
@@ -5466,7 +5466,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 78,
             weight: 5,
-            thumbnail: "sprites/pokemon/682.png",
+            thumbnail: "/sprites/pokemon/682.png",
         },
         {
             id: 683,
@@ -5474,7 +5474,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 140,
             baseHp: 101,
             weight: 155,
-            thumbnail: "sprites/pokemon/683.png",
+            thumbnail: "/sprites/pokemon/683.png",
         },
         {
             id: 684,
@@ -5482,7 +5482,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 62,
             weight: 35,
-            thumbnail: "sprites/pokemon/684.png",
+            thumbnail: "/sprites/pokemon/684.png",
         },
         {
             id: 685,
@@ -5490,7 +5490,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 140,
             baseHp: 82,
             weight: 50,
-            thumbnail: "sprites/pokemon/685.png",
+            thumbnail: "/sprites/pokemon/685.png",
         },
         {
             id: 686,
@@ -5498,7 +5498,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 53,
             weight: 35,
-            thumbnail: "sprites/pokemon/686.png",
+            thumbnail: "/sprites/pokemon/686.png",
         },
         {
             id: 687,
@@ -5506,7 +5506,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 80,
             baseHp: 86,
             weight: 470,
-            thumbnail: "sprites/pokemon/687.png",
+            thumbnail: "/sprites/pokemon/687.png",
         },
         {
             id: 688,
@@ -5514,7 +5514,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 42,
             weight: 310,
-            thumbnail: "sprites/pokemon/688.png",
+            thumbnail: "/sprites/pokemon/688.png",
         },
         {
             id: 689,
@@ -5522,7 +5522,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 72,
             weight: 960,
-            thumbnail: "sprites/pokemon/689.png",
+            thumbnail: "/sprites/pokemon/689.png",
         },
         {
             id: 690,
@@ -5530,7 +5530,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 50,
             weight: 73,
-            thumbnail: "sprites/pokemon/690.png",
+            thumbnail: "/sprites/pokemon/690.png",
         },
         {
             id: 691,
@@ -5538,7 +5538,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 55,
             baseHp: 65,
             weight: 815,
-            thumbnail: "sprites/pokemon/691.png",
+            thumbnail: "/sprites/pokemon/691.png",
         },
         {
             id: 692,
@@ -5546,7 +5546,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 50,
             weight: 83,
-            thumbnail: "sprites/pokemon/692.png",
+            thumbnail: "/sprites/pokemon/692.png",
         },
         {
             id: 693,
@@ -5554,7 +5554,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 55,
             baseHp: 71,
             weight: 353,
-            thumbnail: "sprites/pokemon/693.png",
+            thumbnail: "/sprites/pokemon/693.png",
         },
         {
             id: 694,
@@ -5562,7 +5562,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 44,
             weight: 60,
-            thumbnail: "sprites/pokemon/694.png",
+            thumbnail: "/sprites/pokemon/694.png",
         },
         {
             id: 695,
@@ -5570,7 +5570,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 62,
             weight: 210,
-            thumbnail: "sprites/pokemon/695.png",
+            thumbnail: "/sprites/pokemon/695.png",
         },
         {
             id: 696,
@@ -5578,7 +5578,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 58,
             weight: 260,
-            thumbnail: "sprites/pokemon/696.png",
+            thumbnail: "/sprites/pokemon/696.png",
         },
         {
             id: 697,
@@ -5586,7 +5586,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 82,
             weight: 2700,
-            thumbnail: "sprites/pokemon/697.png",
+            thumbnail: "/sprites/pokemon/697.png",
         },
         {
             id: 698,
@@ -5594,7 +5594,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 77,
             weight: 252,
-            thumbnail: "sprites/pokemon/698.png",
+            thumbnail: "/sprites/pokemon/698.png",
         },
         {
             id: 699,
@@ -5602,7 +5602,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 123,
             weight: 2250,
-            thumbnail: "sprites/pokemon/699.png",
+            thumbnail: "/sprites/pokemon/699.png",
         },
         {
             id: 700,
@@ -5610,7 +5610,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 235,
-            thumbnail: "sprites/pokemon/700.png",
+            thumbnail: "/sprites/pokemon/700.png",
         },
         {
             id: 701,
@@ -5618,7 +5618,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 78,
             weight: 215,
-            thumbnail: "sprites/pokemon/701.png",
+            thumbnail: "/sprites/pokemon/701.png",
         },
         {
             id: 702,
@@ -5626,7 +5626,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 67,
             weight: 22,
-            thumbnail: "sprites/pokemon/702.png",
+            thumbnail: "/sprites/pokemon/702.png",
         },
         {
             id: 703,
@@ -5634,7 +5634,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 50,
             weight: 57,
-            thumbnail: "sprites/pokemon/703.png",
+            thumbnail: "/sprites/pokemon/703.png",
         },
         {
             id: 704,
@@ -5642,7 +5642,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 28,
-            thumbnail: "sprites/pokemon/704.png",
+            thumbnail: "/sprites/pokemon/704.png",
         },
         {
             id: 705,
@@ -5650,7 +5650,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 68,
             weight: 175,
-            thumbnail: "sprites/pokemon/705.png",
+            thumbnail: "/sprites/pokemon/705.png",
         },
         {
             id: 706,
@@ -5658,7 +5658,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 1505,
-            thumbnail: "sprites/pokemon/706.png",
+            thumbnail: "/sprites/pokemon/706.png",
         },
         {
             id: 707,
@@ -5666,7 +5666,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 57,
             weight: 30,
-            thumbnail: "sprites/pokemon/707.png",
+            thumbnail: "/sprites/pokemon/707.png",
         },
         {
             id: 708,
@@ -5674,7 +5674,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 43,
             weight: 70,
-            thumbnail: "sprites/pokemon/708.png",
+            thumbnail: "/sprites/pokemon/708.png",
         },
         {
             id: 709,
@@ -5682,7 +5682,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 85,
             weight: 710,
-            thumbnail: "sprites/pokemon/709.png",
+            thumbnail: "/sprites/pokemon/709.png",
         },
         {
             id: 710,
@@ -5690,7 +5690,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 49,
             weight: 50,
-            thumbnail: "sprites/pokemon/710.png",
+            thumbnail: "/sprites/pokemon/710.png",
         },
         {
             id: 711,
@@ -5698,7 +5698,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 65,
             weight: 125,
-            thumbnail: "sprites/pokemon/711.png",
+            thumbnail: "/sprites/pokemon/711.png",
         },
         {
             id: 712,
@@ -5706,7 +5706,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 55,
             weight: 995,
-            thumbnail: "sprites/pokemon/712.png",
+            thumbnail: "/sprites/pokemon/712.png",
         },
         {
             id: 713,
@@ -5714,7 +5714,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 55,
             baseHp: 95,
             weight: 5050,
-            thumbnail: "sprites/pokemon/713.png",
+            thumbnail: "/sprites/pokemon/713.png",
         },
         {
             id: 714,
@@ -5722,7 +5722,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 80,
-            thumbnail: "sprites/pokemon/714.png",
+            thumbnail: "/sprites/pokemon/714.png",
         },
         {
             id: 715,
@@ -5730,7 +5730,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 85,
             weight: 850,
-            thumbnail: "sprites/pokemon/715.png",
+            thumbnail: "/sprites/pokemon/715.png",
         },
         {
             id: 716,
@@ -5738,7 +5738,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 126,
             weight: 2150,
-            thumbnail: "sprites/pokemon/716.png",
+            thumbnail: "/sprites/pokemon/716.png",
         },
         {
             id: 717,
@@ -5746,7 +5746,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 126,
             weight: 2030,
-            thumbnail: "sprites/pokemon/717.png",
+            thumbnail: "/sprites/pokemon/717.png",
         },
         {
             id: 718,
@@ -5754,7 +5754,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 108,
             weight: 3050,
-            thumbnail: "sprites/pokemon/718.png",
+            thumbnail: "/sprites/pokemon/718.png",
         },
         {
             id: 719,
@@ -5762,7 +5762,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 50,
             weight: 88,
-            thumbnail: "sprites/pokemon/719.png",
+            thumbnail: "/sprites/pokemon/719.png",
         },
         {
             id: 720,
@@ -5770,7 +5770,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 90,
-            thumbnail: "sprites/pokemon/720.png",
+            thumbnail: "/sprites/pokemon/720.png",
         },
         {
             id: 721,
@@ -5778,7 +5778,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 1950,
-            thumbnail: "sprites/pokemon/721.png",
+            thumbnail: "/sprites/pokemon/721.png",
         },
         {
             id: 722,
@@ -5786,7 +5786,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 68,
             weight: 15,
-            thumbnail: "sprites/pokemon/722.png",
+            thumbnail: "/sprites/pokemon/722.png",
         },
         {
             id: 723,
@@ -5794,7 +5794,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 78,
             weight: 160,
-            thumbnail: "sprites/pokemon/723.png",
+            thumbnail: "/sprites/pokemon/723.png",
         },
         {
             id: 724,
@@ -5802,7 +5802,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 78,
             weight: 366,
-            thumbnail: "sprites/pokemon/724.png",
+            thumbnail: "/sprites/pokemon/724.png",
         },
         {
             id: 725,
@@ -5810,7 +5810,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 43,
-            thumbnail: "sprites/pokemon/725.png",
+            thumbnail: "/sprites/pokemon/725.png",
         },
         {
             id: 726,
@@ -5818,7 +5818,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 250,
-            thumbnail: "sprites/pokemon/726.png",
+            thumbnail: "/sprites/pokemon/726.png",
         },
         {
             id: 727,
@@ -5826,7 +5826,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 830,
-            thumbnail: "sprites/pokemon/727.png",
+            thumbnail: "/sprites/pokemon/727.png",
         },
         {
             id: 728,
@@ -5834,7 +5834,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 75,
-            thumbnail: "sprites/pokemon/728.png",
+            thumbnail: "/sprites/pokemon/728.png",
         },
         {
             id: 729,
@@ -5842,7 +5842,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 175,
-            thumbnail: "sprites/pokemon/729.png",
+            thumbnail: "/sprites/pokemon/729.png",
         },
         {
             id: 730,
@@ -5850,7 +5850,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 440,
-            thumbnail: "sprites/pokemon/730.png",
+            thumbnail: "/sprites/pokemon/730.png",
         },
         {
             id: 731,
@@ -5858,7 +5858,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 35,
             weight: 12,
-            thumbnail: "sprites/pokemon/731.png",
+            thumbnail: "/sprites/pokemon/731.png",
         },
         {
             id: 732,
@@ -5866,7 +5866,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 55,
             weight: 148,
-            thumbnail: "sprites/pokemon/732.png",
+            thumbnail: "/sprites/pokemon/732.png",
         },
         {
             id: 733,
@@ -5874,7 +5874,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 260,
-            thumbnail: "sprites/pokemon/733.png",
+            thumbnail: "/sprites/pokemon/733.png",
         },
         {
             id: 734,
@@ -5882,7 +5882,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 48,
             weight: 60,
-            thumbnail: "sprites/pokemon/734.png",
+            thumbnail: "/sprites/pokemon/734.png",
         },
         {
             id: 735,
@@ -5890,7 +5890,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 127,
             baseHp: 88,
             weight: 142,
-            thumbnail: "sprites/pokemon/735.png",
+            thumbnail: "/sprites/pokemon/735.png",
         },
         {
             id: 736,
@@ -5898,7 +5898,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 47,
             weight: 44,
-            thumbnail: "sprites/pokemon/736.png",
+            thumbnail: "/sprites/pokemon/736.png",
         },
         {
             id: 737,
@@ -5906,7 +5906,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 57,
             weight: 105,
-            thumbnail: "sprites/pokemon/737.png",
+            thumbnail: "/sprites/pokemon/737.png",
         },
         {
             id: 738,
@@ -5914,7 +5914,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 77,
             weight: 450,
-            thumbnail: "sprites/pokemon/738.png",
+            thumbnail: "/sprites/pokemon/738.png",
         },
         {
             id: 739,
@@ -5922,7 +5922,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 225,
             baseHp: 47,
             weight: 70,
-            thumbnail: "sprites/pokemon/739.png",
+            thumbnail: "/sprites/pokemon/739.png",
         },
         {
             id: 740,
@@ -5930,7 +5930,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 97,
             weight: 1800,
-            thumbnail: "sprites/pokemon/740.png",
+            thumbnail: "/sprites/pokemon/740.png",
         },
         {
             id: 741,
@@ -5938,7 +5938,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 34,
-            thumbnail: "sprites/pokemon/741.png",
+            thumbnail: "/sprites/pokemon/741.png",
         },
         {
             id: 742,
@@ -5946,7 +5946,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 2,
-            thumbnail: "sprites/pokemon/742.png",
+            thumbnail: "/sprites/pokemon/742.png",
         },
         {
             id: 743,
@@ -5954,7 +5954,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 5,
-            thumbnail: "sprites/pokemon/743.png",
+            thumbnail: "/sprites/pokemon/743.png",
         },
         {
             id: 744,
@@ -5962,7 +5962,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 45,
             weight: 92,
-            thumbnail: "sprites/pokemon/744.png",
+            thumbnail: "/sprites/pokemon/744.png",
         },
         {
             id: 745,
@@ -5970,7 +5970,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 75,
             weight: 250,
-            thumbnail: "sprites/pokemon/745.png",
+            thumbnail: "/sprites/pokemon/745.png",
         },
         {
             id: 746,
@@ -5978,7 +5978,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 45,
             weight: 3,
-            thumbnail: "sprites/pokemon/746.png",
+            thumbnail: "/sprites/pokemon/746.png",
         },
         {
             id: 747,
@@ -5986,7 +5986,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 80,
-            thumbnail: "sprites/pokemon/747.png",
+            thumbnail: "/sprites/pokemon/747.png",
         },
         {
             id: 748,
@@ -5994,7 +5994,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 50,
             weight: 145,
-            thumbnail: "sprites/pokemon/748.png",
+            thumbnail: "/sprites/pokemon/748.png",
         },
         {
             id: 749,
@@ -6002,7 +6002,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 70,
             weight: 1100,
-            thumbnail: "sprites/pokemon/749.png",
+            thumbnail: "/sprites/pokemon/749.png",
         },
         {
             id: 750,
@@ -6010,7 +6010,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 100,
             weight: 9200,
-            thumbnail: "sprites/pokemon/750.png",
+            thumbnail: "/sprites/pokemon/750.png",
         },
         {
             id: 751,
@@ -6018,7 +6018,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 38,
             weight: 40,
-            thumbnail: "sprites/pokemon/751.png",
+            thumbnail: "/sprites/pokemon/751.png",
         },
         {
             id: 752,
@@ -6026,7 +6026,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 68,
             weight: 820,
-            thumbnail: "sprites/pokemon/752.png",
+            thumbnail: "/sprites/pokemon/752.png",
         },
         {
             id: 753,
@@ -6034,7 +6034,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 15,
-            thumbnail: "sprites/pokemon/753.png",
+            thumbnail: "/sprites/pokemon/753.png",
         },
         {
             id: 754,
@@ -6042,7 +6042,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 185,
-            thumbnail: "sprites/pokemon/754.png",
+            thumbnail: "/sprites/pokemon/754.png",
         },
         {
             id: 755,
@@ -6050,7 +6050,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 15,
-            thumbnail: "sprites/pokemon/755.png",
+            thumbnail: "/sprites/pokemon/755.png",
         },
         {
             id: 756,
@@ -6058,7 +6058,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 115,
-            thumbnail: "sprites/pokemon/756.png",
+            thumbnail: "/sprites/pokemon/756.png",
         },
         {
             id: 757,
@@ -6066,7 +6066,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 48,
             weight: 48,
-            thumbnail: "sprites/pokemon/757.png",
+            thumbnail: "/sprites/pokemon/757.png",
         },
         {
             id: 758,
@@ -6074,7 +6074,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 68,
             weight: 222,
-            thumbnail: "sprites/pokemon/758.png",
+            thumbnail: "/sprites/pokemon/758.png",
         },
         {
             id: 759,
@@ -6082,7 +6082,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 140,
             baseHp: 70,
             weight: 68,
-            thumbnail: "sprites/pokemon/759.png",
+            thumbnail: "/sprites/pokemon/759.png",
         },
         {
             id: 760,
@@ -6090,7 +6090,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 70,
             baseHp: 120,
             weight: 1350,
-            thumbnail: "sprites/pokemon/760.png",
+            thumbnail: "/sprites/pokemon/760.png",
         },
         {
             id: 761,
@@ -6098,7 +6098,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 235,
             baseHp: 42,
             weight: 32,
-            thumbnail: "sprites/pokemon/761.png",
+            thumbnail: "/sprites/pokemon/761.png",
         },
         {
             id: 762,
@@ -6106,7 +6106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 52,
             weight: 82,
-            thumbnail: "sprites/pokemon/762.png",
+            thumbnail: "/sprites/pokemon/762.png",
         },
         {
             id: 763,
@@ -6114,7 +6114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 72,
             weight: 214,
-            thumbnail: "sprites/pokemon/763.png",
+            thumbnail: "/sprites/pokemon/763.png",
         },
         {
             id: 764,
@@ -6122,7 +6122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 51,
             weight: 3,
-            thumbnail: "sprites/pokemon/764.png",
+            thumbnail: "/sprites/pokemon/764.png",
         },
         {
             id: 765,
@@ -6130,7 +6130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 760,
-            thumbnail: "sprites/pokemon/765.png",
+            thumbnail: "/sprites/pokemon/765.png",
         },
         {
             id: 766,
@@ -6138,7 +6138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 828,
-            thumbnail: "sprites/pokemon/766.png",
+            thumbnail: "/sprites/pokemon/766.png",
         },
         {
             id: 767,
@@ -6146,7 +6146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 25,
             weight: 120,
-            thumbnail: "sprites/pokemon/767.png",
+            thumbnail: "/sprites/pokemon/767.png",
         },
         {
             id: 768,
@@ -6154,7 +6154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 1080,
-            thumbnail: "sprites/pokemon/768.png",
+            thumbnail: "/sprites/pokemon/768.png",
         },
         {
             id: 769,
@@ -6162,7 +6162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 140,
             baseHp: 55,
             weight: 700,
-            thumbnail: "sprites/pokemon/769.png",
+            thumbnail: "/sprites/pokemon/769.png",
         },
         {
             id: 770,
@@ -6170,7 +6170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 85,
             weight: 2500,
-            thumbnail: "sprites/pokemon/770.png",
+            thumbnail: "/sprites/pokemon/770.png",
         },
         {
             id: 771,
@@ -6178,7 +6178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 55,
             weight: 12,
-            thumbnail: "sprites/pokemon/771.png",
+            thumbnail: "/sprites/pokemon/771.png",
         },
         {
             id: 772,
@@ -6186,7 +6186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 95,
             weight: 1205,
-            thumbnail: "sprites/pokemon/772.png",
+            thumbnail: "/sprites/pokemon/772.png",
         },
         {
             id: 773,
@@ -6194,7 +6194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 95,
             weight: 1005,
-            thumbnail: "sprites/pokemon/773.png",
+            thumbnail: "/sprites/pokemon/773.png",
         },
         {
             id: 774,
@@ -6202,7 +6202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 60,
             weight: 400,
-            thumbnail: "sprites/pokemon/774.png",
+            thumbnail: "/sprites/pokemon/774.png",
         },
         {
             id: 775,
@@ -6210,7 +6210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 199,
-            thumbnail: "sprites/pokemon/775.png",
+            thumbnail: "/sprites/pokemon/775.png",
         },
         {
             id: 776,
@@ -6218,7 +6218,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 70,
             baseHp: 60,
             weight: 2120,
-            thumbnail: "sprites/pokemon/776.png",
+            thumbnail: "/sprites/pokemon/776.png",
         },
         {
             id: 777,
@@ -6226,7 +6226,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 65,
             weight: 33,
-            thumbnail: "sprites/pokemon/777.png",
+            thumbnail: "/sprites/pokemon/777.png",
         },
         {
             id: 778,
@@ -6234,7 +6234,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 7,
-            thumbnail: "sprites/pokemon/778.png",
+            thumbnail: "/sprites/pokemon/778.png",
         },
         {
             id: 779,
@@ -6242,7 +6242,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 80,
             baseHp: 68,
             weight: 190,
-            thumbnail: "sprites/pokemon/779.png",
+            thumbnail: "/sprites/pokemon/779.png",
         },
         {
             id: 780,
@@ -6250,7 +6250,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 70,
             baseHp: 78,
             weight: 1850,
-            thumbnail: "sprites/pokemon/780.png",
+            thumbnail: "/sprites/pokemon/780.png",
         },
         {
             id: 781,
@@ -6258,7 +6258,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 70,
             weight: 2100,
-            thumbnail: "sprites/pokemon/781.png",
+            thumbnail: "/sprites/pokemon/781.png",
         },
         {
             id: 782,
@@ -6266,7 +6266,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 297,
-            thumbnail: "sprites/pokemon/782.png",
+            thumbnail: "/sprites/pokemon/782.png",
         },
         {
             id: 783,
@@ -6274,7 +6274,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 470,
-            thumbnail: "sprites/pokemon/783.png",
+            thumbnail: "/sprites/pokemon/783.png",
         },
         {
             id: 784,
@@ -6282,7 +6282,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 782,
-            thumbnail: "sprites/pokemon/784.png",
+            thumbnail: "/sprites/pokemon/784.png",
         },
         {
             id: 785,
@@ -6290,7 +6290,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 70,
             weight: 205,
-            thumbnail: "sprites/pokemon/785.png",
+            thumbnail: "/sprites/pokemon/785.png",
         },
         {
             id: 786,
@@ -6298,7 +6298,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 70,
             weight: 186,
-            thumbnail: "sprites/pokemon/786.png",
+            thumbnail: "/sprites/pokemon/786.png",
         },
         {
             id: 787,
@@ -6306,7 +6306,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 70,
             weight: 455,
-            thumbnail: "sprites/pokemon/787.png",
+            thumbnail: "/sprites/pokemon/787.png",
         },
         {
             id: 788,
@@ -6314,7 +6314,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 70,
             weight: 212,
-            thumbnail: "sprites/pokemon/788.png",
+            thumbnail: "/sprites/pokemon/788.png",
         },
         {
             id: 789,
@@ -6322,7 +6322,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 43,
             weight: 1,
-            thumbnail: "sprites/pokemon/789.png",
+            thumbnail: "/sprites/pokemon/789.png",
         },
         {
             id: 790,
@@ -6330,7 +6330,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 43,
             weight: 9999,
-            thumbnail: "sprites/pokemon/790.png",
+            thumbnail: "/sprites/pokemon/790.png",
         },
         {
             id: 791,
@@ -6338,7 +6338,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 137,
             weight: 2300,
-            thumbnail: "sprites/pokemon/791.png",
+            thumbnail: "/sprites/pokemon/791.png",
         },
         {
             id: 792,
@@ -6346,7 +6346,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 137,
             weight: 1200,
-            thumbnail: "sprites/pokemon/792.png",
+            thumbnail: "/sprites/pokemon/792.png",
         },
         {
             id: 793,
@@ -6354,7 +6354,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 109,
             weight: 555,
-            thumbnail: "sprites/pokemon/793.png",
+            thumbnail: "/sprites/pokemon/793.png",
         },
         {
             id: 794,
@@ -6362,7 +6362,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 107,
             weight: 3336,
-            thumbnail: "sprites/pokemon/794.png",
+            thumbnail: "/sprites/pokemon/794.png",
         },
         {
             id: 795,
@@ -6370,7 +6370,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 71,
             weight: 250,
-            thumbnail: "sprites/pokemon/795.png",
+            thumbnail: "/sprites/pokemon/795.png",
         },
         {
             id: 796,
@@ -6378,7 +6378,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 83,
             weight: 1000,
-            thumbnail: "sprites/pokemon/796.png",
+            thumbnail: "/sprites/pokemon/796.png",
         },
         {
             id: 797,
@@ -6386,7 +6386,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 97,
             weight: 9999,
-            thumbnail: "sprites/pokemon/797.png",
+            thumbnail: "/sprites/pokemon/797.png",
         },
         {
             id: 798,
@@ -6394,7 +6394,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 59,
             weight: 1,
-            thumbnail: "sprites/pokemon/798.png",
+            thumbnail: "/sprites/pokemon/798.png",
         },
         {
             id: 799,
@@ -6402,7 +6402,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 223,
             weight: 8880,
-            thumbnail: "sprites/pokemon/799.png",
+            thumbnail: "/sprites/pokemon/799.png",
         },
         {
             id: 800,
@@ -6410,7 +6410,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 97,
             weight: 2300,
-            thumbnail: "sprites/pokemon/800.png",
+            thumbnail: "/sprites/pokemon/800.png",
         },
         {
             id: 801,
@@ -6418,7 +6418,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 805,
-            thumbnail: "sprites/pokemon/801.png",
+            thumbnail: "/sprites/pokemon/801.png",
         },
         {
             id: 802,
@@ -6426,7 +6426,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 90,
             weight: 222,
-            thumbnail: "sprites/pokemon/802.png",
+            thumbnail: "/sprites/pokemon/802.png",
         },
         {
             id: 803,
@@ -6434,7 +6434,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 67,
             weight: 18,
-            thumbnail: "sprites/pokemon/803.png",
+            thumbnail: "/sprites/pokemon/803.png",
         },
         {
             id: 804,
@@ -6442,7 +6442,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 73,
             weight: 1500,
-            thumbnail: "sprites/pokemon/804.png",
+            thumbnail: "/sprites/pokemon/804.png",
         },
         {
             id: 805,
@@ -6450,7 +6450,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 61,
             weight: 8200,
-            thumbnail: "sprites/pokemon/805.png",
+            thumbnail: "/sprites/pokemon/805.png",
         },
         {
             id: 806,
@@ -6458,7 +6458,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 53,
             weight: 130,
-            thumbnail: "sprites/pokemon/806.png",
+            thumbnail: "/sprites/pokemon/806.png",
         },
         {
             id: 807,
@@ -6466,7 +6466,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 88,
             weight: 445,
-            thumbnail: "sprites/pokemon/807.png",
+            thumbnail: "/sprites/pokemon/807.png",
         },
         {
             id: 808,
@@ -6474,7 +6474,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 46,
             weight: 80,
-            thumbnail: "sprites/pokemon/808.png",
+            thumbnail: "/sprites/pokemon/808.png",
         },
         {
             id: 809,
@@ -6482,7 +6482,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 135,
             weight: 8000,
-            thumbnail: "sprites/pokemon/809.png",
+            thumbnail: "/sprites/pokemon/809.png",
         },
         {
             id: 810,
@@ -6490,7 +6490,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 50,
-            thumbnail: "sprites/pokemon/810.png",
+            thumbnail: "/sprites/pokemon/810.png",
         },
         {
             id: 811,
@@ -6498,7 +6498,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 140,
-            thumbnail: "sprites/pokemon/811.png",
+            thumbnail: "/sprites/pokemon/811.png",
         },
         {
             id: 812,
@@ -6506,7 +6506,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 900,
-            thumbnail: "sprites/pokemon/812.png",
+            thumbnail: "/sprites/pokemon/812.png",
         },
         {
             id: 813,
@@ -6514,7 +6514,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 45,
-            thumbnail: "sprites/pokemon/813.png",
+            thumbnail: "/sprites/pokemon/813.png",
         },
         {
             id: 814,
@@ -6522,7 +6522,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 90,
-            thumbnail: "sprites/pokemon/814.png",
+            thumbnail: "/sprites/pokemon/814.png",
         },
         {
             id: 815,
@@ -6530,7 +6530,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 330,
-            thumbnail: "sprites/pokemon/815.png",
+            thumbnail: "/sprites/pokemon/815.png",
         },
         {
             id: 816,
@@ -6538,7 +6538,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 50,
             weight: 40,
-            thumbnail: "sprites/pokemon/816.png",
+            thumbnail: "/sprites/pokemon/816.png",
         },
         {
             id: 817,
@@ -6546,7 +6546,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 115,
-            thumbnail: "sprites/pokemon/817.png",
+            thumbnail: "/sprites/pokemon/817.png",
         },
         {
             id: 818,
@@ -6554,7 +6554,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 452,
-            thumbnail: "sprites/pokemon/818.png",
+            thumbnail: "/sprites/pokemon/818.png",
         },
         {
             id: 819,
@@ -6562,7 +6562,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 70,
             weight: 25,
-            thumbnail: "sprites/pokemon/819.png",
+            thumbnail: "/sprites/pokemon/819.png",
         },
         {
             id: 820,
@@ -6570,7 +6570,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 120,
             weight: 60,
-            thumbnail: "sprites/pokemon/820.png",
+            thumbnail: "/sprites/pokemon/820.png",
         },
         {
             id: 821,
@@ -6578,7 +6578,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 38,
             weight: 18,
-            thumbnail: "sprites/pokemon/821.png",
+            thumbnail: "/sprites/pokemon/821.png",
         },
         {
             id: 822,
@@ -6586,7 +6586,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 68,
             weight: 160,
-            thumbnail: "sprites/pokemon/822.png",
+            thumbnail: "/sprites/pokemon/822.png",
         },
         {
             id: 823,
@@ -6594,7 +6594,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 98,
             weight: 750,
-            thumbnail: "sprites/pokemon/823.png",
+            thumbnail: "/sprites/pokemon/823.png",
         },
         {
             id: 824,
@@ -6602,7 +6602,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 25,
             weight: 80,
-            thumbnail: "sprites/pokemon/824.png",
+            thumbnail: "/sprites/pokemon/824.png",
         },
         {
             id: 825,
@@ -6610,7 +6610,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 50,
             weight: 195,
-            thumbnail: "sprites/pokemon/825.png",
+            thumbnail: "/sprites/pokemon/825.png",
         },
         {
             id: 826,
@@ -6618,7 +6618,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 60,
             weight: 408,
-            thumbnail: "sprites/pokemon/826.png",
+            thumbnail: "/sprites/pokemon/826.png",
         },
         {
             id: 827,
@@ -6626,7 +6626,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 89,
-            thumbnail: "sprites/pokemon/827.png",
+            thumbnail: "/sprites/pokemon/827.png",
         },
         {
             id: 828,
@@ -6634,7 +6634,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 127,
             baseHp: 70,
             weight: 199,
-            thumbnail: "sprites/pokemon/828.png",
+            thumbnail: "/sprites/pokemon/828.png",
         },
         {
             id: 829,
@@ -6642,7 +6642,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 22,
-            thumbnail: "sprites/pokemon/829.png",
+            thumbnail: "/sprites/pokemon/829.png",
         },
         {
             id: 830,
@@ -6650,7 +6650,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 60,
             weight: 25,
-            thumbnail: "sprites/pokemon/830.png",
+            thumbnail: "/sprites/pokemon/830.png",
         },
         {
             id: 831,
@@ -6658,7 +6658,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 42,
             weight: 60,
-            thumbnail: "sprites/pokemon/831.png",
+            thumbnail: "/sprites/pokemon/831.png",
         },
         {
             id: 832,
@@ -6666,7 +6666,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 127,
             baseHp: 72,
             weight: 430,
-            thumbnail: "sprites/pokemon/832.png",
+            thumbnail: "/sprites/pokemon/832.png",
         },
         {
             id: 833,
@@ -6674,7 +6674,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 50,
             weight: 85,
-            thumbnail: "sprites/pokemon/833.png",
+            thumbnail: "/sprites/pokemon/833.png",
         },
         {
             id: 834,
@@ -6682,7 +6682,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 90,
             weight: 1155,
-            thumbnail: "sprites/pokemon/834.png",
+            thumbnail: "/sprites/pokemon/834.png",
         },
         {
             id: 835,
@@ -6690,7 +6690,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 59,
             weight: 135,
-            thumbnail: "sprites/pokemon/835.png",
+            thumbnail: "/sprites/pokemon/835.png",
         },
         {
             id: 836,
@@ -6698,7 +6698,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 69,
             weight: 340,
-            thumbnail: "sprites/pokemon/836.png",
+            thumbnail: "/sprites/pokemon/836.png",
         },
         {
             id: 837,
@@ -6706,7 +6706,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 30,
             weight: 120,
-            thumbnail: "sprites/pokemon/837.png",
+            thumbnail: "/sprites/pokemon/837.png",
         },
         {
             id: 838,
@@ -6714,7 +6714,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 80,
             weight: 780,
-            thumbnail: "sprites/pokemon/838.png",
+            thumbnail: "/sprites/pokemon/838.png",
         },
         {
             id: 839,
@@ -6722,7 +6722,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 110,
             weight: 3105,
-            thumbnail: "sprites/pokemon/839.png",
+            thumbnail: "/sprites/pokemon/839.png",
         },
         {
             id: 840,
@@ -6730,7 +6730,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 40,
             weight: 5,
-            thumbnail: "sprites/pokemon/840.png",
+            thumbnail: "/sprites/pokemon/840.png",
         },
         {
             id: 841,
@@ -6738,7 +6738,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 10,
-            thumbnail: "sprites/pokemon/841.png",
+            thumbnail: "/sprites/pokemon/841.png",
         },
         {
             id: 842,
@@ -6746,7 +6746,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 110,
             weight: 130,
-            thumbnail: "sprites/pokemon/842.png",
+            thumbnail: "/sprites/pokemon/842.png",
         },
         {
             id: 843,
@@ -6754,7 +6754,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 52,
             weight: 76,
-            thumbnail: "sprites/pokemon/843.png",
+            thumbnail: "/sprites/pokemon/843.png",
         },
         {
             id: 844,
@@ -6762,7 +6762,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 72,
             weight: 655,
-            thumbnail: "sprites/pokemon/844.png",
+            thumbnail: "/sprites/pokemon/844.png",
         },
         {
             id: 845,
@@ -6770,7 +6770,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 180,
-            thumbnail: "sprites/pokemon/845.png",
+            thumbnail: "/sprites/pokemon/845.png",
         },
         {
             id: 846,
@@ -6778,7 +6778,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 41,
             weight: 10,
-            thumbnail: "sprites/pokemon/846.png",
+            thumbnail: "/sprites/pokemon/846.png",
         },
         {
             id: 847,
@@ -6786,7 +6786,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 61,
             weight: 300,
-            thumbnail: "sprites/pokemon/847.png",
+            thumbnail: "/sprites/pokemon/847.png",
         },
         {
             id: 848,
@@ -6794,7 +6794,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 40,
             weight: 110,
-            thumbnail: "sprites/pokemon/848.png",
+            thumbnail: "/sprites/pokemon/848.png",
         },
         {
             id: 849,
@@ -6802,7 +6802,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 400,
-            thumbnail: "sprites/pokemon/849.png",
+            thumbnail: "/sprites/pokemon/849.png",
         },
         {
             id: 850,
@@ -6810,7 +6810,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 10,
-            thumbnail: "sprites/pokemon/850.png",
+            thumbnail: "/sprites/pokemon/850.png",
         },
         {
             id: 851,
@@ -6818,7 +6818,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 100,
             weight: 1200,
-            thumbnail: "sprites/pokemon/851.png",
+            thumbnail: "/sprites/pokemon/851.png",
         },
         {
             id: 852,
@@ -6826,7 +6826,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 50,
             weight: 40,
-            thumbnail: "sprites/pokemon/852.png",
+            thumbnail: "/sprites/pokemon/852.png",
         },
         {
             id: 853,
@@ -6834,7 +6834,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 390,
-            thumbnail: "sprites/pokemon/853.png",
+            thumbnail: "/sprites/pokemon/853.png",
         },
         {
             id: 854,
@@ -6842,7 +6842,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 40,
             weight: 2,
-            thumbnail: "sprites/pokemon/854.png",
+            thumbnail: "/sprites/pokemon/854.png",
         },
         {
             id: 855,
@@ -6850,7 +6850,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 60,
             weight: 4,
-            thumbnail: "sprites/pokemon/855.png",
+            thumbnail: "/sprites/pokemon/855.png",
         },
         {
             id: 856,
@@ -6858,7 +6858,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 235,
             baseHp: 42,
             weight: 34,
-            thumbnail: "sprites/pokemon/856.png",
+            thumbnail: "/sprites/pokemon/856.png",
         },
         {
             id: 857,
@@ -6866,7 +6866,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 57,
             weight: 48,
-            thumbnail: "sprites/pokemon/857.png",
+            thumbnail: "/sprites/pokemon/857.png",
         },
         {
             id: 858,
@@ -6874,7 +6874,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 57,
             weight: 51,
-            thumbnail: "sprites/pokemon/858.png",
+            thumbnail: "/sprites/pokemon/858.png",
         },
         {
             id: 859,
@@ -6882,7 +6882,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 45,
             weight: 55,
-            thumbnail: "sprites/pokemon/859.png",
+            thumbnail: "/sprites/pokemon/859.png",
         },
         {
             id: 860,
@@ -6890,7 +6890,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 65,
             weight: 125,
-            thumbnail: "sprites/pokemon/860.png",
+            thumbnail: "/sprites/pokemon/860.png",
         },
         {
             id: 861,
@@ -6898,7 +6898,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 95,
             weight: 610,
-            thumbnail: "sprites/pokemon/861.png",
+            thumbnail: "/sprites/pokemon/861.png",
         },
         {
             id: 862,
@@ -6906,7 +6906,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 93,
             weight: 460,
-            thumbnail: "sprites/pokemon/862.png",
+            thumbnail: "/sprites/pokemon/862.png",
         },
         {
             id: 863,
@@ -6914,7 +6914,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 70,
             weight: 280,
-            thumbnail: "sprites/pokemon/863.png",
+            thumbnail: "/sprites/pokemon/863.png",
         },
         {
             id: 864,
@@ -6922,7 +6922,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 60,
             weight: 4,
-            thumbnail: "sprites/pokemon/864.png",
+            thumbnail: "/sprites/pokemon/864.png",
         },
         {
             id: 865,
@@ -6930,7 +6930,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 62,
             weight: 1170,
-            thumbnail: "sprites/pokemon/865.png",
+            thumbnail: "/sprites/pokemon/865.png",
         },
         {
             id: 866,
@@ -6938,7 +6938,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 582,
-            thumbnail: "sprites/pokemon/866.png",
+            thumbnail: "/sprites/pokemon/866.png",
         },
         {
             id: 867,
@@ -6946,7 +6946,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 58,
             weight: 666,
-            thumbnail: "sprites/pokemon/867.png",
+            thumbnail: "/sprites/pokemon/867.png",
         },
         {
             id: 868,
@@ -6954,7 +6954,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 45,
             weight: 3,
-            thumbnail: "sprites/pokemon/868.png",
+            thumbnail: "/sprites/pokemon/868.png",
         },
         {
             id: 869,
@@ -6962,7 +6962,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 65,
             weight: 5,
-            thumbnail: "sprites/pokemon/869.png",
+            thumbnail: "/sprites/pokemon/869.png",
         },
         {
             id: 870,
@@ -6970,7 +6970,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 620,
-            thumbnail: "sprites/pokemon/870.png",
+            thumbnail: "/sprites/pokemon/870.png",
         },
         {
             id: 871,
@@ -6978,7 +6978,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 48,
             weight: 10,
-            thumbnail: "sprites/pokemon/871.png",
+            thumbnail: "/sprites/pokemon/871.png",
         },
         {
             id: 872,
@@ -6986,7 +6986,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 30,
             weight: 38,
-            thumbnail: "sprites/pokemon/872.png",
+            thumbnail: "/sprites/pokemon/872.png",
         },
         {
             id: 873,
@@ -6994,7 +6994,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 70,
             weight: 420,
-            thumbnail: "sprites/pokemon/873.png",
+            thumbnail: "/sprites/pokemon/873.png",
         },
         {
             id: 874,
@@ -7002,7 +7002,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 100,
             weight: 5200,
-            thumbnail: "sprites/pokemon/874.png",
+            thumbnail: "/sprites/pokemon/874.png",
         },
         {
             id: 875,
@@ -7010,7 +7010,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 75,
             weight: 890,
-            thumbnail: "sprites/pokemon/875.png",
+            thumbnail: "/sprites/pokemon/875.png",
         },
         {
             id: 876,
@@ -7018,7 +7018,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 60,
             weight: 280,
-            thumbnail: "sprites/pokemon/876.png",
+            thumbnail: "/sprites/pokemon/876.png",
         },
         {
             id: 877,
@@ -7026,7 +7026,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 58,
             weight: 30,
-            thumbnail: "sprites/pokemon/877.png",
+            thumbnail: "/sprites/pokemon/877.png",
         },
         {
             id: 878,
@@ -7034,7 +7034,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 72,
             weight: 1000,
-            thumbnail: "sprites/pokemon/878.png",
+            thumbnail: "/sprites/pokemon/878.png",
         },
         {
             id: 879,
@@ -7042,7 +7042,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 122,
             weight: 6500,
-            thumbnail: "sprites/pokemon/879.png",
+            thumbnail: "/sprites/pokemon/879.png",
         },
         {
             id: 880,
@@ -7050,7 +7050,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 1900,
-            thumbnail: "sprites/pokemon/880.png",
+            thumbnail: "/sprites/pokemon/880.png",
         },
         {
             id: 881,
@@ -7058,7 +7058,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 1500,
-            thumbnail: "sprites/pokemon/881.png",
+            thumbnail: "/sprites/pokemon/881.png",
         },
         {
             id: 882,
@@ -7066,7 +7066,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 2150,
-            thumbnail: "sprites/pokemon/882.png",
+            thumbnail: "/sprites/pokemon/882.png",
         },
         {
             id: 883,
@@ -7074,7 +7074,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 90,
             weight: 1750,
-            thumbnail: "sprites/pokemon/883.png",
+            thumbnail: "/sprites/pokemon/883.png",
         },
         {
             id: 884,
@@ -7082,7 +7082,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 400,
-            thumbnail: "sprites/pokemon/884.png",
+            thumbnail: "/sprites/pokemon/884.png",
         },
         {
             id: 885,
@@ -7090,7 +7090,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 28,
             weight: 20,
-            thumbnail: "sprites/pokemon/885.png",
+            thumbnail: "/sprites/pokemon/885.png",
         },
         {
             id: 886,
@@ -7098,7 +7098,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 68,
             weight: 110,
-            thumbnail: "sprites/pokemon/886.png",
+            thumbnail: "/sprites/pokemon/886.png",
         },
         {
             id: 887,
@@ -7106,7 +7106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 88,
             weight: 500,
-            thumbnail: "sprites/pokemon/887.png",
+            thumbnail: "/sprites/pokemon/887.png",
         },
         {
             id: 888,
@@ -7114,7 +7114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 92,
             weight: 1100,
-            thumbnail: "sprites/pokemon/888.png",
+            thumbnail: "/sprites/pokemon/888.png",
         },
         {
             id: 889,
@@ -7122,7 +7122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 92,
             weight: 2100,
-            thumbnail: "sprites/pokemon/889.png",
+            thumbnail: "/sprites/pokemon/889.png",
         },
         {
             id: 890,
@@ -7130,7 +7130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 140,
             weight: 9500,
-            thumbnail: "sprites/pokemon/890.png",
+            thumbnail: "/sprites/pokemon/890.png",
         },
         {
             id: 891,
@@ -7138,7 +7138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 60,
             weight: 120,
-            thumbnail: "sprites/pokemon/891.png",
+            thumbnail: "/sprites/pokemon/891.png",
         },
         {
             id: 892,
@@ -7146,7 +7146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 1050,
-            thumbnail: "sprites/pokemon/892.png",
+            thumbnail: "/sprites/pokemon/892.png",
         },
         {
             id: 893,
@@ -7154,7 +7154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 105,
             weight: 700,
-            thumbnail: "sprites/pokemon/893.png",
+            thumbnail: "/sprites/pokemon/893.png",
         },
         {
             id: 894,
@@ -7162,7 +7162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 80,
             weight: 1450,
-            thumbnail: "sprites/pokemon/894.png",
+            thumbnail: "/sprites/pokemon/894.png",
         },
         {
             id: 895,
@@ -7170,7 +7170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 200,
             weight: 2000,
-            thumbnail: "sprites/pokemon/895.png",
+            thumbnail: "/sprites/pokemon/895.png",
         },
         {
             id: 896,
@@ -7178,7 +7178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 8000,
-            thumbnail: "sprites/pokemon/896.png",
+            thumbnail: "/sprites/pokemon/896.png",
         },
         {
             id: 897,
@@ -7186,7 +7186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 445,
-            thumbnail: "sprites/pokemon/897.png",
+            thumbnail: "/sprites/pokemon/897.png",
         },
         {
             id: 898,
@@ -7194,7 +7194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 77,
-            thumbnail: "sprites/pokemon/898.png",
+            thumbnail: "/sprites/pokemon/898.png",
         },
         {
             id: 899,
@@ -7202,7 +7202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 135,
             baseHp: 103,
             weight: 951,
-            thumbnail: "sprites/pokemon/899.png",
+            thumbnail: "/sprites/pokemon/899.png",
         },
         {
             id: 900,
@@ -7210,7 +7210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 115,
             baseHp: 70,
             weight: 890,
-            thumbnail: "sprites/pokemon/900.png",
+            thumbnail: "/sprites/pokemon/900.png",
         },
         {
             id: 901,
@@ -7218,7 +7218,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 130,
             weight: 2900,
-            thumbnail: "sprites/pokemon/901.png",
+            thumbnail: "/sprites/pokemon/901.png",
         },
         {
             id: 902,
@@ -7226,7 +7226,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 135,
             baseHp: 120,
             weight: 1100,
-            thumbnail: "sprites/pokemon/902.png",
+            thumbnail: "/sprites/pokemon/902.png",
         },
         {
             id: 903,
@@ -7234,7 +7234,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 135,
             baseHp: 80,
             weight: 430,
-            thumbnail: "sprites/pokemon/903.png",
+            thumbnail: "/sprites/pokemon/903.png",
         },
         {
             id: 904,
@@ -7242,7 +7242,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 135,
             baseHp: 85,
             weight: 605,
-            thumbnail: "sprites/pokemon/904.png",
+            thumbnail: "/sprites/pokemon/904.png",
         },
         {
             id: 905,
@@ -7250,7 +7250,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 74,
             weight: 480,
-            thumbnail: "sprites/pokemon/905.png",
+            thumbnail: "/sprites/pokemon/905.png",
         },
         {
             id: 906,
@@ -7258,7 +7258,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 40,
             weight: 41,
-            thumbnail: "sprites/pokemon/906.png",
+            thumbnail: "/sprites/pokemon/906.png",
         },
         {
             id: 907,
@@ -7266,7 +7266,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 61,
             weight: 122,
-            thumbnail: "sprites/pokemon/907.png",
+            thumbnail: "/sprites/pokemon/907.png",
         },
         {
             id: 908,
@@ -7274,7 +7274,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 76,
             weight: 312,
-            thumbnail: "sprites/pokemon/908.png",
+            thumbnail: "/sprites/pokemon/908.png",
         },
         {
             id: 909,
@@ -7282,7 +7282,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 67,
             weight: 98,
-            thumbnail: "sprites/pokemon/909.png",
+            thumbnail: "/sprites/pokemon/909.png",
         },
         {
             id: 910,
@@ -7290,7 +7290,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 81,
             weight: 307,
-            thumbnail: "sprites/pokemon/910.png",
+            thumbnail: "/sprites/pokemon/910.png",
         },
         {
             id: 911,
@@ -7298,7 +7298,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 104,
             weight: 3265,
-            thumbnail: "sprites/pokemon/911.png",
+            thumbnail: "/sprites/pokemon/911.png",
         },
         {
             id: 912,
@@ -7306,7 +7306,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 61,
-            thumbnail: "sprites/pokemon/912.png",
+            thumbnail: "/sprites/pokemon/912.png",
         },
         {
             id: 913,
@@ -7314,7 +7314,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 215,
-            thumbnail: "sprites/pokemon/913.png",
+            thumbnail: "/sprites/pokemon/913.png",
         },
         {
             id: 914,
@@ -7322,7 +7322,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 85,
             weight: 619,
-            thumbnail: "sprites/pokemon/914.png",
+            thumbnail: "/sprites/pokemon/914.png",
         },
         {
             id: 915,
@@ -7330,7 +7330,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 54,
             weight: 102,
-            thumbnail: "sprites/pokemon/915.png",
+            thumbnail: "/sprites/pokemon/915.png",
         },
         {
             id: 916,
@@ -7338,7 +7338,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 110,
             weight: 1200,
-            thumbnail: "sprites/pokemon/916.png",
+            thumbnail: "/sprites/pokemon/916.png",
         },
         {
             id: 917,
@@ -7346,7 +7346,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 35,
             weight: 40,
-            thumbnail: "sprites/pokemon/917.png",
+            thumbnail: "/sprites/pokemon/917.png",
         },
         {
             id: 918,
@@ -7354,7 +7354,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 60,
             weight: 165,
-            thumbnail: "sprites/pokemon/918.png",
+            thumbnail: "/sprites/pokemon/918.png",
         },
         {
             id: 919,
@@ -7362,7 +7362,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 33,
             weight: 10,
-            thumbnail: "sprites/pokemon/919.png",
+            thumbnail: "/sprites/pokemon/919.png",
         },
         {
             id: 920,
@@ -7370,7 +7370,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 71,
             weight: 175,
-            thumbnail: "sprites/pokemon/920.png",
+            thumbnail: "/sprites/pokemon/920.png",
         },
         {
             id: 921,
@@ -7378,7 +7378,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 45,
             weight: 25,
-            thumbnail: "sprites/pokemon/921.png",
+            thumbnail: "/sprites/pokemon/921.png",
         },
         {
             id: 922,
@@ -7386,7 +7386,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 80,
             baseHp: 60,
             weight: 65,
-            thumbnail: "sprites/pokemon/922.png",
+            thumbnail: "/sprites/pokemon/922.png",
         },
         {
             id: 923,
@@ -7394,7 +7394,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 70,
             weight: 410,
-            thumbnail: "sprites/pokemon/923.png",
+            thumbnail: "/sprites/pokemon/923.png",
         },
         {
             id: 924,
@@ -7402,7 +7402,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 50,
             weight: 18,
-            thumbnail: "sprites/pokemon/924.png",
+            thumbnail: "/sprites/pokemon/924.png",
         },
         {
             id: 925,
@@ -7410,7 +7410,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 74,
             weight: 23,
-            thumbnail: "sprites/pokemon/925.png",
+            thumbnail: "/sprites/pokemon/925.png",
         },
         {
             id: 926,
@@ -7418,7 +7418,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 37,
             weight: 109,
-            thumbnail: "sprites/pokemon/926.png",
+            thumbnail: "/sprites/pokemon/926.png",
         },
         {
             id: 927,
@@ -7426,7 +7426,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 57,
             weight: 149,
-            thumbnail: "sprites/pokemon/927.png",
+            thumbnail: "/sprites/pokemon/927.png",
         },
         {
             id: 928,
@@ -7434,7 +7434,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 41,
             weight: 65,
-            thumbnail: "sprites/pokemon/928.png",
+            thumbnail: "/sprites/pokemon/928.png",
         },
         {
             id: 929,
@@ -7442,7 +7442,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 52,
             weight: 119,
-            thumbnail: "sprites/pokemon/929.png",
+            thumbnail: "/sprites/pokemon/929.png",
         },
         {
             id: 930,
@@ -7450,7 +7450,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 78,
             weight: 482,
-            thumbnail: "sprites/pokemon/930.png",
+            thumbnail: "/sprites/pokemon/930.png",
         },
         {
             id: 931,
@@ -7458,7 +7458,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 82,
             weight: 24,
-            thumbnail: "sprites/pokemon/931.png",
+            thumbnail: "/sprites/pokemon/931.png",
         },
         {
             id: 932,
@@ -7466,7 +7466,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 55,
             weight: 160,
-            thumbnail: "sprites/pokemon/932.png",
+            thumbnail: "/sprites/pokemon/932.png",
         },
         {
             id: 933,
@@ -7474,7 +7474,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 60,
             weight: 1050,
-            thumbnail: "sprites/pokemon/933.png",
+            thumbnail: "/sprites/pokemon/933.png",
         },
         {
             id: 934,
@@ -7482,7 +7482,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 2400,
-            thumbnail: "sprites/pokemon/934.png",
+            thumbnail: "/sprites/pokemon/934.png",
         },
         {
             id: 935,
@@ -7490,7 +7490,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 40,
             weight: 105,
-            thumbnail: "sprites/pokemon/935.png",
+            thumbnail: "/sprites/pokemon/935.png",
         },
         {
             id: 936,
@@ -7498,7 +7498,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 85,
             weight: 850,
-            thumbnail: "sprites/pokemon/936.png",
+            thumbnail: "/sprites/pokemon/936.png",
         },
         {
             id: 937,
@@ -7506,7 +7506,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 75,
             weight: 620,
-            thumbnail: "sprites/pokemon/937.png",
+            thumbnail: "/sprites/pokemon/937.png",
         },
         {
             id: 938,
@@ -7514,7 +7514,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 61,
             weight: 4,
-            thumbnail: "sprites/pokemon/938.png",
+            thumbnail: "/sprites/pokemon/938.png",
         },
         {
             id: 939,
@@ -7522,7 +7522,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 109,
             weight: 1130,
-            thumbnail: "sprites/pokemon/939.png",
+            thumbnail: "/sprites/pokemon/939.png",
         },
         {
             id: 940,
@@ -7530,7 +7530,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 180,
             baseHp: 40,
             weight: 36,
-            thumbnail: "sprites/pokemon/940.png",
+            thumbnail: "/sprites/pokemon/940.png",
         },
         {
             id: 941,
@@ -7538,7 +7538,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 70,
             weight: 386,
-            thumbnail: "sprites/pokemon/941.png",
+            thumbnail: "/sprites/pokemon/941.png",
         },
         {
             id: 942,
@@ -7546,7 +7546,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 60,
             weight: 160,
-            thumbnail: "sprites/pokemon/942.png",
+            thumbnail: "/sprites/pokemon/942.png",
         },
         {
             id: 943,
@@ -7554,7 +7554,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 80,
             weight: 610,
-            thumbnail: "sprites/pokemon/943.png",
+            thumbnail: "/sprites/pokemon/943.png",
         },
         {
             id: 944,
@@ -7562,7 +7562,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 7,
-            thumbnail: "sprites/pokemon/944.png",
+            thumbnail: "/sprites/pokemon/944.png",
         },
         {
             id: 945,
@@ -7570,7 +7570,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 63,
             weight: 272,
-            thumbnail: "sprites/pokemon/945.png",
+            thumbnail: "/sprites/pokemon/945.png",
         },
         {
             id: 946,
@@ -7578,7 +7578,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 6,
-            thumbnail: "sprites/pokemon/946.png",
+            thumbnail: "/sprites/pokemon/946.png",
         },
         {
             id: 947,
@@ -7586,7 +7586,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 55,
             weight: 60,
-            thumbnail: "sprites/pokemon/947.png",
+            thumbnail: "/sprites/pokemon/947.png",
         },
         {
             id: 948,
@@ -7594,7 +7594,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 40,
             weight: 330,
-            thumbnail: "sprites/pokemon/948.png",
+            thumbnail: "/sprites/pokemon/948.png",
         },
         {
             id: 949,
@@ -7602,7 +7602,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 80,
             weight: 580,
-            thumbnail: "sprites/pokemon/949.png",
+            thumbnail: "/sprites/pokemon/949.png",
         },
         {
             id: 950,
@@ -7610,7 +7610,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 70,
             weight: 790,
-            thumbnail: "sprites/pokemon/950.png",
+            thumbnail: "/sprites/pokemon/950.png",
         },
         {
             id: 951,
@@ -7618,7 +7618,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 30,
-            thumbnail: "sprites/pokemon/951.png",
+            thumbnail: "/sprites/pokemon/951.png",
         },
         {
             id: 952,
@@ -7626,7 +7626,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 65,
             weight: 150,
-            thumbnail: "sprites/pokemon/952.png",
+            thumbnail: "/sprites/pokemon/952.png",
         },
         {
             id: 953,
@@ -7634,7 +7634,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 41,
             weight: 10,
-            thumbnail: "sprites/pokemon/953.png",
+            thumbnail: "/sprites/pokemon/953.png",
         },
         {
             id: 954,
@@ -7642,7 +7642,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 75,
             weight: 35,
-            thumbnail: "sprites/pokemon/954.png",
+            thumbnail: "/sprites/pokemon/954.png",
         },
         {
             id: 955,
@@ -7650,7 +7650,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 30,
             weight: 15,
-            thumbnail: "sprites/pokemon/955.png",
+            thumbnail: "/sprites/pokemon/955.png",
         },
         {
             id: 956,
@@ -7658,7 +7658,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 95,
             weight: 900,
-            thumbnail: "sprites/pokemon/956.png",
+            thumbnail: "/sprites/pokemon/956.png",
         },
         {
             id: 957,
@@ -7666,7 +7666,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 50,
             weight: 89,
-            thumbnail: "sprites/pokemon/957.png",
+            thumbnail: "/sprites/pokemon/957.png",
         },
         {
             id: 958,
@@ -7674,7 +7674,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 65,
             weight: 591,
-            thumbnail: "sprites/pokemon/958.png",
+            thumbnail: "/sprites/pokemon/958.png",
         },
         {
             id: 959,
@@ -7682,7 +7682,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 85,
             weight: 1128,
-            thumbnail: "sprites/pokemon/959.png",
+            thumbnail: "/sprites/pokemon/959.png",
         },
         {
             id: 960,
@@ -7690,7 +7690,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 10,
             weight: 18,
-            thumbnail: "sprites/pokemon/960.png",
+            thumbnail: "/sprites/pokemon/960.png",
         },
         {
             id: 961,
@@ -7698,7 +7698,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 35,
             weight: 54,
-            thumbnail: "sprites/pokemon/961.png",
+            thumbnail: "/sprites/pokemon/961.png",
         },
         {
             id: 962,
@@ -7706,7 +7706,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 70,
             weight: 429,
-            thumbnail: "sprites/pokemon/962.png",
+            thumbnail: "/sprites/pokemon/962.png",
         },
         {
             id: 963,
@@ -7714,7 +7714,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 200,
             baseHp: 70,
             weight: 602,
-            thumbnail: "sprites/pokemon/963.png",
+            thumbnail: "/sprites/pokemon/963.png",
         },
         {
             id: 964,
@@ -7722,7 +7722,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 100,
             weight: 602,
-            thumbnail: "sprites/pokemon/964.png",
+            thumbnail: "/sprites/pokemon/964.png",
         },
         {
             id: 965,
@@ -7730,7 +7730,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 45,
             weight: 350,
-            thumbnail: "sprites/pokemon/965.png",
+            thumbnail: "/sprites/pokemon/965.png",
         },
         {
             id: 966,
@@ -7738,7 +7738,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 75,
             baseHp: 80,
             weight: 1200,
-            thumbnail: "sprites/pokemon/966.png",
+            thumbnail: "/sprites/pokemon/966.png",
         },
         {
             id: 967,
@@ -7746,7 +7746,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 190,
             baseHp: 70,
             weight: 630,
-            thumbnail: "sprites/pokemon/967.png",
+            thumbnail: "/sprites/pokemon/967.png",
         },
         {
             id: 968,
@@ -7754,7 +7754,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 70,
             weight: 3100,
-            thumbnail: "sprites/pokemon/968.png",
+            thumbnail: "/sprites/pokemon/968.png",
         },
         {
             id: 969,
@@ -7762,7 +7762,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 70,
             baseHp: 48,
             weight: 80,
-            thumbnail: "sprites/pokemon/969.png",
+            thumbnail: "/sprites/pokemon/969.png",
         },
         {
             id: 970,
@@ -7770,7 +7770,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 83,
             weight: 450,
-            thumbnail: "sprites/pokemon/970.png",
+            thumbnail: "/sprites/pokemon/970.png",
         },
         {
             id: 971,
@@ -7778,7 +7778,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 50,
             weight: 350,
-            thumbnail: "sprites/pokemon/971.png",
+            thumbnail: "/sprites/pokemon/971.png",
         },
         {
             id: 972,
@@ -7786,7 +7786,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 72,
             weight: 150,
-            thumbnail: "sprites/pokemon/972.png",
+            thumbnail: "/sprites/pokemon/972.png",
         },
         {
             id: 973,
@@ -7794,7 +7794,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 82,
             weight: 370,
-            thumbnail: "sprites/pokemon/973.png",
+            thumbnail: "/sprites/pokemon/973.png",
         },
         {
             id: 974,
@@ -7802,7 +7802,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 150,
             baseHp: 108,
             weight: 450,
-            thumbnail: "sprites/pokemon/974.png",
+            thumbnail: "/sprites/pokemon/974.png",
         },
         {
             id: 975,
@@ -7810,7 +7810,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 170,
             weight: 7000,
-            thumbnail: "sprites/pokemon/975.png",
+            thumbnail: "/sprites/pokemon/975.png",
         },
         {
             id: 976,
@@ -7818,7 +7818,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 90,
             weight: 900,
-            thumbnail: "sprites/pokemon/976.png",
+            thumbnail: "/sprites/pokemon/976.png",
         },
         {
             id: 977,
@@ -7826,7 +7826,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 150,
             weight: 2200,
-            thumbnail: "sprites/pokemon/977.png",
+            thumbnail: "/sprites/pokemon/977.png",
         },
         {
             id: 978,
@@ -7834,7 +7834,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 100,
             baseHp: 68,
             weight: 80,
-            thumbnail: "sprites/pokemon/978.png",
+            thumbnail: "/sprites/pokemon/978.png",
         },
         {
             id: 979,
@@ -7842,7 +7842,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 110,
             weight: 560,
-            thumbnail: "sprites/pokemon/979.png",
+            thumbnail: "/sprites/pokemon/979.png",
         },
         {
             id: 980,
@@ -7850,7 +7850,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 130,
             weight: 2230,
-            thumbnail: "sprites/pokemon/980.png",
+            thumbnail: "/sprites/pokemon/980.png",
         },
         {
             id: 981,
@@ -7858,7 +7858,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 120,
             weight: 1600,
-            thumbnail: "sprites/pokemon/981.png",
+            thumbnail: "/sprites/pokemon/981.png",
         },
         {
             id: 982,
@@ -7866,7 +7866,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 125,
             weight: 392,
-            thumbnail: "sprites/pokemon/982.png",
+            thumbnail: "/sprites/pokemon/982.png",
         },
         {
             id: 983,
@@ -7874,7 +7874,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 100,
             weight: 1200,
-            thumbnail: "sprites/pokemon/983.png",
+            thumbnail: "/sprites/pokemon/983.png",
         },
         {
             id: 984,
@@ -7882,7 +7882,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 115,
             weight: 3200,
-            thumbnail: "sprites/pokemon/984.png",
+            thumbnail: "/sprites/pokemon/984.png",
         },
         {
             id: 985,
@@ -7890,7 +7890,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 115,
             weight: 80,
-            thumbnail: "sprites/pokemon/985.png",
+            thumbnail: "/sprites/pokemon/985.png",
         },
         {
             id: 986,
@@ -7898,7 +7898,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 111,
             weight: 210,
-            thumbnail: "sprites/pokemon/986.png",
+            thumbnail: "/sprites/pokemon/986.png",
         },
         {
             id: 987,
@@ -7906,7 +7906,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 55,
             weight: 40,
-            thumbnail: "sprites/pokemon/987.png",
+            thumbnail: "/sprites/pokemon/987.png",
         },
         {
             id: 988,
@@ -7914,7 +7914,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 85,
             weight: 920,
-            thumbnail: "sprites/pokemon/988.png",
+            thumbnail: "/sprites/pokemon/988.png",
         },
         {
             id: 989,
@@ -7922,7 +7922,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 85,
             weight: 600,
-            thumbnail: "sprites/pokemon/989.png",
+            thumbnail: "/sprites/pokemon/989.png",
         },
         {
             id: 990,
@@ -7930,7 +7930,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 90,
             weight: 2400,
-            thumbnail: "sprites/pokemon/990.png",
+            thumbnail: "/sprites/pokemon/990.png",
         },
         {
             id: 991,
@@ -7938,7 +7938,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 56,
             weight: 110,
-            thumbnail: "sprites/pokemon/991.png",
+            thumbnail: "/sprites/pokemon/991.png",
         },
         {
             id: 992,
@@ -7946,7 +7946,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 50,
             baseHp: 154,
             weight: 3807,
-            thumbnail: "sprites/pokemon/992.png",
+            thumbnail: "/sprites/pokemon/992.png",
         },
         {
             id: 993,
@@ -7954,7 +7954,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 94,
             weight: 1110,
-            thumbnail: "sprites/pokemon/993.png",
+            thumbnail: "/sprites/pokemon/993.png",
         },
         {
             id: 994,
@@ -7962,7 +7962,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 80,
             weight: 360,
-            thumbnail: "sprites/pokemon/994.png",
+            thumbnail: "/sprites/pokemon/994.png",
         },
         {
             id: 995,
@@ -7970,7 +7970,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 30,
             baseHp: 100,
             weight: 3030,
-            thumbnail: "sprites/pokemon/995.png",
+            thumbnail: "/sprites/pokemon/995.png",
         },
         {
             id: 996,
@@ -7978,7 +7978,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 65,
             weight: 170,
-            thumbnail: "sprites/pokemon/996.png",
+            thumbnail: "/sprites/pokemon/996.png",
         },
         {
             id: 997,
@@ -7986,7 +7986,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 25,
             baseHp: 90,
             weight: 300,
-            thumbnail: "sprites/pokemon/997.png",
+            thumbnail: "/sprites/pokemon/997.png",
         },
         {
             id: 998,
@@ -7994,7 +7994,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 115,
             weight: 2100,
-            thumbnail: "sprites/pokemon/998.png",
+            thumbnail: "/sprites/pokemon/998.png",
         },
         {
             id: 999,
@@ -8002,7 +8002,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 45,
             weight: 50,
-            thumbnail: "sprites/pokemon/999.png",
+            thumbnail: "/sprites/pokemon/999.png",
         },
         {
             id: 1000,
@@ -8010,7 +8010,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 87,
             weight: 300,
-            thumbnail: "sprites/pokemon/1000.png",
+            thumbnail: "/sprites/pokemon/1000.png",
         },
         {
             id: 1001,
@@ -8018,7 +8018,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 6,
             baseHp: 85,
             weight: 742,
-            thumbnail: "sprites/pokemon/1001.png",
+            thumbnail: "/sprites/pokemon/1001.png",
         },
         {
             id: 1002,
@@ -8026,7 +8026,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 6,
             baseHp: 80,
             weight: 1522,
-            thumbnail: "sprites/pokemon/1002.png",
+            thumbnail: "/sprites/pokemon/1002.png",
         },
         {
             id: 1003,
@@ -8034,7 +8034,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 6,
             baseHp: 155,
             weight: 6997,
-            thumbnail: "sprites/pokemon/1003.png",
+            thumbnail: "/sprites/pokemon/1003.png",
         },
         {
             id: 1004,
@@ -8042,7 +8042,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 6,
             baseHp: 55,
             weight: 49,
-            thumbnail: "sprites/pokemon/1004.png",
+            thumbnail: "/sprites/pokemon/1004.png",
         },
         {
             id: 1005,
@@ -8050,7 +8050,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 105,
             weight: 3800,
-            thumbnail: "sprites/pokemon/1005.png",
+            thumbnail: "/sprites/pokemon/1005.png",
         },
         {
             id: 1006,
@@ -8058,7 +8058,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 74,
             weight: 350,
-            thumbnail: "sprites/pokemon/1006.png",
+            thumbnail: "/sprites/pokemon/1006.png",
         },
         {
             id: 1007,
@@ -8066,7 +8066,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 3030,
-            thumbnail: "sprites/pokemon/1007.png",
+            thumbnail: "/sprites/pokemon/1007.png",
         },
         {
             id: 1008,
@@ -8074,7 +8074,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 100,
             weight: 2400,
-            thumbnail: "sprites/pokemon/1008.png",
+            thumbnail: "/sprites/pokemon/1008.png",
         },
         {
             id: 1009,
@@ -8082,7 +8082,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 5,
             baseHp: 99,
             weight: 2800,
-            thumbnail: "sprites/pokemon/1009.png",
+            thumbnail: "/sprites/pokemon/1009.png",
         },
         {
             id: 1010,
@@ -8090,7 +8090,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 5,
             baseHp: 90,
             weight: 1250,
-            thumbnail: "sprites/pokemon/1010.png",
+            thumbnail: "/sprites/pokemon/1010.png",
         },
         {
             id: 1011,
@@ -8098,7 +8098,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 45,
             baseHp: 80,
             weight: 97,
-            thumbnail: "sprites/pokemon/1011.png",
+            thumbnail: "/sprites/pokemon/1011.png",
         },
         {
             id: 1012,
@@ -8106,7 +8106,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 120,
             baseHp: 40,
             weight: 11,
-            thumbnail: "sprites/pokemon/1012.png",
+            thumbnail: "/sprites/pokemon/1012.png",
         },
         {
             id: 1013,
@@ -8114,7 +8114,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 60,
             baseHp: 71,
             weight: 22,
-            thumbnail: "sprites/pokemon/1013.png",
+            thumbnail: "/sprites/pokemon/1013.png",
         },
         {
             id: 1014,
@@ -8122,7 +8122,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 88,
             weight: 922,
-            thumbnail: "sprites/pokemon/1014.png",
+            thumbnail: "/sprites/pokemon/1014.png",
         },
         {
             id: 1015,
@@ -8130,7 +8130,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 88,
             weight: 122,
-            thumbnail: "sprites/pokemon/1015.png",
+            thumbnail: "/sprites/pokemon/1015.png",
         },
         {
             id: 1016,
@@ -8138,7 +8138,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 88,
             weight: 301,
-            thumbnail: "sprites/pokemon/1016.png",
+            thumbnail: "/sprites/pokemon/1016.png",
         },
         {
             id: 1017,
@@ -8146,7 +8146,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 5,
             baseHp: 80,
             weight: 398,
-            thumbnail: "sprites/pokemon/1017.png",
+            thumbnail: "/sprites/pokemon/1017.png",
         },
         {
             id: 1018,
@@ -8154,7 +8154,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 90,
             weight: 600,
-            thumbnail: "sprites/pokemon/1018.png",
+            thumbnail: "/sprites/pokemon/1018.png",
         },
         {
             id: 1019,
@@ -8162,7 +8162,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 106,
             weight: 930,
-            thumbnail: "sprites/pokemon/1019.png",
+            thumbnail: "/sprites/pokemon/1019.png",
         },
         {
             id: 1020,
@@ -8170,7 +8170,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 105,
             weight: 5900,
-            thumbnail: "sprites/pokemon/1020.png",
+            thumbnail: "/sprites/pokemon/1020.png",
         },
         {
             id: 1021,
@@ -8178,7 +8178,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 125,
             weight: 4800,
-            thumbnail: "sprites/pokemon/1021.png",
+            thumbnail: "/sprites/pokemon/1021.png",
         },
         {
             id: 1022,
@@ -8186,7 +8186,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 90,
             weight: 1625,
-            thumbnail: "sprites/pokemon/1022.png",
+            thumbnail: "/sprites/pokemon/1022.png",
         },
         {
             id: 1023,
@@ -8194,7 +8194,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 10,
             baseHp: 90,
             weight: 1560,
-            thumbnail: "sprites/pokemon/1023.png",
+            thumbnail: "/sprites/pokemon/1023.png",
         },
         {
             id: 1024,
@@ -8202,7 +8202,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 255,
             baseHp: 90,
             weight: 65,
-            thumbnail: "sprites/pokemon/1024.png",
+            thumbnail: "/sprites/pokemon/1024.png",
         },
         {
             id: 1025,
@@ -8210,7 +8210,7 @@ function getPokemonList(): PokemonListItem[] {
             captureRate: 3,
             baseHp: 88,
             weight: 3,
-            thumbnail: "sprites/pokemon/1025.png",
+            thumbnail: "/sprites/pokemon/1025.png",
         },
     ];
 }
@@ -8223,7 +8223,7 @@ function getOverridesForGen1RB(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 55,
             weight: 185,
-            thumbnail: "sprites/pokemon/20.png",
+            thumbnail: "/sprites/pokemon/20.png",
         },
     ];
 }
@@ -8236,7 +8236,7 @@ function getOverridesForGen1Y(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 55,
             weight: 185,
-            thumbnail: "sprites/pokemon/20.png",
+            thumbnail: "/sprites/pokemon/20.png",
         },
         {
             id: 148,
@@ -8244,7 +8244,7 @@ function getOverridesForGen1Y(): PokemonListItem[] {
             captureRate: 27,
             baseHp: 61,
             weight: 165,
-            thumbnail: "sprites/pokemon/148.png",
+            thumbnail: "/sprites/pokemon/148.png",
         },
         {
             id: 149,
@@ -8252,7 +8252,7 @@ function getOverridesForGen1Y(): PokemonListItem[] {
             captureRate: 9,
             baseHp: 91,
             weight: 2100,
-            thumbnail: "sprites/pokemon/149.png",
+            thumbnail: "/sprites/pokemon/149.png",
         },
     ];
 }
@@ -8265,7 +8265,7 @@ function getOverridesForGen2(): PokemonListItem[] {
             captureRate: 90,
             baseHp: 55,
             weight: 185,
-            thumbnail: "sprites/pokemon/20.png",
+            thumbnail: "/sprites/pokemon/20.png",
         },
     ];
 }

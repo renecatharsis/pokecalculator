@@ -144,9 +144,6 @@ function calculateGen2Probability(input: CatchRateInputDto): number {
                 catchRateModifier = catchRateModifier * 3;
             }
             break;
-        case PokeBalls.POKE_BALL:
-        case PokeBalls.FRIEND_BALL:
-        case PokeBalls.MOON_BALL:
         default:
             break;
     }

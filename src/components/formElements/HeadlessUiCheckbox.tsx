@@ -20,10 +20,10 @@ export default function HeadlessUiCheckbox({
                     setEnabled(checked);
                     stateHandler(name, checked);
                 }}
-                className="group block size-4 rounded border bg-white data-[checked]:bg-blue-500"
+                className="group block size-4 rounded-sm border bg-white data-checked:bg-blue-500"
             >
                 <svg
-                    className="stroke-white opacity-0 group-data-[checked]:opacity-100"
+                    className="stroke-white opacity-0 group-data-checked:opacity-100"
                     viewBox="0 0 14 14"
                     fill="none"
                     aria-hidden="true"
