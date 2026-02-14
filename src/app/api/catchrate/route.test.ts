@@ -1,8 +1,5 @@
-/**
- * @jest-environment node
- */
-
 import type { NextRequest } from "next/server";
+import { expect, it } from "vitest";
 import type { CatchRateOutputDto, CatchRateOutputNoticeDto } from "@/dto/CatchRateOutputDto";
 import { Generation } from "@/enum/Generation";
 import { PokeBalls } from "@/enum/PokeBalls";

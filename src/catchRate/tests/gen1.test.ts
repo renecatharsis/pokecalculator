@@ -1,3 +1,4 @@
+import { expect, it } from "vitest";
 import { calculateProbability } from "@/catchRate/CatchRateCalculator";
 import type { CatchRateInputDto } from "@/dto/CatchRateInputDto";
 import { Generation } from "@/enum/Generation";
