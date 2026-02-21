@@ -3,7 +3,7 @@
 Simple set of tools to help with probabilities in Pokémon games.
 
 ## Requirements
-* NodeJS 20+
+* NodeJS 24
 
 ## Installation
 * `nvm use`
