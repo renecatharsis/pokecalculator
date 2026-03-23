@@ -266,7 +266,7 @@ export default function CatchRate() {
                     <h2 className="text-base font-semibold leading-7">Good to know:</h2>
                     <ul className="mt-2">
                         <UnorderedList text="No support for Shadow Pokémon" />
-                        <UnorderedList text="No support for Pokémon Legends Arceus & Let's Go Eevee / Pikachu" />
+                        <UnorderedList text="No support for Pokémon Legends Arceus / Z-A & Let's Go Eevee / Pikachu" />
                         <UnorderedList text="No support for Safari Zones or parks" />
                     </ul>
                 </div>

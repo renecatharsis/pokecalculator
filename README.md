@@ -11,6 +11,7 @@ Simple set of tools to help with probabilities in Pokémon games.
 * `npm run dev`
 
 ## Running with docker in production
+* `cp .env.dist .env` to adjust local port (optional)
 * `docker compose up --build -d`
 
 ## Updating static Pokémon resources
