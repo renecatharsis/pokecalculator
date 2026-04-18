@@ -7,8 +7,8 @@ Simple set of tools to help with probabilities in Pokémon games.
 
 ## Installation
 * `nvm use`
-* `npm install`
-* `npm run dev`
+* `pnpm install`
+* `pnpm run dev`
 
 ## Running with docker in production
 * `cp .env.dist .env` to adjust local port (optional)
@@ -27,7 +27,7 @@ Temporarily require their sprites repo to get the full package: `npm install git
   * `wget -P bin/_pokedata https://raw.githubusercontent.com/PokeAPI/pokeapi/refs/heads/master/data/v2/csv/pokemon.csv`
   * `wget -P bin/_pokedata https://raw.githubusercontent.com/PokeAPI/pokeapi/refs/heads/master/data/v2/csv/pokemon_species.csv`
   * `wget -P bin/_pokedata https://raw.githubusercontent.com/PokeAPI/pokeapi/refs/heads/master/data/v2/csv/pokemon_stats.csv`
-  * `npm run create-pokemon-data` to create data for `dataProviders/PokemonProvider.ts`
+  * `pnpm run create-pokemon-data` to create data for `dataProviders/PokemonProvider.ts`
 
 ## Legal information
 Pokémon and Pokémon character names are trademarks of Nintendo.
